@@ -1,0 +1,2708 @@
+{
+  "snapshotDates": [
+    "2026-11-26"
+  ],
+  "thresholds": [
+    1250,
+    1300,
+    1350,
+    1400,
+    1450
+  ],
+  "cheapestByThreshold": [
+    {
+      "date": "2026-11-26",
+      "threshold": 1250,
+      "blended": 0.0425,
+      "modelId": "google/gemma-3-4b-it",
+      "modelName": "Google: Gemma 3 4B",
+      "arenaScore": 1303.2,
+      "openWeights": true
+    },
+    {
+      "date": "2026-11-26",
+      "threshold": 1300,
+      "blended": 0.0425,
+      "modelId": "google/gemma-3-4b-it",
+      "modelName": "Google: Gemma 3 4B",
+      "arenaScore": 1303.2,
+      "openWeights": true
+    },
+    {
+      "date": "2026-11-26",
+      "threshold": 1350,
+      "blended": 0.09,
+      "modelId": "deepseek/deepseek-v4-flash-0731",
+      "modelName": "DeepSeek: DeepSeek V4 Flash 0731",
+      "arenaScore": 1435.6,
+      "openWeights": true
+    },
+    {
+      "date": "2026-11-26",
+      "threshold": 1400,
+      "blended": 0.09,
+      "modelId": "deepseek/deepseek-v4-flash-0731",
+      "modelName": "DeepSeek: DeepSeek V4 Flash 0731",
+      "arenaScore": 1435.6,
+      "openWeights": true
+    },
+    {
+      "date": "2026-11-26",
+      "threshold": 1450,
+      "blended": 0.231,
+      "modelId": "tencent/hy3",
+      "modelName": "Tencent: Hy3",
+      "arenaScore": 1455.5,
+      "openWeights": true
+    }
+  ],
+  "models": [
+    {
+      "id": "anthropic/claude-opus-4.6",
+      "name": "Anthropic: Claude Opus 4.6",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1496.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "blended": 10,
+          "arenaScore": 1496.5
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4.7",
+      "name": "Anthropic: Claude Opus 4.7",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1494,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "blended": 10,
+          "arenaScore": 1494
+        }
+      ]
+    },
+    {
+      "id": "meta/muse-spark-1.1",
+      "name": "Meta: Muse Spark 1.1",
+      "provider": "Meta",
+      "openWeights": false,
+      "latestScore": 1491.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 4.25,
+          "blended": 2,
+          "arenaScore": 1491.2
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-pro-preview",
+      "name": "Google: Gemini 3.1 Pro Preview",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1486.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 12,
+          "blended": 4.5,
+          "arenaScore": 1486.7
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-max-0902",
+      "name": "Qwen: Qwen3.8 Max (0902)",
+      "provider": "Qwen",
+      "openWeights": false,
+      "latestScore": 1483.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "blended": 3,
+          "arenaScore": 1483.5
+        }
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro",
+      "name": "Xiaomi: MiMo-V2.6-Pro",
+      "provider": "Xiaomi",
+      "openWeights": true,
+      "latestScore": 1481.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.435,
+          "outputPrice": 0.87,
+          "blended": 0.54375,
+          "arenaScore": 1481.3
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "name": "OpenAI: GPT-5.5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1476.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 30,
+          "blended": 11.25,
+          "arenaScore": 1476.2
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3-flash",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1475.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "arenaScore": 1475.8
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2-chat",
+      "name": "OpenAI: GPT-5.2 Chat",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1475.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.75,
+          "outputPrice": 14,
+          "blended": 4.8125,
+          "arenaScore": 1475.3
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4.8",
+      "name": "Anthropic: Claude Opus 4.8",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1474,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "blended": 10,
+          "arenaScore": 1474
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.7-max",
+      "name": "Qwen: Qwen3.7 Max",
+      "provider": "Qwen",
+      "openWeights": false,
+      "latestScore": 1473.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.475,
+          "outputPrice": 4.425,
+          "blended": 2.2125,
+          "arenaScore": 1473.7
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3-flash-preview",
+      "name": "Google: Gemini 3 Flash Preview",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1473,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.5,
+          "outputPrice": 3,
+          "blended": 1.125,
+          "arenaScore": 1473
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.6",
+      "name": "Anthropic: Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1471.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 3,
+          "outputPrice": 15,
+          "blended": 6,
+          "arenaScore": 1471.9
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4.5",
+      "name": "Anthropic: Claude Opus 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1469.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "blended": 10,
+          "arenaScore": 1469.5
+        }
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.5",
+      "name": "SpaceXSI: Grok 4.5",
+      "provider": "xAI",
+      "openWeights": false,
+      "latestScore": 1465.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "blended": 3,
+          "arenaScore": 1465.6
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4",
+      "name": "OpenAI: GPT-5.4",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1464.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2.5,
+          "outputPrice": 15,
+          "blended": 5.625,
+          "arenaScore": 1464.9
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1464.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.4,
+          "outputPrice": 4.4,
+          "blended": 2.15,
+          "arenaScore": 1464.8
+        }
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "latestScore": 1461,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.65,
+          "outputPrice": 3.41,
+          "blended": 1.34,
+          "arenaScore": 1461
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1458,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.111,
+          "outputPrice": 4.44,
+          "blended": 1.19325,
+          "arenaScore": 1458
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek: DeepSeek V4 Pro 0423",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1458,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.888188,
+          "outputPrice": 1.5082,
+          "blended": 1.043191,
+          "arenaScore": 1458
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-5",
+      "name": "Z.ai: GLM 5",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1457.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1,
+          "outputPrice": 3.2,
+          "blended": 1.55,
+          "arenaScore": 1457.2
+        }
+      ]
+    },
+    {
+      "id": "tencent/hy3",
+      "name": "Tencent: Hy3",
+      "provider": "Tencent",
+      "openWeights": true,
+      "latestScore": 1455.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.132,
+          "outputPrice": 0.528,
+          "blended": 0.231,
+          "arenaScore": 1455.5
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.7-plus",
+      "name": "Qwen: Qwen3.7 Plus",
+      "provider": "Qwen",
+      "openWeights": false,
+      "latestScore": 1455.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.32,
+          "outputPrice": 1.28,
+          "blended": 0.56,
+          "arenaScore": 1455.4
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite",
+      "name": "Google: Gemini 3.5 Flash Lite",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1455.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 2.5,
+          "blended": 0.85,
+          "arenaScore": 1455.2
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5",
+      "name": "Anthropic: Claude Sonnet 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1455,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 3,
+          "outputPrice": 15,
+          "blended": 6,
+          "arenaScore": 1455
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-4-31b-it",
+      "name": "Google: Gemma 4 31B",
+      "provider": "Google",
+      "openWeights": true,
+      "latestScore": 1452.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.2,
+          "outputPrice": 0.4,
+          "blended": 0.25,
+          "arenaScore": 1452.2
+        }
+      ]
+    },
+    {
+      "id": "stepfun/step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "provider": "StepFun",
+      "openWeights": false,
+      "latestScore": 1449.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1,
+          "outputPrice": 2.7,
+          "blended": 1.425,
+          "arenaScore": 1449.1
+        }
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "provider": "Xiaomi",
+      "openWeights": true,
+      "latestScore": 1448.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "arenaScore": 1448.3
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4.1",
+      "name": "Anthropic: Claude Opus 4.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1447.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 15,
+          "outputPrice": 75,
+          "blended": 30,
+          "arenaScore": 1447.9
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1445.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "blended": 3.4375,
+          "arenaScore": 1445.4
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview",
+      "name": "Google: Gemini 2.5 Pro Preview 06-05",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1445.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "blended": 3.4375,
+          "arenaScore": 1445.4
+        }
+      ]
+    },
+    {
+      "id": "thinkingmachines/inkling",
+      "name": "Thinking Machines: Inkling",
+      "provider": "Thinkingmachines",
+      "openWeights": true,
+      "latestScore": 1443.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1,
+          "outputPrice": 4.05,
+          "blended": 1.7625,
+          "arenaScore": 1443.4
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.6-plus",
+      "name": "Qwen: Qwen3.6 Plus",
+      "provider": "Qwen",
+      "openWeights": false,
+      "latestScore": 1442.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.325,
+          "outputPrice": 1.95,
+          "blended": 0.73125,
+          "arenaScore": 1442.8
+        }
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.3",
+      "name": "SpaceXSI: Grok 4.3",
+      "provider": "xAI",
+      "openWeights": false,
+      "latestScore": 1441.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 2.5,
+          "blended": 1.5625,
+          "arenaScore": 1441.6
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen: Qwen3.5 397B A17B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1441.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.5,
+          "outputPrice": 3.6,
+          "blended": 1.275,
+          "arenaScore": 1441.5
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.7",
+      "name": "Z.ai: GLM 4.7",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1441.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "blended": 1,
+          "arenaScore": 1441.3
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1",
+      "name": "OpenAI: GPT-5.1",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1438.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "blended": 3.4375,
+          "arenaScore": 1438.5
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it",
+      "name": "Google: Gemma 4 26B A4B ",
+      "provider": "Google",
+      "openWeights": true,
+      "latestScore": 1437.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.09,
+          "outputPrice": 0.3,
+          "blended": 0.1425,
+          "arenaScore": 1437.6
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1435.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.06,
+          "outputPrice": 0.18,
+          "blended": 0.09,
+          "arenaScore": 1435.6
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "name": "DeepSeek: DeepSeek V4 Flash 0423",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1435.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.09,
+          "outputPrice": 0.18,
+          "blended": 0.1125,
+          "arenaScore": 1435.6
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2",
+      "name": "OpenAI: GPT-5.2",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1435.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.75,
+          "outputPrice": 14,
+          "blended": 4.8125,
+          "arenaScore": 1435.2
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "name": "Qwen: Qwen3.8 27B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1435,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.06,
+          "outputPrice": 1.96,
+          "blended": 0.535,
+          "arenaScore": 1435
+        }
+      ]
+    },
+    {
+      "id": "minimax/minimax-m3",
+      "name": "MiniMax: MiniMax M3",
+      "provider": "MiniMax",
+      "openWeights": true,
+      "latestScore": 1434.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 1.2,
+          "blended": 0.525,
+          "arenaScore": 1434.1
+        }
+      ]
+    },
+    {
+      "id": "reflection/beam-1.0-501b-a23b",
+      "name": "Reflection: Beam 1.0 501B A23B",
+      "provider": "Reflection",
+      "openWeights": true,
+      "latestScore": 1433.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 1,
+          "blended": 0.475,
+          "arenaScore": 1433.7
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite",
+      "name": "Google: Gemini 3.1 Flash Lite",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1433.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.25,
+          "outputPrice": 1.5,
+          "blended": 0.5625,
+          "arenaScore": 1433.1
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite-preview",
+      "name": "Google: Gemini 3.1 Flash Lite Preview",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1433.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.25,
+          "outputPrice": 1.5,
+          "blended": 0.5625,
+          "arenaScore": 1433.1
+        }
+      ]
+    },
+    {
+      "id": "openai/o3",
+      "name": "OpenAI: o3",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1431.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 8,
+          "blended": 3.5,
+          "arenaScore": 1431.5
+        }
+      ]
+    },
+    {
+      "id": "mistralai/mistral-medium-3-5",
+      "name": "Mistral: Mistral Medium 3.5",
+      "provider": "Mistral",
+      "openWeights": true,
+      "latestScore": 1426.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.5,
+          "outputPrice": 7.5,
+          "blended": 3,
+          "arenaScore": 1426.3
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.2",
+      "name": "DeepSeek: DeepSeek V3.2",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1424.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.26,
+          "outputPrice": 0.38,
+          "blended": 0.29,
+          "arenaScore": 1424.7
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.6",
+      "name": "Z.ai: GLM 4.6",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1424.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.5,
+          "outputPrice": 2,
+          "blended": 0.875,
+          "arenaScore": 1424.4
+        }
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large-4-0",
+      "name": "Mistral: Mistral Large 4",
+      "provider": "Mistral",
+      "openWeights": true,
+      "latestScore": 1423.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.7,
+          "outputPrice": 2.1,
+          "blended": 1.05,
+          "arenaScore": 1423.5
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "name": "Qwen: Qwen3 235B A22B Instruct 2507",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1422.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.14,
+          "outputPrice": 0.8,
+          "blended": 0.305,
+          "arenaScore": 1422.2
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-exp",
+      "name": "DeepSeek: DeepSeek V3.2 Exp",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1421.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.27,
+          "outputPrice": 0.41,
+          "blended": 0.305,
+          "arenaScore": 1421.9
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528",
+      "name": "DeepSeek: R1 0528",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1421.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.571,
+          "outputPrice": 2.286,
+          "blended": 0.99975,
+          "arenaScore": 1421.4
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "name": "DeepSeek: DeepSeek V3.1",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1417.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.25,
+          "outputPrice": 0.95,
+          "blended": 0.425,
+          "arenaScore": 1417.2
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "name": "Qwen: Qwen3.5-122B-A10B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1416.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.26,
+          "outputPrice": 2.08,
+          "blended": 0.715,
+          "arenaScore": 1416.6
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus",
+      "name": "DeepSeek: DeepSeek V3.1 Terminus",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1415.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.27,
+          "outputPrice": 1,
+          "blended": 0.4525,
+          "arenaScore": 1415.1
+        }
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.7",
+      "name": "MiniMax: MiniMax M2.7",
+      "provider": "MiniMax",
+      "openWeights": true,
+      "latestScore": 1414.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.6,
+          "outputPrice": 1.8,
+          "blended": 0.9,
+          "arenaScore": 1414.8
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "name": "OpenAI: GPT-4.1",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1414.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 8,
+          "blended": 3.5,
+          "arenaScore": 1414.5
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-haiku-4.5",
+      "name": "Anthropic: Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1414,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1,
+          "outputPrice": 5,
+          "blended": 2,
+          "arenaScore": 1414
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "name": "Qwen: Qwen3 VL 235B A22B Instruct",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1413.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.21,
+          "outputPrice": 1.9,
+          "blended": 0.6325,
+          "arenaScore": 1413.2
+        }
+      ]
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small",
+      "name": "Thinking Machines: Inkling 2 Small",
+      "provider": "Thinkingmachines",
+      "openWeights": true,
+      "latestScore": 1412.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 1,
+          "blended": 0.475,
+          "arenaScore": 1412.2
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.5",
+      "name": "Z.ai: GLM 4.5",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1411,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "blended": 1,
+          "arenaScore": 1411
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "name": "Google: Gemini 2.5 Flash",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1409.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 2.5,
+          "blended": 0.85,
+          "arenaScore": 1409.2
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-27b",
+      "name": "Qwen: Qwen3.5-27B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1408.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.26,
+          "outputPrice": 2.6,
+          "blended": 0.845,
+          "arenaScore": 1408.6
+        }
+      ]
+    },
+    {
+      "id": "thinkingmachines/inkling-small",
+      "name": "Thinking Machines: Inkling Small",
+      "provider": "Thinkingmachines",
+      "openWeights": true,
+      "latestScore": 1405.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.45,
+          "outputPrice": 1.2,
+          "blended": 0.6375,
+          "arenaScore": 1405.2
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1400,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.45,
+          "outputPrice": 3.5,
+          "blended": 1.2125,
+          "arenaScore": 1400
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1398.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.1,
+          "outputPrice": 1.1,
+          "blended": 0.35,
+          "arenaScore": 1398.7
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-flash-02-23",
+      "name": "Qwen: Qwen3.5-Flash",
+      "provider": "Qwen",
+      "openWeights": false,
+      "latestScore": 1396.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.065,
+          "outputPrice": 0.26,
+          "blended": 0.11375,
+          "arenaScore": 1396.1
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek: DeepSeek V3 0324",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1395.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.25,
+          "outputPrice": 1,
+          "blended": 0.4375,
+          "arenaScore": 1395.1
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-35b-a3b",
+      "name": "Qwen: Qwen3.5-35B-A3B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1394,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.14,
+          "outputPrice": 1,
+          "blended": 0.355,
+          "arenaScore": 1394
+        }
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.5",
+      "name": "MiniMax: MiniMax M2.5",
+      "provider": "MiniMax",
+      "openWeights": true,
+      "latestScore": 1390.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 1.2,
+          "blended": 0.525,
+          "arenaScore": 1390.9
+        }
+      ]
+    },
+    {
+      "id": "upstage/solar-pro4",
+      "name": "Upstage: Solar Pro 4",
+      "provider": "Upstage",
+      "openWeights": false,
+      "latestScore": 1387.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "blended": 0.2625,
+          "arenaScore": 1387.6
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "name": "OpenAI: GPT-4.1 Mini",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1382.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.4,
+          "outputPrice": 1.6,
+          "blended": 0.7,
+          "arenaScore": 1382.7
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "name": "Qwen: Qwen3 30B A3B Instruct 2507",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1382.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.1,
+          "outputPrice": 0.3,
+          "blended": 0.15,
+          "arenaScore": 1382.2
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.6v",
+      "name": "Z.ai: GLM 4.6V",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1378.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.3,
+          "outputPrice": 0.9,
+          "blended": 0.45,
+          "arenaScore": 1378.2
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "name": "Z.ai: GLM 4.5 Air",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1372.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.2,
+          "outputPrice": 1.1,
+          "blended": 0.425,
+          "arenaScore": 1372.9
+        }
+      ]
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "name": "Thinking Machines: Inkling 2 Mini",
+      "provider": "Thinkingmachines",
+      "openWeights": true,
+      "latestScore": 1366.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.075,
+          "outputPrice": 0.3,
+          "blended": 0.13125,
+          "arenaScore": 1366.9
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "name": "Google: Gemma 3 27B",
+      "provider": "Google",
+      "openWeights": true,
+      "latestScore": 1365.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.08,
+          "outputPrice": 0.45,
+          "blended": 0.1725,
+          "arenaScore": 1365.4
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.7-flash",
+      "name": "Z.ai: GLM 4.7 Flash",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1364.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.0605,
+          "outputPrice": 0.4,
+          "blended": 0.145375,
+          "arenaScore": 1364.6
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "name": "DeepSeek: DeepSeek V3",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1358.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.2574,
+          "outputPrice": 1.0287,
+          "blended": 0.450225,
+          "arenaScore": 1358.4
+        }
+      ]
+    },
+    {
+      "id": "cohere/command-a",
+      "name": "Cohere: Command A",
+      "provider": "Cohere",
+      "openWeights": true,
+      "latestScore": 1353.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "blended": 4.375,
+          "arenaScore": 1353.6
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.5v",
+      "name": "Z.ai: GLM 4.5V",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1352.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.6,
+          "outputPrice": 1.8,
+          "blended": 0.9,
+          "arenaScore": 1352.1
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "provider": "OpenAI",
+      "openWeights": true,
+      "latestScore": 1351.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.05,
+          "outputPrice": 0.25,
+          "blended": 0.1,
+          "arenaScore": 1351.7
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-32b",
+      "name": "Qwen: Qwen3 32B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1346.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.08,
+          "outputPrice": 0.28,
+          "blended": 0.13,
+          "arenaScore": 1346.7
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1346.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 15,
+          "blended": 7.5,
+          "arenaScore": 1346.1
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen-plus",
+      "name": "Qwen: Qwen-Plus",
+      "provider": "Qwen",
+      "openWeights": false,
+      "latestScore": 1345.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.26,
+          "outputPrice": 0.78,
+          "blended": 0.39,
+          "arenaScore": 1345.8
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "name": "Google: Gemma 3 12B",
+      "provider": "Google",
+      "openWeights": true,
+      "latestScore": 1341.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.05,
+          "outputPrice": 0.15,
+          "blended": 0.075,
+          "arenaScore": 1341.8
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-08-06",
+      "name": "OpenAI: GPT-4o (2024-08-06)",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1335.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "blended": 4.375,
+          "arenaScore": 1335.6
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Meta: Llama 4 Maverick",
+      "provider": "Meta",
+      "openWeights": true,
+      "latestScore": 1327,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.35,
+          "outputPrice": 1,
+          "blended": 0.5125,
+          "arenaScore": 1327
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b",
+      "name": "Qwen: Qwen3 30B A3B",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1326.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.12,
+          "outputPrice": 0.5,
+          "blended": 0.215,
+          "arenaScore": 1326.4
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-nano",
+      "name": "OpenAI: GPT-4.1 Nano",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1322.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.1,
+          "outputPrice": 0.4,
+          "blended": 0.175,
+          "arenaScore": 1322.2
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/llama-4-scout",
+      "name": "Meta: Llama 4 Scout",
+      "provider": "Meta",
+      "openWeights": true,
+      "latestScore": 1321.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.1,
+          "outputPrice": 0.3,
+          "blended": 0.15,
+          "arenaScore": 1321.4
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "name": "Meta: Llama 3.3 70B Instruct",
+      "provider": "Meta",
+      "openWeights": true,
+      "latestScore": 1318.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.71,
+          "outputPrice": 0.71,
+          "blended": 0.71,
+          "arenaScore": 1318.1
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1317.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "blended": 0.2625,
+          "arenaScore": 1317.5
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1317.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "blended": 0.2625,
+          "arenaScore": 1317.5
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b",
+      "provider": "OpenAI",
+      "openWeights": true,
+      "latestScore": 1317.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.03,
+          "outputPrice": 0.13,
+          "blended": 0.055,
+          "arenaScore": 1317.5
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-3-4b-it",
+      "name": "Google: Gemma 3 4B",
+      "provider": "Google",
+      "openWeights": true,
+      "latestScore": 1303.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.04,
+          "outputPrice": 0.05,
+          "blended": 0.0425,
+          "arenaScore": 1303.2
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct",
+      "name": "Qwen2.5 72B Instruct",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1302.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.36,
+          "outputPrice": 0.4,
+          "blended": 0.37,
+          "arenaScore": 1302.8
+        }
+      ]
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral: Mistral Small 3.1 24B",
+      "provider": "Mistral",
+      "openWeights": true,
+      "latestScore": 1302.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.351,
+          "outputPrice": 0.555,
+          "blended": 0.402,
+          "arenaScore": 1302.6
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "provider": "Meta",
+      "openWeights": true,
+      "latestScore": 1293.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.72,
+          "outputPrice": 0.72,
+          "blended": 0.72,
+          "arenaScore": 1293.4
+        }
+      ]
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "name": "Google: Gemma 2 27B",
+      "provider": "Google",
+      "openWeights": true,
+      "latestScore": 1289.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.65,
+          "outputPrice": 0.65,
+          "blended": 0.65,
+          "arenaScore": 1289.5
+        }
+      ]
+    },
+    {
+      "id": "ibm-granite/granite-4.2-8b",
+      "name": "IBM: Granite 4.2 8B",
+      "provider": "IBM",
+      "openWeights": true,
+      "latestScore": 1289.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.06,
+          "outputPrice": 0.15,
+          "blended": 0.0825,
+          "arenaScore": 1289.4
+        }
+      ]
+    },
+    {
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
+      "provider": "Cohere",
+      "openWeights": true,
+      "latestScore": 1276.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "blended": 4.375,
+          "arenaScore": 1276.4
+        }
+      ]
+    },
+    {
+      "id": "mistralai/mistral-small-24b-instruct-2501",
+      "name": "Mistral: Mistral Small 3",
+      "provider": "Mistral",
+      "openWeights": true,
+      "latestScore": 1274.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.05,
+          "outputPrice": 0.08,
+          "blended": 0.0575,
+          "arenaScore": 1274.4
+        }
+      ]
+    },
+    {
+      "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "provider": "Qwen",
+      "openWeights": true,
+      "latestScore": 1270.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.66,
+          "outputPrice": 1,
+          "blended": 0.745,
+          "arenaScore": 1270.6
+        }
+      ]
+    },
+    {
+      "id": "microsoft/phi-4",
+      "name": "Microsoft: Phi 4",
+      "provider": "Microsoft",
+      "openWeights": true,
+      "latestScore": 1256.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.07,
+          "outputPrice": 0.14,
+          "blended": 0.0875,
+          "arenaScore": 1256.3
+        }
+      ]
+    },
+    {
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
+      "provider": "Cohere",
+      "openWeights": true,
+      "latestScore": 1250.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "blended": 0.2625,
+          "arenaScore": 1250.5
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "provider": "Meta",
+      "openWeights": true,
+      "latestScore": 1211.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.05,
+          "outputPrice": 0.08,
+          "blended": 0.0575,
+          "arenaScore": 1211.2
+        }
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "provider": "Meta",
+      "openWeights": true,
+      "latestScore": 1166.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.05,
+          "outputPrice": 0.33,
+          "blended": 0.12,
+          "arenaScore": 1166.9
+        }
+      ]
+    }
+  ],
+  "deflationSnapshots": [
+    {
+      "date": "2026-11-26",
+      "models": [
+        {
+          "id": "anthropic/claude-opus-4.6",
+          "name": "Anthropic: Claude Opus 4.6",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "arenaScore": 1496.5,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-opus-4.7",
+          "name": "Anthropic: Claude Opus 4.7",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "arenaScore": 1494,
+          "openWeights": false
+        },
+        {
+          "id": "meta/muse-spark-1.1",
+          "name": "Meta: Muse Spark 1.1",
+          "inputPrice": 1.25,
+          "outputPrice": 4.25,
+          "arenaScore": 1491.2,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-3.1-pro-preview",
+          "name": "Google: Gemini 3.1 Pro Preview",
+          "inputPrice": 2,
+          "outputPrice": 12,
+          "arenaScore": 1486.7,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3.8-max-0902",
+          "name": "Qwen: Qwen3.8 Max (0902)",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "arenaScore": 1483.5,
+          "openWeights": false
+        },
+        {
+          "id": "xiaomi/mimo-v2.6-pro",
+          "name": "Xiaomi: MiMo-V2.6-Pro",
+          "inputPrice": 0.435,
+          "outputPrice": 0.87,
+          "arenaScore": 1481.3,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5.5",
+          "name": "OpenAI: GPT-5.5",
+          "inputPrice": 5,
+          "outputPrice": 30,
+          "arenaScore": 1476.2,
+          "openWeights": false
+        },
+        {
+          "id": "z-ai/glm-5.3-flash",
+          "name": "Z.ai: GLM 5.3 Flash",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "arenaScore": 1475.8,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5.2-chat",
+          "name": "OpenAI: GPT-5.2 Chat",
+          "inputPrice": 1.75,
+          "outputPrice": 14,
+          "arenaScore": 1475.3,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-opus-4.8",
+          "name": "Anthropic: Claude Opus 4.8",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "arenaScore": 1474,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3.7-max",
+          "name": "Qwen: Qwen3.7 Max",
+          "inputPrice": 1.475,
+          "outputPrice": 4.425,
+          "arenaScore": 1473.7,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-3-flash-preview",
+          "name": "Google: Gemini 3 Flash Preview",
+          "inputPrice": 0.5,
+          "outputPrice": 3,
+          "arenaScore": 1473,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-sonnet-4.6",
+          "name": "Anthropic: Claude Sonnet 4.6",
+          "inputPrice": 3,
+          "outputPrice": 15,
+          "arenaScore": 1471.9,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-opus-4.5",
+          "name": "Anthropic: Claude Opus 4.5",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "arenaScore": 1469.5,
+          "openWeights": false
+        },
+        {
+          "id": "x-ai/grok-4.5",
+          "name": "SpaceXSI: Grok 4.5",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "arenaScore": 1465.6,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-5.4",
+          "name": "OpenAI: GPT-5.4",
+          "inputPrice": 2.5,
+          "outputPrice": 15,
+          "arenaScore": 1464.9,
+          "openWeights": false
+        },
+        {
+          "id": "z-ai/glm-5.1",
+          "name": "Z.ai: GLM 5.1",
+          "inputPrice": 1.4,
+          "outputPrice": 4.4,
+          "arenaScore": 1464.8,
+          "openWeights": true
+        },
+        {
+          "id": "moonshotai/kimi-k2.6",
+          "name": "MoonshotAI: Kimi K2.6",
+          "inputPrice": 0.65,
+          "outputPrice": 3.41,
+          "arenaScore": 1461,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v4-pro-0813",
+          "name": "DeepSeek: DeepSeek V4 Pro 0813",
+          "inputPrice": 0.111,
+          "outputPrice": 4.44,
+          "arenaScore": 1458,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v4-pro",
+          "name": "DeepSeek: DeepSeek V4 Pro 0423",
+          "inputPrice": 0.888188,
+          "outputPrice": 1.5082,
+          "arenaScore": 1458,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-5",
+          "name": "Z.ai: GLM 5",
+          "inputPrice": 1,
+          "outputPrice": 3.2,
+          "arenaScore": 1457.2,
+          "openWeights": true
+        },
+        {
+          "id": "tencent/hy3",
+          "name": "Tencent: Hy3",
+          "inputPrice": 0.132,
+          "outputPrice": 0.528,
+          "arenaScore": 1455.5,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3.7-plus",
+          "name": "Qwen: Qwen3.7 Plus",
+          "inputPrice": 0.32,
+          "outputPrice": 1.28,
+          "arenaScore": 1455.4,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-3.5-flash-lite",
+          "name": "Google: Gemini 3.5 Flash Lite",
+          "inputPrice": 0.3,
+          "outputPrice": 2.5,
+          "arenaScore": 1455.2,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-sonnet-4.5",
+          "name": "Anthropic: Claude Sonnet 4.5",
+          "inputPrice": 3,
+          "outputPrice": 15,
+          "arenaScore": 1455,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemma-4-31b-it",
+          "name": "Google: Gemma 4 31B",
+          "inputPrice": 0.2,
+          "outputPrice": 0.4,
+          "arenaScore": 1452.2,
+          "openWeights": true
+        },
+        {
+          "id": "stepfun/step-5-preview",
+          "name": "StepFun: Step 5 Preview",
+          "inputPrice": 1,
+          "outputPrice": 2.7,
+          "arenaScore": 1449.1,
+          "openWeights": false
+        },
+        {
+          "id": "xiaomi/mimo-v2.6-flash",
+          "name": "Xiaomi: MiMo-V2.6-Flash",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "arenaScore": 1448.3,
+          "openWeights": true
+        },
+        {
+          "id": "anthropic/claude-opus-4.1",
+          "name": "Anthropic: Claude Opus 4.1",
+          "inputPrice": 15,
+          "outputPrice": 75,
+          "arenaScore": 1447.9,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-2.5-pro",
+          "name": "Google: Gemini 2.5 Pro",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "arenaScore": 1445.4,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-2.5-pro-preview",
+          "name": "Google: Gemini 2.5 Pro Preview 06-05",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "arenaScore": 1445.4,
+          "openWeights": false
+        },
+        {
+          "id": "thinkingmachines/inkling",
+          "name": "Thinking Machines: Inkling",
+          "inputPrice": 1,
+          "outputPrice": 4.05,
+          "arenaScore": 1443.4,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3.6-plus",
+          "name": "Qwen: Qwen3.6 Plus",
+          "inputPrice": 0.325,
+          "outputPrice": 1.95,
+          "arenaScore": 1442.8,
+          "openWeights": false
+        },
+        {
+          "id": "x-ai/grok-4.3",
+          "name": "SpaceXSI: Grok 4.3",
+          "inputPrice": 1.25,
+          "outputPrice": 2.5,
+          "arenaScore": 1441.6,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3.5-397b-a17b",
+          "name": "Qwen: Qwen3.5 397B A17B",
+          "inputPrice": 0.5,
+          "outputPrice": 3.6,
+          "arenaScore": 1441.5,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.7",
+          "name": "Z.ai: GLM 4.7",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "arenaScore": 1441.3,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5.1",
+          "name": "OpenAI: GPT-5.1",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "arenaScore": 1438.5,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemma-4-26b-a4b-it",
+          "name": "Google: Gemma 4 26B A4B ",
+          "inputPrice": 0.09,
+          "outputPrice": 0.3,
+          "arenaScore": 1437.6,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "name": "DeepSeek: DeepSeek V4 Flash 0731",
+          "inputPrice": 0.06,
+          "outputPrice": 0.18,
+          "arenaScore": 1435.6,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v4-flash",
+          "name": "DeepSeek: DeepSeek V4 Flash 0423",
+          "inputPrice": 0.09,
+          "outputPrice": 0.18,
+          "arenaScore": 1435.6,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5.2",
+          "name": "OpenAI: GPT-5.2",
+          "inputPrice": 1.75,
+          "outputPrice": 14,
+          "arenaScore": 1435.2,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "Qwen: Qwen3.8 27B",
+          "inputPrice": 0.06,
+          "outputPrice": 1.96,
+          "arenaScore": 1435,
+          "openWeights": true
+        },
+        {
+          "id": "minimax/minimax-m3",
+          "name": "MiniMax: MiniMax M3",
+          "inputPrice": 0.3,
+          "outputPrice": 1.2,
+          "arenaScore": 1434.1,
+          "openWeights": true
+        },
+        {
+          "id": "reflection/beam-1.0-501b-a23b",
+          "name": "Reflection: Beam 1.0 501B A23B",
+          "inputPrice": 0.3,
+          "outputPrice": 1,
+          "arenaScore": 1433.7,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemini-3.1-flash-lite",
+          "name": "Google: Gemini 3.1 Flash Lite",
+          "inputPrice": 0.25,
+          "outputPrice": 1.5,
+          "arenaScore": 1433.1,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-3.1-flash-lite-preview",
+          "name": "Google: Gemini 3.1 Flash Lite Preview",
+          "inputPrice": 0.25,
+          "outputPrice": 1.5,
+          "arenaScore": 1433.1,
+          "openWeights": false
+        },
+        {
+          "id": "openai/o3",
+          "name": "OpenAI: o3",
+          "inputPrice": 2,
+          "outputPrice": 8,
+          "arenaScore": 1431.5,
+          "openWeights": false
+        },
+        {
+          "id": "mistralai/mistral-medium-3-5",
+          "name": "Mistral: Mistral Medium 3.5",
+          "inputPrice": 1.5,
+          "outputPrice": 7.5,
+          "arenaScore": 1426.3,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v3.2",
+          "name": "DeepSeek: DeepSeek V3.2",
+          "inputPrice": 0.26,
+          "outputPrice": 0.38,
+          "arenaScore": 1424.7,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.6",
+          "name": "Z.ai: GLM 4.6",
+          "inputPrice": 0.5,
+          "outputPrice": 2,
+          "arenaScore": 1424.4,
+          "openWeights": true
+        },
+        {
+          "id": "mistralai/mistral-large-4-0",
+          "name": "Mistral: Mistral Large 4",
+          "inputPrice": 0.7,
+          "outputPrice": 2.1,
+          "arenaScore": 1423.5,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3-235b-a22b-2507",
+          "name": "Qwen: Qwen3 235B A22B Instruct 2507",
+          "inputPrice": 0.14,
+          "outputPrice": 0.8,
+          "arenaScore": 1422.2,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v3.2-exp",
+          "name": "DeepSeek: DeepSeek V3.2 Exp",
+          "inputPrice": 0.27,
+          "outputPrice": 0.41,
+          "arenaScore": 1421.9,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-r1-0528",
+          "name": "DeepSeek: R1 0528",
+          "inputPrice": 0.571,
+          "outputPrice": 2.286,
+          "arenaScore": 1421.4,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-chat-v3.1",
+          "name": "DeepSeek: DeepSeek V3.1",
+          "inputPrice": 0.25,
+          "outputPrice": 0.95,
+          "arenaScore": 1417.2,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3.5-122b-a10b",
+          "name": "Qwen: Qwen3.5-122B-A10B",
+          "inputPrice": 0.26,
+          "outputPrice": 2.08,
+          "arenaScore": 1416.6,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v3.1-terminus",
+          "name": "DeepSeek: DeepSeek V3.1 Terminus",
+          "inputPrice": 0.27,
+          "outputPrice": 1,
+          "arenaScore": 1415.1,
+          "openWeights": true
+        },
+        {
+          "id": "minimax/minimax-m2.7",
+          "name": "MiniMax: MiniMax M2.7",
+          "inputPrice": 0.6,
+          "outputPrice": 1.8,
+          "arenaScore": 1414.8,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-4.1",
+          "name": "OpenAI: GPT-4.1",
+          "inputPrice": 2,
+          "outputPrice": 8,
+          "arenaScore": 1414.5,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-haiku-4.5",
+          "name": "Anthropic: Claude Haiku 4.5",
+          "inputPrice": 1,
+          "outputPrice": 5,
+          "arenaScore": 1414,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3-vl-235b-a22b-instruct",
+          "name": "Qwen: Qwen3 VL 235B A22B Instruct",
+          "inputPrice": 0.21,
+          "outputPrice": 1.9,
+          "arenaScore": 1413.2,
+          "openWeights": true
+        },
+        {
+          "id": "thinkingmachines/inkling-2-small",
+          "name": "Thinking Machines: Inkling 2 Small",
+          "inputPrice": 0.3,
+          "outputPrice": 1,
+          "arenaScore": 1412.2,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.5",
+          "name": "Z.ai: GLM 4.5",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "arenaScore": 1411,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemini-2.5-flash",
+          "name": "Google: Gemini 2.5 Flash",
+          "inputPrice": 0.3,
+          "outputPrice": 2.5,
+          "arenaScore": 1409.2,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3.5-27b",
+          "name": "Qwen: Qwen3.5-27B",
+          "inputPrice": 0.26,
+          "outputPrice": 2.6,
+          "arenaScore": 1408.6,
+          "openWeights": true
+        },
+        {
+          "id": "thinkingmachines/inkling-small",
+          "name": "Thinking Machines: Inkling Small",
+          "inputPrice": 0.45,
+          "outputPrice": 1.2,
+          "arenaScore": 1405.2,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3-235b-a22b-thinking-2507",
+          "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+          "inputPrice": 0.45,
+          "outputPrice": 3.5,
+          "arenaScore": 1400,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3-next-80b-a3b-instruct",
+          "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+          "inputPrice": 0.1,
+          "outputPrice": 1.1,
+          "arenaScore": 1398.7,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3.5-flash-02-23",
+          "name": "Qwen: Qwen3.5-Flash",
+          "inputPrice": 0.065,
+          "outputPrice": 0.26,
+          "arenaScore": 1396.1,
+          "openWeights": false
+        },
+        {
+          "id": "deepseek/deepseek-chat-v3-0324",
+          "name": "DeepSeek: DeepSeek V3 0324",
+          "inputPrice": 0.25,
+          "outputPrice": 1,
+          "arenaScore": 1395.1,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3.5-35b-a3b",
+          "name": "Qwen: Qwen3.5-35B-A3B",
+          "inputPrice": 0.14,
+          "outputPrice": 1,
+          "arenaScore": 1394,
+          "openWeights": true
+        },
+        {
+          "id": "minimax/minimax-m2.5",
+          "name": "MiniMax: MiniMax M2.5",
+          "inputPrice": 0.3,
+          "outputPrice": 1.2,
+          "arenaScore": 1390.9,
+          "openWeights": true
+        },
+        {
+          "id": "upstage/solar-pro4",
+          "name": "Upstage: Solar Pro 4",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "arenaScore": 1387.6,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-4.1-mini",
+          "name": "OpenAI: GPT-4.1 Mini",
+          "inputPrice": 0.4,
+          "outputPrice": 1.6,
+          "arenaScore": 1382.7,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen3-30b-a3b-instruct-2507",
+          "name": "Qwen: Qwen3 30B A3B Instruct 2507",
+          "inputPrice": 0.1,
+          "outputPrice": 0.3,
+          "arenaScore": 1382.2,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.6v",
+          "name": "Z.ai: GLM 4.6V",
+          "inputPrice": 0.3,
+          "outputPrice": 0.9,
+          "arenaScore": 1378.2,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.5-air",
+          "name": "Z.ai: GLM 4.5 Air",
+          "inputPrice": 0.2,
+          "outputPrice": 1.1,
+          "arenaScore": 1372.9,
+          "openWeights": true
+        },
+        {
+          "id": "thinkingmachines/inkling-2-mini",
+          "name": "Thinking Machines: Inkling 2 Mini",
+          "inputPrice": 0.075,
+          "outputPrice": 0.3,
+          "arenaScore": 1366.9,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemma-3-27b-it",
+          "name": "Google: Gemma 3 27B",
+          "inputPrice": 0.08,
+          "outputPrice": 0.45,
+          "arenaScore": 1365.4,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.7-flash",
+          "name": "Z.ai: GLM 4.7 Flash",
+          "inputPrice": 0.0605,
+          "outputPrice": 0.4,
+          "arenaScore": 1364.6,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-chat",
+          "name": "DeepSeek: DeepSeek V3",
+          "inputPrice": 0.2574,
+          "outputPrice": 1.0287,
+          "arenaScore": 1358.4,
+          "openWeights": true
+        },
+        {
+          "id": "cohere/command-a",
+          "name": "Cohere: Command A",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "arenaScore": 1353.6,
+          "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-4.5v",
+          "name": "Z.ai: GLM 4.5V",
+          "inputPrice": 0.6,
+          "outputPrice": 1.8,
+          "arenaScore": 1352.1,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "OpenAI: gpt-oss-120b",
+          "inputPrice": 0.05,
+          "outputPrice": 0.25,
+          "arenaScore": 1351.7,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3-32b",
+          "name": "Qwen: Qwen3 32B",
+          "inputPrice": 0.08,
+          "outputPrice": 0.28,
+          "arenaScore": 1346.7,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-4o-2024-05-13",
+          "name": "OpenAI: GPT-4o (2024-05-13)",
+          "inputPrice": 5,
+          "outputPrice": 15,
+          "arenaScore": 1346.1,
+          "openWeights": false
+        },
+        {
+          "id": "qwen/qwen-plus",
+          "name": "Qwen: Qwen-Plus",
+          "inputPrice": 0.26,
+          "outputPrice": 0.78,
+          "arenaScore": 1345.8,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemma-3-12b-it",
+          "name": "Google: Gemma 3 12B",
+          "inputPrice": 0.05,
+          "outputPrice": 0.15,
+          "arenaScore": 1341.8,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-4o-2024-08-06",
+          "name": "OpenAI: GPT-4o (2024-08-06)",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "arenaScore": 1335.6,
+          "openWeights": false
+        },
+        {
+          "id": "meta-llama/llama-4-maverick",
+          "name": "Meta: Llama 4 Maverick",
+          "inputPrice": 0.35,
+          "outputPrice": 1,
+          "arenaScore": 1327,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen3-30b-a3b",
+          "name": "Qwen: Qwen3 30B A3B",
+          "inputPrice": 0.12,
+          "outputPrice": 0.5,
+          "arenaScore": 1326.4,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-4.1-nano",
+          "name": "OpenAI: GPT-4.1 Nano",
+          "inputPrice": 0.1,
+          "outputPrice": 0.4,
+          "arenaScore": 1322.2,
+          "openWeights": false
+        },
+        {
+          "id": "meta-llama/llama-4-scout",
+          "name": "Meta: Llama 4 Scout",
+          "inputPrice": 0.1,
+          "outputPrice": 0.3,
+          "arenaScore": 1321.4,
+          "openWeights": true
+        },
+        {
+          "id": "meta-llama/llama-3.3-70b-instruct",
+          "name": "Meta: Llama 3.3 70B Instruct",
+          "inputPrice": 0.71,
+          "outputPrice": 0.71,
+          "arenaScore": 1318.1,
+          "openWeights": true
+        },
+        {
+          "id": "openai/gpt-4o-mini",
+          "name": "OpenAI: GPT-4o-mini",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "arenaScore": 1317.5,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-4o-mini-2024-07-18",
+          "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "arenaScore": 1317.5,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "OpenAI: gpt-oss-20b",
+          "inputPrice": 0.03,
+          "outputPrice": 0.13,
+          "arenaScore": 1317.5,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemma-3-4b-it",
+          "name": "Google: Gemma 3 4B",
+          "inputPrice": 0.04,
+          "outputPrice": 0.05,
+          "arenaScore": 1303.2,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen-2.5-72b-instruct",
+          "name": "Qwen2.5 72B Instruct",
+          "inputPrice": 0.36,
+          "outputPrice": 0.4,
+          "arenaScore": 1302.8,
+          "openWeights": true
+        },
+        {
+          "id": "mistralai/mistral-small-3.1-24b-instruct",
+          "name": "Mistral: Mistral Small 3.1 24B",
+          "inputPrice": 0.351,
+          "outputPrice": 0.555,
+          "arenaScore": 1302.6,
+          "openWeights": true
+        },
+        {
+          "id": "meta-llama/llama-3.1-70b-instruct",
+          "name": "Meta: Llama 3.1 70B Instruct",
+          "inputPrice": 0.72,
+          "outputPrice": 0.72,
+          "arenaScore": 1293.4,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemma-2-27b-it",
+          "name": "Google: Gemma 2 27B",
+          "inputPrice": 0.65,
+          "outputPrice": 0.65,
+          "arenaScore": 1289.5,
+          "openWeights": true
+        },
+        {
+          "id": "ibm-granite/granite-4.2-8b",
+          "name": "IBM: Granite 4.2 8B",
+          "inputPrice": 0.06,
+          "outputPrice": 0.15,
+          "arenaScore": 1289.4,
+          "openWeights": true
+        },
+        {
+          "id": "cohere/command-r-plus-08-2024",
+          "name": "Cohere: Command R+ (08-2024)",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "arenaScore": 1276.4,
+          "openWeights": true
+        },
+        {
+          "id": "mistralai/mistral-small-24b-instruct-2501",
+          "name": "Mistral: Mistral Small 3",
+          "inputPrice": 0.05,
+          "outputPrice": 0.08,
+          "arenaScore": 1274.4,
+          "openWeights": true
+        },
+        {
+          "id": "qwen/qwen-2.5-coder-32b-instruct",
+          "name": "Qwen2.5 Coder 32B Instruct",
+          "inputPrice": 0.66,
+          "outputPrice": 1,
+          "arenaScore": 1270.6,
+          "openWeights": true
+        },
+        {
+          "id": "microsoft/phi-4",
+          "name": "Microsoft: Phi 4",
+          "inputPrice": 0.07,
+          "outputPrice": 0.14,
+          "arenaScore": 1256.3,
+          "openWeights": true
+        },
+        {
+          "id": "cohere/command-r-08-2024",
+          "name": "Cohere: Command R (08-2024)",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "arenaScore": 1250.5,
+          "openWeights": true
+        },
+        {
+          "id": "meta-llama/llama-3.1-8b-instruct",
+          "name": "Meta: Llama 3.1 8B Instruct",
+          "inputPrice": 0.05,
+          "outputPrice": 0.08,
+          "arenaScore": 1211.2,
+          "openWeights": true
+        },
+        {
+          "id": "meta-llama/llama-3.2-3b-instruct",
+          "name": "Meta: Llama 3.2 3B Instruct",
+          "inputPrice": 0.05,
+          "outputPrice": 0.33,
+          "arenaScore": 1166.9,
+          "openWeights": true
+        }
+      ]
+    }
+  ]
+}

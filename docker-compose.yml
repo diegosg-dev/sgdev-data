@@ -7,8 +7,7 @@ services:
       - "8080:8080"
     restart: unless-stopped
 
-  # Weekly ETL: fetch OpenRouter + LMArena, write SQLite + JSON, rebuild site.
-  # Full pipeline lands in M2; this service is a no-op stub until then.
+  # Weekly ETL: fetch OpenRouter + LMArena, write SQLite + JSON.
   etl:
     build:
       context: .
@@ -17,6 +16,7 @@ services:
       - ./data:/app/data
       - ./public/data:/app/public/data
     profiles: ["etl"]
+    command: ["npm", "run", "etl"]
     restart: "no"
 
   etl-cron:
@@ -27,11 +27,13 @@ services:
       - ./data:/app/data
       - ./public/data:/app/public/data
     environment:
-      - ETL_CRON=0 6 * * 1
+      - ETL_INTERVAL_SECONDS=604800
     entrypoint: ["/bin/sh", "-c"]
     command:
       - |
-        echo "ETL cron container up. Schedule: $${ETL_CRON:-0 6 * * 1} (UTC)."
-        echo "Pipeline arrives in M2; sleeping until then."
-        while true; do sleep 86400; done
+        echo "ETL cron container up. Running weekly snapshot every $${ETL_INTERVAL_SECONDS:-604800}s."
+        while true; do
+          npm run etl || echo "ETL run failed at $$(date -u)"
+          sleep "$${ETL_INTERVAL_SECONDS:-604800}"
+        done
     restart: unless-stopped

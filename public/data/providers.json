@@ -1,0 +1,1903 @@
+{
+  "snapshotDate": "2026-11-26",
+  "models": [
+    {
+      "modelId": "xiaomi/mimo-v2.6-pro",
+      "modelName": "Xiaomi: MiMo-V2.6-Pro",
+      "arenaScore": 1481.3,
+      "minBlended": 0.486,
+      "maxBlended": 3.3,
+      "spreadRatio": 6.79,
+      "quotes": [
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.387,
+          "outputPrice": 0.783,
+          "blended": 0.486,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Xiaomi",
+          "quantization": "fp8",
+          "inputPrice": 0.435,
+          "outputPrice": 0.87,
+          "blended": 0.54375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "PrimaLabs",
+          "quantization": "fp8",
+          "inputPrice": 2.64,
+          "outputPrice": 5.28,
+          "blended": 3.3,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "z-ai/glm-5.3-flash",
+      "modelName": "Z.ai: GLM 5.3 Flash",
+      "arenaScore": 1475.8,
+      "minBlended": 0.047075,
+      "maxBlended": 0.35625,
+      "spreadRatio": 7.57,
+      "quotes": [
+        {
+          "provider": "Relace",
+          "quantization": "fp4",
+          "inputPrice": 0.0356,
+          "outputPrice": 0.0815,
+          "blended": 0.047075,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Pareto Inference",
+          "quantization": "nvfp4",
+          "inputPrice": 0.0375,
+          "outputPrice": 0.125,
+          "blended": 0.059375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Darkbloom",
+          "quantization": "fp4",
+          "inputPrice": 0.065,
+          "outputPrice": 0.18,
+          "blended": 0.09375,
+          "contextLength": 32768
+        },
+        {
+          "provider": "Wafer",
+          "quantization": "nvfp4",
+          "inputPrice": 0.065,
+          "outputPrice": 0.24,
+          "blended": 0.10875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Tenstorrent",
+          "quantization": "fp8",
+          "inputPrice": 0.075,
+          "outputPrice": 0.25,
+          "blended": 0.11875,
+          "contextLength": 262000
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 0.084,
+          "outputPrice": 0.28,
+          "blended": 0.133,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.0885,
+          "outputPrice": 0.295,
+          "blended": 0.140125,
+          "contextLength": 1024000
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp4",
+          "inputPrice": 0.09,
+          "outputPrice": 0.3,
+          "blended": 0.1425,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "OpenInference",
+          "quantization": "fp4",
+          "inputPrice": 0.05,
+          "outputPrice": 0.5,
+          "blended": 0.1625,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Cohere",
+          "quantization": "nvfp4",
+          "inputPrice": 0.105,
+          "outputPrice": 0.34,
+          "blended": 0.16375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Reka",
+          "quantization": "unknown",
+          "inputPrice": 0.12,
+          "outputPrice": 0.3,
+          "blended": 0.165,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "InferenceNet",
+          "quantization": "fp4",
+          "inputPrice": 0.108,
+          "outputPrice": 0.35,
+          "blended": 0.1685,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.1,
+          "outputPrice": 0.4,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Makora",
+          "quantization": "fp4",
+          "inputPrice": 0.14,
+          "outputPrice": 0.29,
+          "blended": 0.1775,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DigitalOcean",
+          "quantization": "unknown",
+          "inputPrice": 0.1125,
+          "outputPrice": 0.375,
+          "blended": 0.178125,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Near AI",
+          "quantization": "fp8",
+          "inputPrice": 0.08,
+          "outputPrice": 0.5,
+          "blended": 0.185,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "nvfp4",
+          "inputPrice": 0.12,
+          "outputPrice": 0.38,
+          "blended": 0.185,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "River",
+          "quantization": "unknown",
+          "inputPrice": 0.12,
+          "outputPrice": 0.4,
+          "blended": 0.19,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Crusoe",
+          "quantization": "fp4",
+          "inputPrice": 0.12,
+          "outputPrice": 0.4,
+          "blended": 0.19,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Morph",
+          "quantization": "fp8",
+          "inputPrice": 0.132,
+          "outputPrice": 0.381,
+          "blended": 0.19425,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Mistral",
+          "quantization": "unknown",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "KT",
+          "quantization": "unknown",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Nebius",
+          "quantization": "fp4",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Modal",
+          "quantization": "fp4",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Friendli",
+          "quantization": "unknown",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "BaseTen",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Venice",
+          "quantization": "unknown",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Z.AI",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Particle AI",
+          "quantization": "nvfp4",
+          "inputPrice": 0.13,
+          "outputPrice": 0.65,
+          "blended": 0.26,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Inceptron",
+          "quantization": "fp8",
+          "inputPrice": 0.185,
+          "outputPrice": 0.5,
+          "blended": 0.26375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Sail Research",
+          "quantization": "fp4",
+          "inputPrice": 0.175,
+          "outputPrice": 0.625,
+          "blended": 0.2875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Together",
+          "quantization": "unknown",
+          "inputPrice": 0.1875,
+          "outputPrice": 0.625,
+          "blended": 0.296875,
+          "contextLength": 1048575
+        },
+        {
+          "provider": "Fireworks",
+          "quantization": "unknown",
+          "inputPrice": 0.225,
+          "outputPrice": 0.75,
+          "blended": 0.35625,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "z-ai/glm-5.1",
+      "modelName": "Z.ai: GLM 5.1",
+      "arenaScore": 1464.8,
+      "minBlended": 1.4,
+      "maxBlended": 2.15,
+      "spreadRatio": 1.54,
+      "quotes": [
+        {
+          "provider": "Chutes",
+          "quantization": "fp8",
+          "inputPrice": 0.9,
+          "outputPrice": 2.9,
+          "blended": 1.4,
+          "contextLength": 202752
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.966,
+          "outputPrice": 3.036,
+          "blended": 1.4835,
+          "contextLength": 200000
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 1.19,
+          "outputPrice": 3.74,
+          "blended": 1.8275,
+          "contextLength": 204800
+        },
+        {
+          "provider": "Alibaba",
+          "quantization": "fp8",
+          "inputPrice": 1.33,
+          "outputPrice": 4.18,
+          "blended": 2.0425,
+          "contextLength": 202745
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 1.38,
+          "outputPrice": 4.4,
+          "blended": 2.135,
+          "contextLength": 204800
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 1.4,
+          "outputPrice": 4.4,
+          "blended": 2.15,
+          "contextLength": 202752
+        },
+        {
+          "provider": "Z.AI",
+          "quantization": "fp8",
+          "inputPrice": 1.4,
+          "outputPrice": 4.4,
+          "blended": 2.15,
+          "contextLength": 202752
+        }
+      ]
+    },
+    {
+      "modelId": "moonshotai/kimi-k2.6",
+      "modelName": "MoonshotAI: Kimi K2.6",
+      "arenaScore": 1461,
+      "minBlended": 0.7425,
+      "maxBlended": 2.15625,
+      "spreadRatio": 2.9,
+      "quotes": [
+        {
+          "provider": "Chutes",
+          "quantization": "int4",
+          "inputPrice": 0.39,
+          "outputPrice": 1.8,
+          "blended": 0.7425,
+          "contextLength": 262144
+        },
+        {
+          "provider": "DigitalOcean",
+          "quantization": "unknown",
+          "inputPrice": 0.57,
+          "outputPrice": 2.4,
+          "blended": 1.0275,
+          "contextLength": 262144
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.5985,
+          "outputPrice": 2.52,
+          "blended": 1.078875,
+          "contextLength": 256000
+        },
+        {
+          "provider": "Inceptron",
+          "quantization": "int4",
+          "inputPrice": 0.5655,
+          "outputPrice": 3.42,
+          "blended": 1.279125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "fp4",
+          "inputPrice": 0.65,
+          "outputPrice": 3.41,
+          "blended": 1.34,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Crusoe",
+          "quantization": "bf16",
+          "inputPrice": 0.7,
+          "outputPrice": 3.5,
+          "blended": 1.4,
+          "contextLength": 262144
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.77,
+          "outputPrice": 3.4,
+          "blended": 1.4275,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Venice",
+          "quantization": "int4",
+          "inputPrice": 0.75,
+          "outputPrice": 3.5,
+          "blended": 1.4375,
+          "contextLength": 256000
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "int4",
+          "inputPrice": 0.75,
+          "outputPrice": 3.5,
+          "blended": 1.4375,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Moonshot AI",
+          "quantization": "unknown",
+          "inputPrice": 0.95,
+          "outputPrice": 4,
+          "blended": 1.7125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp4",
+          "inputPrice": 1.125,
+          "outputPrice": 5.25,
+          "blended": 2.15625,
+          "contextLength": 262144
+        }
+      ]
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-pro-0813",
+      "modelName": "DeepSeek: DeepSeek V4 Pro 0813",
+      "arenaScore": 1458,
+      "minBlended": 0.99,
+      "maxBlended": 2.97,
+      "spreadRatio": 3,
+      "quotes": [
+        {
+          "provider": "StreamLake",
+          "quantization": "unknown",
+          "inputPrice": 0.66,
+          "outputPrice": 1.98,
+          "blended": 0.99,
+          "contextLength": 1024000
+        },
+        {
+          "provider": "DeepSeek",
+          "quantization": "unknown",
+          "inputPrice": 0.66,
+          "outputPrice": 1.98,
+          "blended": 0.99,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Wafer",
+          "quantization": "mxfp4",
+          "inputPrice": 0.285,
+          "outputPrice": 4.3,
+          "blended": 1.28875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Relace",
+          "quantization": "fp4",
+          "inputPrice": 0.25,
+          "outputPrice": 5,
+          "blended": 1.4375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Pearl Research",
+          "quantization": "fp8",
+          "inputPrice": 1.1,
+          "outputPrice": 3.3,
+          "blended": 1.65,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 1.254,
+          "outputPrice": 3.762,
+          "blended": 1.881,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "fp8",
+          "inputPrice": 1.31,
+          "outputPrice": 3.96,
+          "blended": 1.9725,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Alibaba",
+          "quantization": "unknown",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "BaseTen",
+          "quantization": "fp4",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Nebius",
+          "quantization": "fp8",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Together",
+          "quantization": "unknown",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DigitalOcean",
+          "quantization": "unknown",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 1.32,
+          "outputPrice": 3.96,
+          "blended": 1.98,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 1.95,
+          "outputPrice": 3.9,
+          "blended": 2.4375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Venice",
+          "quantization": "unknown",
+          "inputPrice": 1.65,
+          "outputPrice": 4.95,
+          "blended": 2.475,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 1.98,
+          "outputPrice": 5.94,
+          "blended": 2.97,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-pro",
+      "modelName": "DeepSeek: DeepSeek V4 Pro 0423",
+      "arenaScore": 1458,
+      "minBlended": 1.043191,
+      "maxBlended": 2.4375,
+      "spreadRatio": 2.34,
+      "quotes": [
+        {
+          "provider": "Relace",
+          "quantization": "fp4",
+          "inputPrice": 0.888188,
+          "outputPrice": 1.5082,
+          "blended": 1.043191,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.9,
+          "outputPrice": 1.7,
+          "blended": 1.1,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.898188,
+          "outputPrice": 1.796376,
+          "blended": 1.122735,
+          "contextLength": 1024000
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 1.28,
+          "outputPrice": 2.56,
+          "blended": 1.6,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Alibaba",
+          "quantization": "fp8",
+          "inputPrice": 1.56,
+          "outputPrice": 3.12,
+          "blended": 1.95,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "Venice",
+          "quantization": "unknown",
+          "inputPrice": 1.65,
+          "outputPrice": 3.301,
+          "blended": 2.06275,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 1.69,
+          "outputPrice": 3.38,
+          "blended": 2.1125,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Azure",
+          "quantization": "unknown",
+          "inputPrice": 1.91,
+          "outputPrice": 3.83,
+          "blended": 2.39,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 1.95,
+          "outputPrice": 3.9,
+          "blended": 2.4375,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "z-ai/glm-5",
+      "modelName": "Z.ai: GLM 5",
+      "arenaScore": 1457.2,
+      "minBlended": 0.93,
+      "maxBlended": 1.55,
+      "spreadRatio": 1.67,
+      "quotes": [
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.6,
+          "outputPrice": 1.92,
+          "blended": 0.93,
+          "contextLength": 198000
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 0.7,
+          "outputPrice": 2.24,
+          "blended": 1.085,
+          "contextLength": 202752
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.95,
+          "outputPrice": 2.55,
+          "blended": 1.35,
+          "contextLength": 204800
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 0.9,
+          "outputPrice": 2.88,
+          "blended": 1.395,
+          "contextLength": 202800
+        },
+        {
+          "provider": "Amazon Bedrock",
+          "quantization": "unknown",
+          "inputPrice": 1,
+          "outputPrice": 3.2,
+          "blended": 1.55,
+          "contextLength": 202752
+        },
+        {
+          "provider": "Z.AI",
+          "quantization": "fp8",
+          "inputPrice": 1,
+          "outputPrice": 3.2,
+          "blended": 1.55,
+          "contextLength": 202752
+        }
+      ]
+    },
+    {
+      "modelId": "google/gemma-4-31b-it",
+      "modelName": "Google: Gemma 4 31B",
+      "arenaScore": 1452.2,
+      "minBlended": 0.16,
+      "maxBlended": 0.8125,
+      "spreadRatio": 5.08,
+      "quotes": [
+        {
+          "provider": "KT",
+          "quantization": "unknown",
+          "inputPrice": 0.1,
+          "outputPrice": 0.34,
+          "blended": 0.16,
+          "contextLength": 262144
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "fp4",
+          "inputPrice": 0.1,
+          "outputPrice": 0.34,
+          "blended": 0.16,
+          "contextLength": 262144
+        },
+        {
+          "provider": "NextBit",
+          "quantization": "fp4",
+          "inputPrice": 0.125,
+          "outputPrice": 0.34,
+          "blended": 0.17875,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Venice",
+          "quantization": "fp4",
+          "inputPrice": 0.12,
+          "outputPrice": 0.36,
+          "blended": 0.18,
+          "contextLength": 256000
+        },
+        {
+          "provider": "Chutes",
+          "quantization": "fp4",
+          "inputPrice": 0.12,
+          "outputPrice": 0.37,
+          "blended": 0.1825,
+          "contextLength": 131072
+        },
+        {
+          "provider": "Crusoe",
+          "quantization": "bf16",
+          "inputPrice": 0.14,
+          "outputPrice": 0.4,
+          "blended": 0.205,
+          "contextLength": 259871
+        },
+        {
+          "provider": "Friendli",
+          "quantization": "unknown",
+          "inputPrice": 0.14,
+          "outputPrice": 0.4,
+          "blended": 0.205,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Novita",
+          "quantization": "bf16",
+          "inputPrice": 0.14,
+          "outputPrice": 0.4,
+          "blended": 0.205,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.4,
+          "blended": 0.2125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp4",
+          "inputPrice": 0.135,
+          "outputPrice": 0.51,
+          "blended": 0.22875,
+          "contextLength": 262144
+        },
+        {
+          "provider": "PrimeIntellect",
+          "quantization": "fp8",
+          "inputPrice": 0.2,
+          "outputPrice": 0.335,
+          "blended": 0.23375,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Modal",
+          "quantization": "unknown",
+          "inputPrice": 0.34,
+          "outputPrice": 0.1,
+          "blended": 0.28,
+          "contextLength": 131072
+        },
+        {
+          "provider": "SambaNova",
+          "quantization": "unknown",
+          "inputPrice": 0.38,
+          "outputPrice": 1.15,
+          "blended": 0.5725,
+          "contextLength": 131072
+        },
+        {
+          "provider": "ModelRun",
+          "quantization": "fp4",
+          "inputPrice": 0.75,
+          "outputPrice": 1,
+          "blended": 0.8125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.75,
+          "outputPrice": 1,
+          "blended": 0.8125,
+          "contextLength": 262144
+        }
+      ]
+    },
+    {
+      "modelId": "xiaomi/mimo-v2.6-flash",
+      "modelName": "Xiaomi: MiMo-V2.6-Flash",
+      "arenaScore": 1448.3,
+      "minBlended": 0.145,
+      "maxBlended": 0.3875,
+      "spreadRatio": 2.67,
+      "quotes": [
+        {
+          "provider": "Darkbloom",
+          "quantization": "fp4",
+          "inputPrice": 0.1,
+          "outputPrice": 0.28,
+          "blended": 0.145,
+          "contextLength": 65536
+        },
+        {
+          "provider": "Cohere",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Makora",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Venice",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Xiaomi",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Tenstorrent",
+          "quantization": "fp8",
+          "inputPrice": 0.165,
+          "outputPrice": 0.33,
+          "blended": 0.20625,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Featherless",
+          "quantization": "fp8",
+          "inputPrice": 0.25,
+          "outputPrice": 0.8,
+          "blended": 0.3875,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "thinkingmachines/inkling",
+      "modelName": "Thinking Machines: Inkling",
+      "arenaScore": 1443.4,
+      "minBlended": 2.15,
+      "maxBlended": 2.203125,
+      "spreadRatio": 1.02,
+      "quotes": [
+        {
+          "provider": "Modal",
+          "quantization": "nvfp4",
+          "inputPrice": 1.2,
+          "outputPrice": 5,
+          "blended": 2.15,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Together",
+          "quantization": "unknown",
+          "inputPrice": 1.25,
+          "outputPrice": 5.0625,
+          "blended": 2.203125,
+          "contextLength": 524288
+        }
+      ]
+    },
+    {
+      "modelId": "qwen/qwen3.5-397b-a17b",
+      "modelName": "Qwen: Qwen3.5 397B A17B",
+      "arenaScore": 1441.5,
+      "minBlended": 0.8775,
+      "maxBlended": 1.6875,
+      "spreadRatio": 1.92,
+      "quotes": [
+        {
+          "provider": "Alibaba",
+          "quantization": "unknown",
+          "inputPrice": 0.39,
+          "outputPrice": 2.34,
+          "blended": 0.8775,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.5,
+          "outputPrice": 3.6,
+          "blended": 1.275,
+          "contextLength": 262144
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "unknown",
+          "inputPrice": 0.6,
+          "outputPrice": 3.6,
+          "blended": 1.35,
+          "contextLength": 256000
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.675,
+          "outputPrice": 4.5,
+          "blended": 1.63125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Venice",
+          "quantization": "unknown",
+          "inputPrice": 0.75,
+          "outputPrice": 4.5,
+          "blended": 1.6875,
+          "contextLength": 128000
+        }
+      ]
+    },
+    {
+      "modelId": "z-ai/glm-4.7",
+      "modelName": "Z.ai: GLM 4.7",
+      "arenaScore": 1441.3,
+      "minBlended": 0.7375,
+      "maxBlended": 1.15,
+      "spreadRatio": 1.56,
+      "quotes": [
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp4",
+          "inputPrice": 0.4,
+          "outputPrice": 1.75,
+          "blended": 0.7375,
+          "contextLength": 202752
+        },
+        {
+          "provider": "Venice",
+          "quantization": "fp4",
+          "inputPrice": 0.4,
+          "outputPrice": 1.75,
+          "blended": 0.7375,
+          "contextLength": 198000
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "blended": 1,
+          "contextLength": 204800
+        },
+        {
+          "provider": "Z.AI",
+          "quantization": "fp4",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "blended": 1,
+          "contextLength": 202752
+        },
+        {
+          "provider": "Mancer 2",
+          "quantization": "fp4",
+          "inputPrice": 0.7,
+          "outputPrice": 2.5,
+          "blended": 1.15,
+          "contextLength": 131072
+        }
+      ]
+    },
+    {
+      "modelId": "google/gemma-4-26b-a4b-it",
+      "modelName": "Google: Gemma 4 26B A4B ",
+      "arenaScore": 1437.6,
+      "minBlended": 0.085,
+      "maxBlended": 0.33,
+      "spreadRatio": 3.88,
+      "quotes": [
+        {
+          "provider": "Darkbloom",
+          "quantization": "int4",
+          "inputPrice": 0.05,
+          "outputPrice": 0.19,
+          "blended": 0.085,
+          "contextLength": 262144
+        },
+        {
+          "provider": "AkashML",
+          "quantization": "fp4",
+          "inputPrice": 0.07,
+          "outputPrice": 0.24,
+          "blended": 0.1125,
+          "contextLength": 131072
+        },
+        {
+          "provider": "Io Net",
+          "quantization": "fp8",
+          "inputPrice": 0.067,
+          "outputPrice": 0.29,
+          "blended": 0.12275,
+          "contextLength": 262142
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.07,
+          "outputPrice": 0.34,
+          "blended": 0.1375,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Makora",
+          "quantization": "unknown",
+          "inputPrice": 0.09,
+          "outputPrice": 0.28,
+          "blended": 0.1375,
+          "contextLength": 256000
+        },
+        {
+          "provider": "NextBit",
+          "quantization": "fp4",
+          "inputPrice": 0.09,
+          "outputPrice": 0.3,
+          "blended": 0.1425,
+          "contextLength": 262144
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "bf16",
+          "inputPrice": 0.1,
+          "outputPrice": 0.3,
+          "blended": 0.15,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Cloudflare",
+          "quantization": "unknown",
+          "inputPrice": 0.1,
+          "outputPrice": 0.3,
+          "blended": 0.15,
+          "contextLength": 256000
+        },
+        {
+          "provider": "Venice",
+          "quantization": "bf16",
+          "inputPrice": 0.13,
+          "outputPrice": 0.4,
+          "blended": 0.1975,
+          "contextLength": 256000
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "bf16",
+          "inputPrice": 0.13,
+          "outputPrice": 0.4,
+          "blended": 0.1975,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Novita",
+          "quantization": "bf16",
+          "inputPrice": 0.13,
+          "outputPrice": 0.4,
+          "blended": 0.1975,
+          "contextLength": 262144
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.4,
+          "blended": 0.205,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Google",
+          "quantization": "unknown",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "blended": 0.2625,
+          "contextLength": 262144
+        },
+        {
+          "provider": "PrimeIntellect",
+          "quantization": "bf16",
+          "inputPrice": 0.2,
+          "outputPrice": 0.72,
+          "blended": 0.33,
+          "contextLength": 262144
+        }
+      ]
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-flash-0731",
+      "modelName": "DeepSeek: DeepSeek V4 Flash 0731",
+      "arenaScore": 1435.6,
+      "minBlended": 0.0875,
+      "maxBlended": 0.66,
+      "spreadRatio": 7.54,
+      "quotes": [
+        {
+          "provider": "Relace",
+          "quantization": "fp4",
+          "inputPrice": 0.07,
+          "outputPrice": 0.14,
+          "blended": 0.0875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.09,
+          "outputPrice": 0.27,
+          "blended": 0.135,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Cohere",
+          "quantization": "fp8",
+          "inputPrice": 0.11,
+          "outputPrice": 0.22,
+          "blended": 0.1375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DigitalOcean",
+          "quantization": "unknown",
+          "inputPrice": 0.119,
+          "outputPrice": 0.238,
+          "blended": 0.14875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Wafer",
+          "quantization": "nvfp4",
+          "inputPrice": 0.14,
+          "outputPrice": 0.23,
+          "blended": 0.1625,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "BaseTen",
+          "quantization": "fp8",
+          "inputPrice": 0.13,
+          "outputPrice": 0.26,
+          "blended": 0.1625,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Venice",
+          "quantization": "unknown",
+          "inputPrice": 0.13,
+          "outputPrice": 0.26,
+          "blended": 0.1625,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "fp8",
+          "inputPrice": 0.13,
+          "outputPrice": 0.27,
+          "blended": 0.165,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Nebius",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Sail Research",
+          "quantization": "fp4",
+          "inputPrice": 0.15,
+          "outputPrice": 0.3,
+          "blended": 0.1875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.132,
+          "outputPrice": 0.396,
+          "blended": 0.198,
+          "contextLength": 1024000
+        },
+        {
+          "provider": "Inceptron",
+          "quantization": "fp4",
+          "inputPrice": 0.13,
+          "outputPrice": 0.495,
+          "blended": 0.22125,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Mancer 2",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.5,
+          "blended": 0.2375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.22,
+          "outputPrice": 0.66,
+          "blended": 0.33,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Alibaba",
+          "quantization": "unknown",
+          "inputPrice": 0.374,
+          "outputPrice": 1.122,
+          "blended": 0.561,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "Novita",
+          "quantization": "fp8",
+          "inputPrice": 0.418,
+          "outputPrice": 1.254,
+          "blended": 0.627,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Chutes",
+          "quantization": "fp8",
+          "inputPrice": 0.44,
+          "outputPrice": 1.32,
+          "blended": 0.66,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 0.44,
+          "outputPrice": 1.32,
+          "blended": 0.66,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-flash",
+      "modelName": "DeepSeek: DeepSeek V4 Flash 0423",
+      "arenaScore": 1435.6,
+      "minBlended": 0.0875,
+      "maxBlended": 0.2975,
+      "spreadRatio": 3.4,
+      "quotes": [
+        {
+          "provider": "Fireworks",
+          "quantization": "unknown",
+          "inputPrice": 0.07,
+          "outputPrice": 0.14,
+          "blended": 0.0875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "fp8",
+          "inputPrice": 0.0826,
+          "outputPrice": 0.1652,
+          "blended": 0.10325,
+          "contextLength": 1024000
+        },
+        {
+          "provider": "Wafer",
+          "quantization": "mxfp4",
+          "inputPrice": 0.12,
+          "outputPrice": 0.17,
+          "blended": 0.1325,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Relace",
+          "quantization": "fp4",
+          "inputPrice": 0.05,
+          "outputPrice": 0.45,
+          "blended": 0.15,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.13,
+          "outputPrice": 0.28,
+          "blended": 0.1675,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.135,
+          "outputPrice": 0.27,
+          "blended": 0.16875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Venice",
+          "quantization": "unknown",
+          "inputPrice": 0.138,
+          "outputPrice": 0.275,
+          "blended": 0.17225,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "Featherless",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.28,
+          "blended": 0.175,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Mancer 2",
+          "quantization": "fp8",
+          "inputPrice": 0.18,
+          "outputPrice": 0.5,
+          "blended": 0.26,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Azure",
+          "quantization": "unknown",
+          "inputPrice": 0.21,
+          "outputPrice": 0.56,
+          "blended": 0.2975,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "qwen/qwen3.8-27b",
+      "modelName": "Qwen: Qwen3.8 27B",
+      "arenaScore": 1435,
+      "minBlended": 0.34175,
+      "maxBlended": 1.1375,
+      "spreadRatio": 3.33,
+      "quotes": [
+        {
+          "provider": "Chutes",
+          "quantization": "fp8",
+          "inputPrice": 0.039,
+          "outputPrice": 1.25,
+          "blended": 0.34175,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Near AI",
+          "quantization": "fp8",
+          "inputPrice": 0.04,
+          "outputPrice": 1.35,
+          "blended": 0.3675,
+          "contextLength": 262144
+        },
+        {
+          "provider": "StreamLake",
+          "quantization": "unknown",
+          "inputPrice": 0.175,
+          "outputPrice": 1.05,
+          "blended": 0.39375,
+          "contextLength": 1024000
+        },
+        {
+          "provider": "Darkbloom",
+          "quantization": "fp4",
+          "inputPrice": 0.035,
+          "outputPrice": 1.5,
+          "blended": 0.40125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Mancer 2",
+          "quantization": "fp8",
+          "inputPrice": 0.125,
+          "outputPrice": 1.5,
+          "blended": 0.46875,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Ionstream",
+          "quantization": "fp8",
+          "inputPrice": 0.04,
+          "outputPrice": 1.95,
+          "blended": 0.5175,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Wafer",
+          "quantization": "fp8",
+          "inputPrice": 0.06,
+          "outputPrice": 1.96,
+          "blended": 0.535,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Pearl Research",
+          "quantization": "fp8",
+          "inputPrice": 0.1,
+          "outputPrice": 2,
+          "blended": 0.575,
+          "contextLength": 262144
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 1.875,
+          "blended": 0.58125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Modal",
+          "quantization": "unknown",
+          "inputPrice": 0.04,
+          "outputPrice": 2.3,
+          "blended": 0.605,
+          "contextLength": 262144
+        },
+        {
+          "provider": "AkashML",
+          "quantization": "fp8",
+          "inputPrice": 0.225,
+          "outputPrice": 1.98,
+          "blended": 0.66375,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Tenstorrent",
+          "quantization": "fp8",
+          "inputPrice": 0.3,
+          "outputPrice": 2,
+          "blended": 0.725,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.24,
+          "outputPrice": 2.2,
+          "blended": 0.73,
+          "contextLength": 262144
+        },
+        {
+          "provider": "ModelRun",
+          "quantization": "fp4",
+          "inputPrice": 0.2,
+          "outputPrice": 2.5,
+          "blended": 0.775,
+          "contextLength": 262144
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.425,
+          "outputPrice": 2.55,
+          "blended": 0.95625,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Alibaba",
+          "quantization": "unknown",
+          "inputPrice": 0.425,
+          "outputPrice": 2.55,
+          "blended": 0.95625,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "fp8",
+          "inputPrice": 0.4,
+          "outputPrice": 3,
+          "blended": 1.05,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Nebius",
+          "quantization": "fp4",
+          "inputPrice": 0.45,
+          "outputPrice": 3,
+          "blended": 1.0875,
+          "contextLength": 1000000
+        },
+        {
+          "provider": "Cerebras",
+          "quantization": "fp16",
+          "inputPrice": 0.99,
+          "outputPrice": 1.49,
+          "blended": 1.115,
+          "contextLength": 65536
+        },
+        {
+          "provider": "PrimeIntellect",
+          "quantization": "fp8",
+          "inputPrice": 0.45,
+          "outputPrice": 3.2,
+          "blended": 1.1375,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Cloudflare",
+          "quantization": "unknown",
+          "inputPrice": 0.45,
+          "outputPrice": 3.2,
+          "blended": 1.1375,
+          "contextLength": 262144
+        },
+        {
+          "provider": "Reka",
+          "quantization": "fp8",
+          "inputPrice": 0.45,
+          "outputPrice": 3.2,
+          "blended": 1.1375,
+          "contextLength": 262144
+        }
+      ]
+    },
+    {
+      "modelId": "minimax/minimax-m3",
+      "modelName": "MiniMax: MiniMax M3",
+      "arenaScore": 1434.1,
+      "minBlended": 0.4125,
+      "maxBlended": 0.9625,
+      "spreadRatio": 2.33,
+      "quotes": [
+        {
+          "provider": "CoreWeave",
+          "quantization": "fp4",
+          "inputPrice": 0.23,
+          "outputPrice": 0.96,
+          "blended": 0.4125,
+          "contextLength": 262144
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.28,
+          "outputPrice": 1.1,
+          "blended": 0.485,
+          "contextLength": 524288
+        },
+        {
+          "provider": "Venice",
+          "quantization": "fp8",
+          "inputPrice": 0.3,
+          "outputPrice": 1.2,
+          "blended": 0.525,
+          "contextLength": 524288
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.45,
+          "outputPrice": 1.8,
+          "blended": 0.7875,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Featherless",
+          "quantization": "fp8",
+          "inputPrice": 0.55,
+          "outputPrice": 2.2,
+          "blended": 0.9625,
+          "contextLength": 262144
+        }
+      ]
+    },
+    {
+      "modelId": "reflection/beam-1.0-501b-a23b",
+      "modelName": "Reflection: Beam 1.0 501B A23B",
+      "arenaScore": 1433.7,
+      "minBlended": 0.4375,
+      "maxBlended": 0.6,
+      "spreadRatio": 1.37,
+      "quotes": [
+        {
+          "provider": "Nebius",
+          "quantization": "fp4",
+          "inputPrice": 0.25,
+          "outputPrice": 1,
+          "blended": 0.4375,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "CoreWeave",
+          "quantization": "nvfp4",
+          "inputPrice": 0.3,
+          "outputPrice": 1,
+          "blended": 0.475,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "DigitalOcean",
+          "quantization": "unknown",
+          "inputPrice": 0.4,
+          "outputPrice": 1.2,
+          "blended": 0.6,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "BaseTen",
+          "quantization": "fp4",
+          "inputPrice": 0.4,
+          "outputPrice": 1.2,
+          "blended": 0.6,
+          "contextLength": 1048576
+        },
+        {
+          "provider": "Together",
+          "quantization": "unknown",
+          "inputPrice": 0.4,
+          "outputPrice": 1.2,
+          "blended": 0.6,
+          "contextLength": 1048576
+        }
+      ]
+    },
+    {
+      "modelId": "deepseek/deepseek-v3.2",
+      "modelName": "DeepSeek: DeepSeek V3.2",
+      "arenaScore": 1424.7,
+      "minBlended": 0.29,
+      "maxBlended": 1.075,
+      "spreadRatio": 3.71,
+      "quotes": [
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp4",
+          "inputPrice": 0.26,
+          "outputPrice": 0.38,
+          "blended": 0.29,
+          "contextLength": 163840
+        },
+        {
+          "provider": "Baidu",
+          "quantization": "fp8",
+          "inputPrice": 0.28,
+          "outputPrice": 0.42,
+          "blended": 0.315,
+          "contextLength": 131072
+        },
+        {
+          "provider": "SiliconFlow",
+          "quantization": "fp8",
+          "inputPrice": 0.259,
+          "outputPrice": 0.8,
+          "blended": 0.39425,
+          "contextLength": 163840
+        },
+        {
+          "provider": "Featherless",
+          "quantization": "fp8",
+          "inputPrice": 0.9,
+          "outputPrice": 1.6,
+          "blended": 1.075,
+          "contextLength": 131072
+        }
+      ]
+    },
+    {
+      "modelId": "z-ai/glm-4.6",
+      "modelName": "Z.ai: GLM 4.6",
+      "arenaScore": 1424.4,
+      "minBlended": 0.76,
+      "maxBlended": 1,
+      "spreadRatio": 1.32,
+      "quotes": [
+        {
+          "provider": "Venice",
+          "quantization": "fp4",
+          "inputPrice": 0.43,
+          "outputPrice": 1.75,
+          "blended": 0.76,
+          "contextLength": 198000
+        },
+        {
+          "provider": "Novita",
+          "quantization": "bf16",
+          "inputPrice": 0.495,
+          "outputPrice": 1.98,
+          "blended": 0.86625,
+          "contextLength": 204800
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp4",
+          "inputPrice": 0.5,
+          "outputPrice": 2,
+          "blended": 0.875,
+          "contextLength": 202752
+        },
+        {
+          "provider": "Z.AI",
+          "quantization": "fp4",
+          "inputPrice": 0.6,
+          "outputPrice": 2.2,
+          "blended": 1,
+          "contextLength": 202752
+        }
+      ]
+    },
+    {
+      "modelId": "qwen/qwen3-235b-a22b-2507",
+      "modelName": "Qwen: Qwen3 235B A22B Instruct 2507",
+      "arenaScore": 1422.2,
+      "minBlended": 0.3,
+      "maxBlended": 0.3075,
+      "spreadRatio": 1.03,
+      "quotes": [
+        {
+          "provider": "Venice",
+          "quantization": "fp8",
+          "inputPrice": 0.15,
+          "outputPrice": 0.75,
+          "blended": 0.3,
+          "contextLength": 128000
+        },
+        {
+          "provider": "Parasail",
+          "quantization": "fp8",
+          "inputPrice": 0.14,
+          "outputPrice": 0.8,
+          "blended": 0.305,
+          "contextLength": 131072
+        },
+        {
+          "provider": "DeepInfra",
+          "quantization": "fp8",
+          "inputPrice": 0.135,
+          "outputPrice": 0.825,
+          "blended": 0.3075,
+          "contextLength": 262144
+        }
+      ]
+    }
+  ]
+}

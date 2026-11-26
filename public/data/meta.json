@@ -1,0 +1,20 @@
+{
+  "lastUpdated": "2026-11-26T11:13:41.404Z",
+  "snapshotDate": "2026-11-26",
+  "arenaPublishDate": "2026-11-22",
+  "snapshotCount": 1,
+  "matchedCount": 110,
+  "arenaHistoryDates": 200,
+  "providerSpreadModels": 21,
+  "sources": {
+    "prices": {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai"
+    },
+    "quality": {
+      "name": "LMArena leaderboard dataset",
+      "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+      "license": "CC BY 4.0"
+    }
+  }
+}

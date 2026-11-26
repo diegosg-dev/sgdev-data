@@ -27,6 +27,7 @@ pnpm-debug.log*
 data/sgdev.sqlite
 data/sgdev.sqlite-*
 data/unmatched-models.jsonl
+data/unmatched-report.json
 data/logs/
 
 # Optional local snapshot dumps

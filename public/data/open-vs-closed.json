@@ -1,0 +1,1604 @@
+{
+  "series": [
+    {
+      "date": "2024-08-28",
+      "bestClosedScore": 1288.8,
+      "bestClosedModel": "chatgpt-4o-latest",
+      "bestOpenScore": 1249.7,
+      "bestOpenModel": "llama-3.1-405b-instruct",
+      "gap": 39.1
+    },
+    {
+      "date": "2024-09-04",
+      "bestClosedScore": 1288.7,
+      "bestClosedModel": "chatgpt-4o-latest",
+      "bestOpenScore": 1250,
+      "bestOpenModel": "llama-3.1-405b-instruct",
+      "gap": 38.6
+    },
+    {
+      "date": "2024-09-15",
+      "bestClosedScore": 1261.6,
+      "bestClosedModel": "gpt-4o-2024-05-13",
+      "bestOpenScore": 1250.9,
+      "bestOpenModel": "llama-3.1-405b-instruct-bf16",
+      "gap": 10.7
+    },
+    {
+      "date": "2024-09-17",
+      "bestClosedScore": 1325.7,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1249.8,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 75.9
+    },
+    {
+      "date": "2024-09-27",
+      "bestClosedScore": 1308.7,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1253.5,
+      "bestOpenModel": "llama-3.1-405b-instruct-bf16",
+      "gap": 55.2
+    },
+    {
+      "date": "2024-10-07",
+      "bestClosedScore": 1300.2,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.2,
+      "bestOpenModel": "llama-3.1-405b-instruct-bf16",
+      "gap": 47.9
+    },
+    {
+      "date": "2024-10-15",
+      "bestClosedScore": 1300.5,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1251.7,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 48.8
+    },
+    {
+      "date": "2024-10-23",
+      "bestClosedScore": 1302.9,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1251.4,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 51.5
+    },
+    {
+      "date": "2024-10-28",
+      "bestClosedScore": 1301.6,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1251.5,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 50.1
+    },
+    {
+      "date": "2024-11-04",
+      "bestClosedScore": 1300.5,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.2,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 48.3
+    },
+    {
+      "date": "2024-11-12",
+      "bestClosedScore": 1300.1,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.4,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 47.7
+    },
+    {
+      "date": "2024-11-13",
+      "bestClosedScore": 1299.7,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.5,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 47.2
+    },
+    {
+      "date": "2024-11-20",
+      "bestClosedScore": 1300.6,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.3,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 48.4
+    },
+    {
+      "date": "2024-11-21",
+      "bestClosedScore": 1300.5,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.2,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 48.3
+    },
+    {
+      "date": "2024-11-22",
+      "bestClosedScore": 1300.5,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.2,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 48.3
+    },
+    {
+      "date": "2024-12-01",
+      "bestClosedScore": 1301.5,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.7,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 48.8
+    },
+    {
+      "date": "2024-12-05",
+      "bestClosedScore": 1301.9,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.4,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 49.5
+    },
+    {
+      "date": "2024-12-10",
+      "bestClosedScore": 1301.7,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.2,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 49.5
+    },
+    {
+      "date": "2024-12-15",
+      "bestClosedScore": 1301.8,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.3,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 49.5
+    },
+    {
+      "date": "2024-12-18",
+      "bestClosedScore": 1302.4,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.3,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 50.2
+    },
+    {
+      "date": "2024-12-22",
+      "bestClosedScore": 1302.6,
+      "bestClosedModel": "o1-preview",
+      "bestOpenScore": 1252.4,
+      "bestOpenModel": "llama-3.1-405b-instruct-fp8",
+      "gap": 50.2
+    },
+    {
+      "date": "2024-12-30",
+      "bestClosedScore": 1327.9,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1274.2,
+      "bestOpenModel": "deepseek-v3",
+      "gap": 53.7
+    },
+    {
+      "date": "2025-01-05",
+      "bestClosedScore": 1322.8,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1277.5,
+      "bestOpenModel": "deepseek-v3",
+      "gap": 45.3
+    },
+    {
+      "date": "2025-01-15",
+      "bestClosedScore": 1321.6,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1278.6,
+      "bestOpenModel": "deepseek-v3",
+      "gap": 43
+    },
+    {
+      "date": "2025-01-19",
+      "bestClosedScore": 1323,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1278.9,
+      "bestOpenModel": "deepseek-v3",
+      "gap": 44.1
+    },
+    {
+      "date": "2025-01-21",
+      "bestClosedScore": 1322.5,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1278.7,
+      "bestOpenModel": "deepseek-v3",
+      "gap": 43.8
+    },
+    {
+      "date": "2025-01-22",
+      "bestClosedScore": 1322.5,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1278.7,
+      "bestOpenModel": "deepseek-v3",
+      "gap": 43.8
+    },
+    {
+      "date": "2025-01-24",
+      "bestClosedScore": 1322.9,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1316.2,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 6.7
+    },
+    {
+      "date": "2025-01-28",
+      "bestClosedScore": 1322.3,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1316.1,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 6.2
+    },
+    {
+      "date": "2025-02-03",
+      "bestClosedScore": 1322.6,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 3.6
+    },
+    {
+      "date": "2025-02-05",
+      "bestClosedScore": 1322.8,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319.7,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 3.1
+    },
+    {
+      "date": "2025-02-06",
+      "bestClosedScore": 1322.6,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319.8,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 2.8
+    },
+    {
+      "date": "2025-02-09",
+      "bestClosedScore": 1322,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319.2,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 2.9
+    },
+    {
+      "date": "2025-02-11",
+      "bestClosedScore": 1323.1,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319.8,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 3.3
+    },
+    {
+      "date": "2025-02-14",
+      "bestClosedScore": 1322.7,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319.7,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 3
+    },
+    {
+      "date": "2025-02-17",
+      "bestClosedScore": 1323.5,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1320,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 3.5
+    },
+    {
+      "date": "2025-02-21",
+      "bestClosedScore": 1322.2,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1319.5,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 2.7
+    },
+    {
+      "date": "2025-02-27",
+      "bestClosedScore": 1323,
+      "bestClosedModel": "o1-2024-12-17",
+      "bestOpenScore": 1320.3,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 2.8
+    },
+    {
+      "date": "2025-03-03",
+      "bestClosedScore": 1369.8,
+      "bestClosedModel": "gpt-4.5-preview-2025-02-27",
+      "bestOpenScore": 1320.3,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 49.5
+    },
+    {
+      "date": "2025-03-11",
+      "bestClosedScore": 1362.3,
+      "bestClosedModel": "gpt-4.5-preview-2025-02-27",
+      "bestOpenScore": 1318.1,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 44.2
+    },
+    {
+      "date": "2025-03-15",
+      "bestClosedScore": 1358.4,
+      "bestClosedModel": "gpt-4.5-preview-2025-02-27",
+      "bestOpenScore": 1316.7,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 41.6
+    },
+    {
+      "date": "2025-03-17",
+      "bestClosedScore": 1357.9,
+      "bestClosedModel": "gpt-4.5-preview-2025-02-27",
+      "bestOpenScore": 1316.8,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 41.1
+    },
+    {
+      "date": "2025-03-20",
+      "bestClosedScore": 1356.8,
+      "bestClosedModel": "gpt-4.5-preview-2025-02-27",
+      "bestOpenScore": 1317.1,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 39.7
+    },
+    {
+      "date": "2025-03-25",
+      "bestClosedScore": 1356.4,
+      "bestClosedModel": "gpt-4.5-preview-2025-02-27",
+      "bestOpenScore": 1316.4,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 40
+    },
+    {
+      "date": "2025-03-26",
+      "bestClosedScore": 1358.8,
+      "bestClosedModel": "chatgpt-4o-latest-20250326",
+      "bestOpenScore": 1316.5,
+      "bestOpenModel": "deepseek-r1",
+      "gap": 42.3
+    },
+    {
+      "date": "2025-03-30",
+      "bestClosedScore": 1358.8,
+      "bestClosedModel": "chatgpt-4o-latest-20250326",
+      "bestOpenScore": 1319.2,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 39.6
+    },
+    {
+      "date": "2025-04-05",
+      "bestClosedScore": 1362.5,
+      "bestClosedModel": "chatgpt-4o-latest-20250326",
+      "bestOpenScore": 1319.2,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 43.3
+    },
+    {
+      "date": "2025-04-08",
+      "bestClosedScore": 1362.5,
+      "bestClosedModel": "chatgpt-4o-latest-20250326",
+      "bestOpenScore": 1319.2,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 43.3
+    },
+    {
+      "date": "2025-04-09",
+      "bestClosedScore": 1359.5,
+      "bestClosedModel": "chatgpt-4o-latest-20250326",
+      "bestOpenScore": 1320.6,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 39
+    },
+    {
+      "date": "2025-04-16",
+      "bestClosedScore": 1359.8,
+      "bestClosedModel": "chatgpt-4o-latest-20250326",
+      "bestOpenScore": 1321.8,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 37.9
+    },
+    {
+      "date": "2025-04-23",
+      "bestClosedScore": 1380.3,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1323.1,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 57.2
+    },
+    {
+      "date": "2025-05-05",
+      "bestClosedScore": 1372.8,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1322.1,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 50.7
+    },
+    {
+      "date": "2025-05-06",
+      "bestClosedScore": 1373.3,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1323,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 50.3
+    },
+    {
+      "date": "2025-05-11",
+      "bestClosedScore": 1375.2,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1323.3,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 51.9
+    },
+    {
+      "date": "2025-05-19",
+      "bestClosedScore": 1434.4,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1382.4,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 52.1
+    },
+    {
+      "date": "2025-05-20",
+      "bestClosedScore": 1434.4,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1382.4,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 52.1
+    },
+    {
+      "date": "2025-05-22",
+      "bestClosedScore": 1435.2,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1382,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 53.2
+    },
+    {
+      "date": "2025-06-01",
+      "bestClosedScore": 1441.8,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1385.5,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 56.3
+    },
+    {
+      "date": "2025-06-03",
+      "bestClosedScore": 1441.4,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1385.8,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 55.6
+    },
+    {
+      "date": "2025-06-05",
+      "bestClosedScore": 1442.8,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1388.4,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 54.4
+    },
+    {
+      "date": "2025-06-11",
+      "bestClosedScore": 1447.1,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1393.5,
+      "bestOpenModel": "deepseek-v3-0324",
+      "gap": 53.6
+    },
+    {
+      "date": "2025-06-17",
+      "bestClosedScore": 1448.9,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1410.2,
+      "bestOpenModel": "deepseek-r1-0528",
+      "gap": 38.7
+    },
+    {
+      "date": "2025-06-18",
+      "bestClosedScore": 1449.1,
+      "bestClosedModel": "o3-2025-04-16",
+      "bestOpenScore": 1411,
+      "bestOpenModel": "deepseek-r1-0528",
+      "gap": 38.1
+    },
+    {
+      "date": "2025-06-24",
+      "bestClosedScore": 1466.6,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1412.8,
+      "bestOpenModel": "deepseek-r1-0528",
+      "gap": 53.8
+    },
+    {
+      "date": "2025-07-01",
+      "bestClosedScore": 1463.4,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1412.7,
+      "bestOpenModel": "deepseek-r1-0528",
+      "gap": 50.7
+    },
+    {
+      "date": "2025-07-07",
+      "bestClosedScore": 1465.4,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1414.1,
+      "bestOpenModel": "deepseek-r1-0528",
+      "gap": 51.4
+    },
+    {
+      "date": "2025-07-15",
+      "bestClosedScore": 1461.8,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1414.4,
+      "bestOpenModel": "deepseek-r1-0528",
+      "gap": 47.4
+    },
+    {
+      "date": "2025-07-17",
+      "bestClosedScore": 1461.7,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1419.8,
+      "bestOpenModel": "kimi-k2-0711-preview",
+      "gap": 41.9
+    },
+    {
+      "date": "2025-07-25",
+      "bestClosedScore": 1460.2,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1418.1,
+      "bestOpenModel": "kimi-k2-0711-preview",
+      "gap": 42.1
+    },
+    {
+      "date": "2025-07-28",
+      "bestClosedScore": 1462.8,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1419.8,
+      "bestOpenModel": "kimi-k2-0711-preview",
+      "gap": 43
+    },
+    {
+      "date": "2025-08-01",
+      "bestClosedScore": 1458.5,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1432.9,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 25.5
+    },
+    {
+      "date": "2025-08-04",
+      "bestClosedScore": 1458.6,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1429.5,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 29.2
+    },
+    {
+      "date": "2025-08-07",
+      "bestClosedScore": 1481.4,
+      "bestClosedModel": "gpt-5-high",
+      "bestOpenScore": 1428.1,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 53.2
+    },
+    {
+      "date": "2025-08-14",
+      "bestClosedScore": 1463.3,
+      "bestClosedModel": "gpt-5-high",
+      "bestOpenScore": 1426.2,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 37.1
+    },
+    {
+      "date": "2025-08-18",
+      "bestClosedScore": 1460.7,
+      "bestClosedModel": "gpt-5-high",
+      "bestOpenScore": 1423.2,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 37.6
+    },
+    {
+      "date": "2025-08-21",
+      "bestClosedScore": 1457.1,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1422.5,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 34.6
+    },
+    {
+      "date": "2025-08-27",
+      "bestClosedScore": 1456.4,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1421.2,
+      "bestOpenModel": "kimi-k2-0711-preview",
+      "gap": 35.2
+    },
+    {
+      "date": "2025-08-28",
+      "bestClosedScore": 1455.9,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1420.9,
+      "bestOpenModel": "kimi-k2-0711-preview",
+      "gap": 35
+    },
+    {
+      "date": "2025-09-08",
+      "bestClosedScore": 1455,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1419.6,
+      "bestOpenModel": "kimi-k2-0711-preview",
+      "gap": 35.4
+    },
+    {
+      "date": "2025-09-17",
+      "bestClosedScore": 1456,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1419.6,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 36.4
+    },
+    {
+      "date": "2025-09-18",
+      "bestClosedScore": 1456.1,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1419.1,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 37
+    },
+    {
+      "date": "2025-09-30",
+      "bestClosedScore": 1452.9,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1420.5,
+      "bestOpenModel": "qwen3-vl-235b-a22b-instruct",
+      "gap": 32.4
+    },
+    {
+      "date": "2025-10-01",
+      "bestClosedScore": 1452.1,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1418.8,
+      "bestOpenModel": "qwen3-235b-a22b-instruct-2507",
+      "gap": 33.3
+    },
+    {
+      "date": "2025-10-03",
+      "bestClosedScore": 1453,
+      "bestClosedModel": "claude-sonnet-4-5-20250929-thinking-32k",
+      "bestOpenScore": 1425.7,
+      "bestOpenModel": "glm-4.6",
+      "gap": 27.3
+    },
+    {
+      "date": "2025-10-07",
+      "bestClosedScore": 1451.8,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1421.4,
+      "bestOpenModel": "glm-4.6",
+      "gap": 30.5
+    },
+    {
+      "date": "2025-10-16",
+      "bestClosedScore": 1450.7,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1421.7,
+      "bestOpenModel": "glm-4.6",
+      "gap": 29
+    },
+    {
+      "date": "2025-10-17",
+      "bestClosedScore": 1450.8,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1421.6,
+      "bestOpenModel": "glm-4.6",
+      "gap": 29.2
+    },
+    {
+      "date": "2025-11-05",
+      "bestClosedScore": 1451.6,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1427.8,
+      "bestOpenModel": "glm-4.6",
+      "gap": 23.9
+    },
+    {
+      "date": "2025-11-06",
+      "bestClosedScore": 1451.9,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1429.1,
+      "bestOpenModel": "glm-4.6",
+      "gap": 22.9
+    },
+    {
+      "date": "2025-11-09",
+      "bestClosedScore": 1452,
+      "bestClosedModel": "gemini-2.5-pro",
+      "bestOpenScore": 1428.7,
+      "bestOpenModel": "glm-4.6",
+      "gap": 23.3
+    },
+    {
+      "date": "2025-11-16",
+      "bestClosedScore": 1500.6,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1431.8,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 68.7
+    },
+    {
+      "date": "2025-11-17",
+      "bestClosedScore": 1502.2,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1431.7,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 70.4
+    },
+    {
+      "date": "2025-11-18",
+      "bestClosedScore": 1497.9,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1430.4,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 67.5
+    },
+    {
+      "date": "2025-11-20",
+      "bestClosedScore": 1495,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1429.5,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 65.5
+    },
+    {
+      "date": "2025-11-26",
+      "bestClosedScore": 1492.4,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1430.8,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 61.6
+    },
+    {
+      "date": "2025-12-01",
+      "bestClosedScore": 1491.4,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1429.1,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 62.2
+    },
+    {
+      "date": "2025-12-04",
+      "bestClosedScore": 1490.8,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1427.7,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 63.1
+    },
+    {
+      "date": "2025-12-05",
+      "bestClosedScore": 1491.3,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1427.6,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 63.7
+    },
+    {
+      "date": "2025-12-08",
+      "bestClosedScore": 1490.3,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1427.1,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 63.1
+    },
+    {
+      "date": "2025-12-11",
+      "bestClosedScore": 1491.8,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1425.5,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 66.3
+    },
+    {
+      "date": "2025-12-15",
+      "bestClosedScore": 1491.2,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1427,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 64.1
+    },
+    {
+      "date": "2025-12-16",
+      "bestClosedScore": 1492.1,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1428.3,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 63.8
+    },
+    {
+      "date": "2025-12-18",
+      "bestClosedScore": 1491.4,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1426.3,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 65.1
+    },
+    {
+      "date": "2025-12-19",
+      "bestClosedScore": 1490.1,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1428.1,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 62
+    },
+    {
+      "date": "2025-12-21",
+      "bestClosedScore": 1490,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1428.4,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 61.6
+    },
+    {
+      "date": "2025-12-23",
+      "bestClosedScore": 1489.9,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1428.4,
+      "bestOpenModel": "kimi-k2-thinking-turbo",
+      "gap": 61.5
+    },
+    {
+      "date": "2025-12-30",
+      "bestClosedScore": 1490.2,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1438.8,
+      "bestOpenModel": "glm-4.7",
+      "gap": 51.4
+    },
+    {
+      "date": "2026-01-09",
+      "bestClosedScore": 1489.6,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1442.6,
+      "bestOpenModel": "glm-4.7",
+      "gap": 47.1
+    },
+    {
+      "date": "2026-01-27",
+      "bestClosedScore": 1487.9,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1440.8,
+      "bestOpenModel": "glm-4.7",
+      "gap": 47.1
+    },
+    {
+      "date": "2026-01-29",
+      "bestClosedScore": 1487.3,
+      "bestClosedModel": "gemini-3-pro",
+      "bestOpenScore": 1449.6,
+      "bestOpenModel": "kimi-k2.5-thinking",
+      "gap": 37.7
+    },
+    {
+      "date": "2026-02-06",
+      "bestClosedScore": 1503.5,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1448.8,
+      "bestOpenModel": "kimi-k2.5-thinking",
+      "gap": 54.8
+    },
+    {
+      "date": "2026-02-09",
+      "bestClosedScore": 1504.4,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1446.7,
+      "bestOpenModel": "kimi-k2.5-thinking",
+      "gap": 57.7
+    },
+    {
+      "date": "2026-02-10",
+      "bestClosedScore": 1505,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1470.4,
+      "bestOpenModel": "glm-5",
+      "gap": 34.7
+    },
+    {
+      "date": "2026-02-11",
+      "bestClosedScore": 1505.9,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1451.5,
+      "bestOpenModel": "glm-5",
+      "gap": 54.3
+    },
+    {
+      "date": "2026-02-16",
+      "bestClosedScore": 1507,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455,
+      "bestOpenModel": "glm-5",
+      "gap": 51.9
+    },
+    {
+      "date": "2026-02-17",
+      "bestClosedScore": 1506,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455.2,
+      "bestOpenModel": "glm-5",
+      "gap": 50.8
+    },
+    {
+      "date": "2026-02-19",
+      "bestClosedScore": 1505.1,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1454.5,
+      "bestOpenModel": "glm-5",
+      "gap": 50.6
+    },
+    {
+      "date": "2026-02-20",
+      "bestClosedScore": 1505.1,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1454.7,
+      "bestOpenModel": "glm-5",
+      "gap": 50.3
+    },
+    {
+      "date": "2026-02-21",
+      "bestClosedScore": 1505.5,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1452.4,
+      "bestOpenModel": "glm-5",
+      "gap": 53.1
+    },
+    {
+      "date": "2026-02-22",
+      "bestClosedScore": 1505.5,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1452.4,
+      "bestOpenModel": "glm-5",
+      "gap": 53.1
+    },
+    {
+      "date": "2026-02-24",
+      "bestClosedScore": 1504.2,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1453,
+      "bestOpenModel": "glm-5",
+      "gap": 51.2
+    },
+    {
+      "date": "2026-02-25",
+      "bestClosedScore": 1503.8,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1453.8,
+      "bestOpenModel": "glm-5",
+      "gap": 50
+    },
+    {
+      "date": "2026-02-26",
+      "bestClosedScore": 1503.4,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455.4,
+      "bestOpenModel": "glm-5",
+      "gap": 48
+    },
+    {
+      "date": "2026-03-03",
+      "bestClosedScore": 1505.1,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1454.4,
+      "bestOpenModel": "glm-5",
+      "gap": 50.7
+    },
+    {
+      "date": "2026-03-04",
+      "bestClosedScore": 1504.1,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1453.2,
+      "bestOpenModel": "glm-5",
+      "gap": 50.9
+    },
+    {
+      "date": "2026-03-05",
+      "bestClosedScore": 1504,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1452.6,
+      "bestOpenModel": "glm-5",
+      "gap": 51.3
+    },
+    {
+      "date": "2026-03-06",
+      "bestClosedScore": 1503.5,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1451.7,
+      "bestOpenModel": "glm-5",
+      "gap": 51.8
+    },
+    {
+      "date": "2026-03-11",
+      "bestClosedScore": 1503.4,
+      "bestClosedModel": "claude-opus-4-6",
+      "bestOpenScore": 1453.9,
+      "bestOpenModel": "glm-5",
+      "gap": 49.4
+    },
+    {
+      "date": "2026-03-16",
+      "bestClosedScore": 1501.4,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1453.5,
+      "bestOpenModel": "glm-5",
+      "gap": 47.9
+    },
+    {
+      "date": "2026-03-18",
+      "bestClosedScore": 1502.1,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1456.6,
+      "bestOpenModel": "glm-5",
+      "gap": 45.6
+    },
+    {
+      "date": "2026-03-19",
+      "bestClosedScore": 1502.1,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1456.4,
+      "bestOpenModel": "glm-5",
+      "gap": 45.7
+    },
+    {
+      "date": "2026-03-20",
+      "bestClosedScore": 1502.1,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455.3,
+      "bestOpenModel": "glm-5",
+      "gap": 46.8
+    },
+    {
+      "date": "2026-03-26",
+      "bestClosedScore": 1504.1,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455.8,
+      "bestOpenModel": "glm-5",
+      "gap": 48.3
+    },
+    {
+      "date": "2026-03-31",
+      "bestClosedScore": 1504.2,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455.7,
+      "bestOpenModel": "glm-5",
+      "gap": 48.5
+    },
+    {
+      "date": "2026-04-02",
+      "bestClosedScore": 1503.7,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1455.4,
+      "bestOpenModel": "glm-5",
+      "gap": 48.3
+    },
+    {
+      "date": "2026-04-07",
+      "bestClosedScore": 1502.8,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1467.4,
+      "bestOpenModel": "glm-5.1",
+      "gap": 35.3
+    },
+    {
+      "date": "2026-04-09",
+      "bestClosedScore": 1503.5,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1470.7,
+      "bestOpenModel": "glm-5.1",
+      "gap": 32.9
+    },
+    {
+      "date": "2026-04-10",
+      "bestClosedScore": 1503.8,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1470.9,
+      "bestOpenModel": "glm-5.1",
+      "gap": 33
+    },
+    {
+      "date": "2026-04-14",
+      "bestClosedScore": 1502.3,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1471.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 31.2
+    },
+    {
+      "date": "2026-04-17",
+      "bestClosedScore": 1504.5,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1471.6,
+      "bestOpenModel": "glm-5.1",
+      "gap": 32.9
+    },
+    {
+      "date": "2026-04-20",
+      "bestClosedScore": 1504,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1468.8,
+      "bestOpenModel": "glm-5.1",
+      "gap": 35.2
+    },
+    {
+      "date": "2026-04-22",
+      "bestClosedScore": 1502.6,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1468.5,
+      "bestOpenModel": "glm-5.1",
+      "gap": 34.1
+    },
+    {
+      "date": "2026-04-23",
+      "bestClosedScore": 1503.1,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1469.6,
+      "bestOpenModel": "glm-5.1",
+      "gap": 33.4
+    },
+    {
+      "date": "2026-04-27",
+      "bestClosedScore": 1503.2,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1469.9,
+      "bestOpenModel": "glm-5.1",
+      "gap": 33.3
+    },
+    {
+      "date": "2026-04-28",
+      "bestClosedScore": 1503.2,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1469.9,
+      "bestOpenModel": "glm-5.1",
+      "gap": 33.3
+    },
+    {
+      "date": "2026-04-29",
+      "bestClosedScore": 1502.9,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1469.1,
+      "bestOpenModel": "glm-5.1",
+      "gap": 33.9
+    },
+    {
+      "date": "2026-04-30",
+      "bestClosedScore": 1504,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1470.3,
+      "bestOpenModel": "glm-5.1",
+      "gap": 33.7
+    },
+    {
+      "date": "2026-05-01",
+      "bestClosedScore": 1502.7,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1470.5,
+      "bestOpenModel": "glm-5.1",
+      "gap": 32.1
+    },
+    {
+      "date": "2026-05-06",
+      "bestClosedScore": 1503.3,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1471.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 32.1
+    },
+    {
+      "date": "2026-05-07",
+      "bestClosedScore": 1503,
+      "bestClosedModel": "claude-opus-4-7-thinking",
+      "bestOpenScore": 1471.3,
+      "bestOpenModel": "glm-5.1",
+      "gap": 31.7
+    },
+    {
+      "date": "2026-05-12",
+      "bestClosedScore": 1501.7,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1471.1,
+      "bestOpenModel": "glm-5.1",
+      "gap": 30.7
+    },
+    {
+      "date": "2026-05-14",
+      "bestClosedScore": 1501.5,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1472.3,
+      "bestOpenModel": "glm-5.1",
+      "gap": 29.3
+    },
+    {
+      "date": "2026-05-18",
+      "bestClosedScore": 1501.8,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1472.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 29.5
+    },
+    {
+      "date": "2026-05-19",
+      "bestClosedScore": 1502,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1472.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 29.8
+    },
+    {
+      "date": "2026-05-27",
+      "bestClosedScore": 1502.2,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1473.9,
+      "bestOpenModel": "glm-5.1",
+      "gap": 28.3
+    },
+    {
+      "date": "2026-06-03",
+      "bestClosedScore": 1503.3,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1475.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 28.2
+    },
+    {
+      "date": "2026-06-04",
+      "bestClosedScore": 1503.5,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1475.4,
+      "bestOpenModel": "glm-5.1",
+      "gap": 28.1
+    },
+    {
+      "date": "2026-06-05",
+      "bestClosedScore": 1503.6,
+      "bestClosedModel": "claude-opus-4-6-thinking",
+      "bestOpenScore": 1475,
+      "bestOpenModel": "glm-5.1",
+      "gap": 28.7
+    },
+    {
+      "date": "2026-06-10",
+      "bestClosedScore": 1510.4,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1475.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 35.1
+    },
+    {
+      "date": "2026-06-16",
+      "bestClosedScore": 1507.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1475.3,
+      "bestOpenModel": "glm-5.1",
+      "gap": 32.3
+    },
+    {
+      "date": "2026-06-25",
+      "bestClosedScore": 1508.2,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1473.4,
+      "bestOpenModel": "glm-5.1",
+      "gap": 34.7
+    },
+    {
+      "date": "2026-07-02",
+      "bestClosedScore": 1508.5,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1472.2,
+      "bestOpenModel": "glm-5.1",
+      "gap": 36.3
+    },
+    {
+      "date": "2026-07-10",
+      "bestClosedScore": 1508.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1472.1,
+      "bestOpenModel": "glm-5.1",
+      "gap": 36.5
+    },
+    {
+      "date": "2026-07-12",
+      "bestClosedScore": 1507.5,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1471.9,
+      "bestOpenModel": "glm-5.1",
+      "gap": 35.6
+    },
+    {
+      "date": "2026-07-14",
+      "bestClosedScore": 1507.5,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1471.7,
+      "bestOpenModel": "glm-5.1",
+      "gap": 35.9
+    },
+    {
+      "date": "2026-07-16",
+      "bestClosedScore": 1507.5,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1470.8,
+      "bestOpenModel": "glm-5.1",
+      "gap": 36.7
+    },
+    {
+      "date": "2026-07-20",
+      "bestClosedScore": 1506.8,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1469.9,
+      "bestOpenModel": "glm-5.1",
+      "gap": 36.9
+    },
+    {
+      "date": "2026-07-21",
+      "bestClosedScore": 1507.3,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1469.6,
+      "bestOpenModel": "glm-5.1",
+      "gap": 37.7
+    },
+    {
+      "date": "2026-07-26",
+      "bestClosedScore": 1508,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1485.3,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 22.7
+    },
+    {
+      "date": "2026-07-27",
+      "bestClosedScore": 1507.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1485.8,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 21.8
+    },
+    {
+      "date": "2026-07-30",
+      "bestClosedScore": 1507.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1485.8,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 21.8
+    },
+    {
+      "date": "2026-08-02",
+      "bestClosedScore": 1508.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1485.3,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 23.2
+    },
+    {
+      "date": "2026-08-03",
+      "bestClosedScore": 1508.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1469.5,
+      "bestOpenModel": "glm-5.2-max",
+      "gap": 39.1
+    },
+    {
+      "date": "2026-08-06",
+      "bestClosedScore": 1507.3,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1485.4,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 21.9
+    },
+    {
+      "date": "2026-08-10",
+      "bestClosedScore": 1505.7,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1487.3,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 18.4
+    },
+    {
+      "date": "2026-08-11",
+      "bestClosedScore": 1506.4,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1486.8,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 19.6
+    },
+    {
+      "date": "2026-08-12",
+      "bestClosedScore": 1506.6,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1488.6,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 18.1
+    },
+    {
+      "date": "2026-08-19",
+      "bestClosedScore": 1507.3,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1489.7,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 17.7
+    },
+    {
+      "date": "2026-08-21",
+      "bestClosedScore": 1507.8,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1489.1,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 18.7
+    },
+    {
+      "date": "2026-08-27",
+      "bestClosedScore": 1507.5,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1488.8,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 18.7
+    },
+    {
+      "date": "2026-09-01",
+      "bestClosedScore": 1507.4,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1489,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 18.4
+    },
+    {
+      "date": "2026-09-02",
+      "bestClosedScore": 1507.2,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1488.7,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 18.5
+    },
+    {
+      "date": "2026-09-11",
+      "bestClosedScore": 1505.5,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1485.6,
+      "bestOpenModel": "glm-5.3-max",
+      "gap": 19.9
+    },
+    {
+      "date": "2026-09-13",
+      "bestClosedScore": 1505.7,
+      "bestClosedModel": "claude-fable-5",
+      "bestOpenScore": 1484.8,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 20.9
+    },
+    {
+      "date": "2026-09-25",
+      "bestClosedScore": 1508.6,
+      "bestClosedModel": "claude-opus-5.5-high",
+      "bestOpenScore": 1488,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 20.6
+    },
+    {
+      "date": "2026-09-30",
+      "bestClosedScore": 1524.8,
+      "bestClosedModel": "gemini-4-argon-high",
+      "bestOpenScore": 1488,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 36.8
+    },
+    {
+      "date": "2026-10-02",
+      "bestClosedScore": 1525.2,
+      "bestClosedModel": "gemini-4-argon-high",
+      "bestOpenScore": 1488.4,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 36.9
+    },
+    {
+      "date": "2026-10-08",
+      "bestClosedScore": 1525.4,
+      "bestClosedModel": "gemini-4-argon-high",
+      "bestOpenScore": 1488.1,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 37.3
+    },
+    {
+      "date": "2026-10-13",
+      "bestClosedScore": 1524.8,
+      "bestClosedModel": "gemini-4-argon-high",
+      "bestOpenScore": 1488.1,
+      "bestOpenModel": "kimi-k3-max",
+      "gap": 36.7
+    },
+    {
+      "date": "2026-10-15",
+      "bestClosedScore": 1523.9,
+      "bestClosedModel": "Gemini 4 Argon (High)",
+      "bestOpenScore": 1487.1,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 36.8
+    },
+    {
+      "date": "2026-10-20",
+      "bestClosedScore": 1523.9,
+      "bestClosedModel": "Gemini 4 Argon (High)",
+      "bestOpenScore": 1488.1,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 35.8
+    },
+    {
+      "date": "2026-10-22",
+      "bestClosedScore": 1517.2,
+      "bestClosedModel": "Gemini 4 Argon (High)",
+      "bestOpenScore": 1487.4,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 29.8
+    },
+    {
+      "date": "2026-10-28",
+      "bestClosedScore": 1527.5,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1488.2,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 39.3
+    },
+    {
+      "date": "2026-11-06",
+      "bestClosedScore": 1526.5,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1488.1,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 38.4
+    },
+    {
+      "date": "2026-11-08",
+      "bestClosedScore": 1526.6,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1487.3,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 39.3
+    },
+    {
+      "date": "2026-11-09",
+      "bestClosedScore": 1526,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1487.1,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 38.8
+    },
+    {
+      "date": "2026-11-11",
+      "bestClosedScore": 1526.2,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1487.4,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 38.7
+    },
+    {
+      "date": "2026-11-18",
+      "bestClosedScore": 1525.9,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1487.3,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 38.7
+    },
+    {
+      "date": "2026-11-19",
+      "bestClosedScore": 1527,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1487.8,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 39.2
+    },
+    {
+      "date": "2026-11-22",
+      "bestClosedScore": 1526.5,
+      "bestClosedModel": "Gemini 4 Carbon (High)",
+      "bestOpenScore": 1487.9,
+      "bestOpenModel": "Kimi K3 (Max)",
+      "gap": 38.6
+    }
+  ]
+}
