@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ChartShell from "../components/ChartShell.astro";
+---
+
+<BaseLayout title="Prices over time" description="Model price history and cheapest-for-score trends.">
+  <div class="grid gap-10">
+    <header class="space-y-2">
+      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+        Prices over time
+      </h1>
+      <p class="m-0 text-[var(--muted)] max-w-2xl">
+        Track input/output (and blended) prices per model, plus the cheapest
+        offering that still clears a chosen Arena score.
+      </p>
+    </header>
+
+    <ChartShell
+      takeaway="Watch how individual model prices move across weekly snapshots."
+      keyNumber="—"
+      keyNumberLabel="Median blended / 1M"
+      source="Source: OpenRouter (openrouter.ai)"
+    />
+
+    <ChartShell
+      takeaway="For a fixed quality bar, the cheapest monthly cost falls as new entrants arrive."
+      keyNumber="—"
+      keyNumberLabel="Cheapest ≥ score X"
+      source="Source: OpenRouter · LMArena (CC BY 4.0)"
+    />
+  </div>
+</BaseLayout>

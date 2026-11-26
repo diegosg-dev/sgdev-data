@@ -1,0 +1,58 @@
+---
+import ThemeToggle from "./ThemeToggle";
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+
+const links = [
+  { href: "/", label: "Frontier" },
+  { href: "/prices", label: "Prices" },
+  { href: "/open-vs-closed", label: "Open vs closed" },
+  { href: "/providers", label: "Providers" },
+  { href: "/dollar", label: "$1 buys" },
+  { href: "/timeline", label: "Timeline" },
+  { href: "/movers", label: "Movers" },
+] as const;
+
+function isActive(href: string) {
+  if (href === "/") return path === "/";
+  return path === href || path.startsWith(href + "/");
+}
+---
+
+<header class="sticky top-0 z-40 border-b border-[var(--grid)] bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] backdrop-blur-md">
+  <div class="site-shell flex flex-wrap items-center justify-between gap-4 py-3">
+    <a href="/" class="group flex items-baseline gap-3 no-underline hover:no-underline">
+      <span class="font-mono text-sm font-medium tracking-[0.04em] text-[var(--text)]">
+        SGDev<span class="text-[var(--signal)]">/</span>LLM
+      </span>
+      <span class="hidden font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--muted)] sm:inline">
+        Data
+      </span>
+    </a>
+
+    <nav aria-label="Primary" class="order-3 w-full md:order-none md:w-auto">
+      <ul class="flex flex-wrap gap-x-1 gap-y-1">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class:list={[
+                  "font-mono inline-block px-2.5 py-1.5 text-[11px] uppercase tracking-[0.08em] no-underline transition-colors",
+                  isActive(link.href)
+                    ? "bg-[var(--surface)] text-[var(--text)] border border-[var(--grid)]"
+                    : "text-[var(--muted)] hover:text-[var(--text)] border border-transparent",
+                ]}
+                aria-current={isActive(link.href) ? "page" : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <ThemeToggle client:load />
+  </div>
+</header>

@@ -1,0 +1,50 @@
+---
+import "../styles/global.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import AttributionFooter from "../components/AttributionFooter.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  lastUpdated?: string | null;
+}
+
+const {
+  title,
+  description = "LLM prices, quality and trends — self-hosted data for SGDev.",
+  lastUpdated = null,
+} = Astro.props;
+
+const fullTitle = title === "SGDev LLM Data" ? title : `${title} · SGDev LLM Data`;
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{fullTitle}</title>
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem("sgdev-theme");
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="site-grid flex min-h-screen flex-col">
+    <SiteHeader />
+    <main class="site-shell flex-1 py-10 animate-in">
+      <slot />
+    </main>
+    <AttributionFooter lastUpdated={lastUpdated} />
+  </body>
+</html>

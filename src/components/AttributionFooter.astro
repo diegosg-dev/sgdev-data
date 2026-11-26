@@ -1,0 +1,58 @@
+---
+interface Props {
+  lastUpdated?: string | null;
+}
+
+const { lastUpdated = null } = Astro.props;
+---
+
+<footer class="mt-16 border-t border-[var(--grid)] bg-[var(--surface)]">
+  <div class="site-shell grid gap-6 py-10 md:grid-cols-12">
+    <div class="md:col-span-5 space-y-3">
+      <p class="font-mono text-xs uppercase tracking-[0.14em] text-[var(--muted)]">
+        SGDev LLM Data
+      </p>
+      <p class="text-sm leading-relaxed text-[var(--muted)] max-w-md">
+        Personal, self-hosted dashboard for LLM prices, quality and trends —
+        built for the
+        <a href="https://www.youtube.com/@DiegoSGDev" rel="noopener noreferrer" target="_blank"
+          >SGDev</a
+        > YouTube channel.
+      </p>
+      {
+        lastUpdated && (
+          <p class="font-mono text-xs text-[var(--muted)]">
+            Last updated: <time datetime={lastUpdated}>{lastUpdated}</time>
+          </p>
+        )
+      }
+    </div>
+
+    <div class="md:col-span-7 space-y-3">
+      <p class="font-mono text-xs uppercase tracking-[0.14em] text-[var(--muted)]">
+        Sources &amp; licences
+      </p>
+      <ul class="space-y-2 text-sm text-[var(--muted)]">
+        <li>
+          Prices:
+          <a href="https://openrouter.ai" rel="noopener noreferrer" target="_blank"
+            >OpenRouter</a
+          >
+          (openrouter.ai) — fetched via public models API.
+        </li>
+        <li>
+          Quality scores:
+          <a
+            href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset"
+            rel="noopener noreferrer"
+            target="_blank">LMArena leaderboard dataset</a
+          >
+          (CC BY 4.0). Style-control overall scores.
+        </li>
+        <li class="font-mono text-xs">
+          Artificial Analysis data is not used.
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

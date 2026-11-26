@@ -1,0 +1,25 @@
+# Example edge Caddy for a VPS (TLS + reverse proxy to the compose `web` service).
+# Place this on the host Caddy (or merge into your main Caddyfile), then:
+#   docker compose up -d --build
+
+llm.sgdev.es {
+	encode gzip zstd
+
+	reverse_proxy 127.0.0.1:8080
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Frame-Options DENY
+		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+	}
+}
+
+# Optional: serve the built dist/ directly from the host instead of reverse_proxy:
+#
+# llm.sgdev.es {
+# 	root * /var/www/sgdev-llm/dist
+# 	encode gzip zstd
+# 	file_server
+# 	try_files {path} {path}/ /index.html
+# }

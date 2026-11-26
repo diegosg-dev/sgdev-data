@@ -1,0 +1,37 @@
+services:
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  # Weekly ETL: fetch OpenRouter + LMArena, write SQLite + JSON, rebuild site.
+  # Full pipeline lands in M2; this service is a no-op stub until then.
+  etl:
+    build:
+      context: .
+      target: etl
+    volumes:
+      - ./data:/app/data
+      - ./public/data:/app/public/data
+    profiles: ["etl"]
+    restart: "no"
+
+  etl-cron:
+    build:
+      context: .
+      target: etl
+    volumes:
+      - ./data:/app/data
+      - ./public/data:/app/public/data
+    environment:
+      - ETL_CRON=0 6 * * 1
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        echo "ETL cron container up. Schedule: $${ETL_CRON:-0 6 * * 1} (UTC)."
+        echo "Pipeline arrives in M2; sleeping until then."
+        while true; do sleep 86400; done
+    restart: unless-stopped

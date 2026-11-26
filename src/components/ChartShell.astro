@@ -1,0 +1,56 @@
+---
+interface Props {
+  takeaway: string;
+  keyNumber?: string;
+  keyNumberLabel?: string;
+  source: string;
+  id?: string;
+}
+
+const { takeaway, keyNumber, keyNumberLabel, source, id } = Astro.props;
+---
+
+<section
+  id={id}
+  class="chart-panel grid gap-4 p-5 md:p-6 md:grid-cols-12"
+  data-chart-shell
+>
+  <header class="md:col-span-8 space-y-2">
+    <h2 class="chart-takeaway m-0">{takeaway}</h2>
+    <p class="source-line m-0">{source}</p>
+  </header>
+
+  {
+    keyNumber && (
+      <div class="md:col-span-4 md:text-right space-y-1">
+        {keyNumberLabel && (
+          <p class="font-mono m-0 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
+            {keyNumberLabel}
+          </p>
+        )}
+        <p class="chart-key-number m-0">{keyNumber}</p>
+      </div>
+    )
+  }
+
+  <div class="md:col-span-12 relative min-h-[220px] border border-dashed border-[var(--grid)] bg-[color-mix(in_srgb,var(--bg)_55%,transparent)]">
+    <slot>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <p class="font-mono m-0 text-xs uppercase tracking-[0.12em] text-[var(--muted)]">
+          Chart landing in a later milestone
+        </p>
+      </div>
+    </slot>
+  </div>
+
+  <div class="md:col-span-12 flex justify-end">
+    <button
+      type="button"
+      class="font-mono copy-chart-btn border border-[var(--grid)] bg-transparent px-3 py-1.5 text-[10px] uppercase tracking-[0.1em] text-[var(--muted)] opacity-60 cursor-not-allowed"
+      disabled
+      title="Enabled when charts ship"
+    >
+      Copy as image
+    </button>
+  </div>
+</section>

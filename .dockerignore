@@ -1,0 +1,16 @@
+node_modules
+dist
+.astro
+.git
+.github
+*.md
+!README.md
+.env
+.env.*
+data/sgdev.sqlite
+data/sgdev.sqlite-*
+data/logs
+tmp
+.DS_Store
+.vscode
+assets

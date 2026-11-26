@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ChartShell from "../components/ChartShell.astro";
+---
+
+<BaseLayout
+  title="Open vs closed"
+  description="Best open-weights vs best closed Arena scores over time."
+>
+  <div class="grid gap-10">
+    <header class="space-y-2">
+      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+        Open vs closed gap
+      </h1>
+      <p class="m-0 text-[var(--muted)] max-w-2xl">
+        Best open-weights Arena score versus best closed model — how fast the
+        gap is closing.
+      </p>
+    </header>
+
+    <ChartShell
+      takeaway="Amber leads when open weights catch up; electric blue when closed still dominate."
+      keyNumber="—"
+      keyNumberLabel="Current gap (Arena)"
+      source="Source: LMArena style-control overall (CC BY 4.0)"
+    />
+  </div>
+</BaseLayout>

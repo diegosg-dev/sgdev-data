@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ChartShell from "../components/ChartShell.astro";
+---
+
+<BaseLayout
+  title="SGDev LLM Data"
+  description="Price vs quality frontier for LLMs — find the good-enough model for your budget."
+>
+  <div class="grid gap-10">
+    <header class="grid gap-4 md:grid-cols-12 md:items-end">
+      <div class="md:col-span-8 space-y-3">
+        <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+          Terminal Editorial · LLM market scan
+        </p>
+        <h1 class="m-0 text-[clamp(2rem,4.5vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
+          Price vs quality.<br />
+          <span class="text-[var(--signal)]">Find the frontier.</span>
+        </h1>
+        <p class="m-0 max-w-xl text-[var(--muted)] leading-relaxed">
+          Weekly snapshots of OpenRouter prices joined to LMArena style-control
+          scores. Built for SGDev — static, self-hosted, no Artificial Analysis.
+        </p>
+      </div>
+      <div class="md:col-span-4 md:text-right space-y-1">
+        <p class="font-mono m-0 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
+          Status
+        </p>
+        <p class="font-mono m-0 text-sm text-[var(--amber)]">M1 scaffold · data incoming</p>
+      </div>
+    </header>
+
+    <ChartShell
+      id="frontier"
+      takeaway="Models that buy the most Arena score per dollar sit on the green frontier."
+      keyNumber="—"
+      keyNumberLabel="Cheapest GPT-4-class / 1M"
+      source="Source: OpenRouter prices · LMArena style-control (CC BY 4.0)"
+    />
+
+    <section class="chart-panel grid gap-4 p-5 md:p-6 md:grid-cols-12" id="good-enough">
+      <header class="md:col-span-12 space-y-2">
+        <h2 class="chart-takeaway m-0">Good-Enough Finder</h2>
+        <p class="m-0 text-sm text-[var(--muted)] max-w-2xl">
+          Pick a task, a quality bar, and a monthly volume. We return the cheapest
+          model that clears it — plus savings vs a premium default.
+        </p>
+        <p class="source-line m-0">Interactive controls ship in M4.</p>
+      </header>
+      <div
+        class="md:col-span-12 min-h-[160px] border border-dashed border-[var(--grid)] flex items-center justify-center"
+      >
+        <p class="font-mono m-0 text-xs uppercase tracking-[0.12em] text-[var(--muted)]">
+          Finder landing in M4
+        </p>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

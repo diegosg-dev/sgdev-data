@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ChartShell from "../components/ChartShell.astro";
+---
+
+<BaseLayout
+  title="What $1 buys"
+  description="Tokens and task counts per model for preset workloads."
+>
+  <div class="grid gap-10">
+    <header class="space-y-2">
+      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+        What $1 buys you
+      </h1>
+      <p class="m-0 text-[var(--muted)] max-w-2xl">
+        Convert list prices into tokens and estimated task runs for chat, coding,
+        summarise-PDF, and agent-loop presets.
+      </p>
+    </header>
+
+    <ChartShell
+      takeaway="One dollar stretches further on models that sit below the frontier tax."
+      keyNumber="—"
+      keyNumberLabel="Best tokens / $"
+      source="Source: OpenRouter prices · task presets (SGDev)"
+    />
+  </div>
+</BaseLayout>
