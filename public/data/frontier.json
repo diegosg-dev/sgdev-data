@@ -12,7 +12,10 @@
       "arenaModel": "Claude Opus 4.6",
       "openWeights": false,
       "firstSeenDate": "2026-02-04",
-      "releaseDate": "2026-02-04"
+      "releaseDate": "2026-02-04",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 44.1,
+      "ttftSeconds": 1.79
     },
     {
       "id": "anthropic/claude-opus-4.7",
@@ -25,7 +28,10 @@
       "arenaModel": "Claude Opus 4.7",
       "openWeights": false,
       "firstSeenDate": "2026-04-16",
-      "releaseDate": "2026-04-16"
+      "releaseDate": "2026-04-16",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 55.9,
+      "ttftSeconds": 27.5
     },
     {
       "id": "meta/muse-spark-1.1",
@@ -38,7 +44,10 @@
       "arenaModel": "Muse Spark 1.1",
       "openWeights": false,
       "firstSeenDate": "2026-07-16",
-      "releaseDate": "2026-07-16"
+      "releaseDate": "2026-07-16",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 274.2,
+      "ttftSeconds": 11
     },
     {
       "id": "google/gemini-3.1-pro-preview",
@@ -51,7 +60,10 @@
       "arenaModel": "Gemini 3.1 Pro Preview",
       "openWeights": false,
       "firstSeenDate": "2026-02-19",
-      "releaseDate": "2026-02-19"
+      "releaseDate": "2026-02-19",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 156.2,
+      "ttftSeconds": 20.21
     },
     {
       "id": "qwen/qwen3.8-max-0902",
@@ -64,7 +76,10 @@
       "arenaModel": "Qwen3.8-Max",
       "openWeights": false,
       "firstSeenDate": "2026-09-03",
-      "releaseDate": "2026-09-03"
+      "releaseDate": "2026-09-03",
+      "aaIntelligenceIndex": 33.7,
+      "tokensPerSecond": 40.2,
+      "ttftSeconds": 3.09
     },
     {
       "id": "xiaomi/mimo-v2.6-pro",
@@ -77,7 +92,10 @@
       "arenaModel": "MiMo-V2.6-Pro",
       "openWeights": true,
       "firstSeenDate": "2026-09-21",
-      "releaseDate": "2026-09-21"
+      "releaseDate": "2026-09-21",
+      "aaIntelligenceIndex": 29.9,
+      "tokensPerSecond": 36.7,
+      "ttftSeconds": 4
     },
     {
       "id": "openai/gpt-5.5",
@@ -90,7 +108,10 @@
       "arenaModel": "GPT-5.5",
       "openWeights": false,
       "firstSeenDate": "2026-04-24",
-      "releaseDate": "2026-04-24"
+      "releaseDate": "2026-04-24",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 78.6,
+      "ttftSeconds": 60.34
     },
     {
       "id": "z-ai/glm-5.3-flash",
@@ -103,7 +124,10 @@
       "arenaModel": "GLM-5.3-Flash",
       "openWeights": true,
       "firstSeenDate": "2026-08-26",
-      "releaseDate": "2026-08-26"
+      "releaseDate": "2026-08-26",
+      "aaIntelligenceIndex": 27.7,
+      "tokensPerSecond": 63.8,
+      "ttftSeconds": 1.53
     },
     {
       "id": "openai/gpt-5.2-chat",
@@ -116,7 +140,10 @@
       "arenaModel": "GPT-5.2 Chat (20260210)",
       "openWeights": false,
       "firstSeenDate": "2025-12-10",
-      "releaseDate": "2025-12-10"
+      "releaseDate": "2025-12-10",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "anthropic/claude-opus-4.8",
@@ -129,7 +156,10 @@
       "arenaModel": "Claude Opus 4.8",
       "openWeights": false,
       "firstSeenDate": "2026-05-27",
-      "releaseDate": "2026-05-27"
+      "releaseDate": "2026-05-27",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 60.8,
+      "ttftSeconds": 27.7
     },
     {
       "id": "qwen/qwen3.7-max",
@@ -142,7 +172,10 @@
       "arenaModel": "Qwen3.7-Max-Preview",
       "openWeights": false,
       "firstSeenDate": "2026-05-21",
-      "releaseDate": "2026-05-21"
+      "releaseDate": "2026-05-21",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 193.6,
+      "ttftSeconds": 2.14
     },
     {
       "id": "google/gemini-3-flash-preview",
@@ -155,7 +188,10 @@
       "arenaModel": "Gemini 3 Flash",
       "openWeights": false,
       "firstSeenDate": "2025-12-17",
-      "releaseDate": "2025-12-17"
+      "releaseDate": "2025-12-17",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 219,
+      "ttftSeconds": 0.82
     },
     {
       "id": "anthropic/claude-sonnet-4.6",
@@ -168,7 +204,10 @@
       "arenaModel": "Claude Sonnet 4.6",
       "openWeights": false,
       "firstSeenDate": "2026-02-17",
-      "releaseDate": "2026-02-17"
+      "releaseDate": "2026-02-17",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 46.1,
+      "ttftSeconds": 1.05
     },
     {
       "id": "anthropic/claude-opus-4.5",
@@ -181,7 +220,10 @@
       "arenaModel": "Claude Opus 4.5 (20251101)",
       "openWeights": false,
       "firstSeenDate": "2025-11-24",
-      "releaseDate": "2025-11-24"
+      "releaseDate": "2025-11-24",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 51.1,
+      "ttftSeconds": 1.26
     },
     {
       "id": "x-ai/grok-4.5",
@@ -194,7 +236,10 @@
       "arenaModel": "Grok 4.5",
       "openWeights": false,
       "firstSeenDate": "2026-07-08",
-      "releaseDate": "2026-07-08"
+      "releaseDate": "2026-07-08",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 68.2,
+      "ttftSeconds": 11.33
     },
     {
       "id": "openai/gpt-5.4",
@@ -207,7 +252,10 @@
       "arenaModel": "GPT-5.4",
       "openWeights": false,
       "firstSeenDate": "2026-03-05",
-      "releaseDate": "2026-03-05"
+      "releaseDate": "2026-03-05",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 96.9,
+      "ttftSeconds": 190.95
     },
     {
       "id": "z-ai/glm-5.1",
@@ -220,7 +268,10 @@
       "arenaModel": "GLM-5.1",
       "openWeights": true,
       "firstSeenDate": "2026-04-07",
-      "releaseDate": "2026-04-07"
+      "releaseDate": "2026-04-07",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 76.1,
+      "ttftSeconds": 2.83
     },
     {
       "id": "moonshotai/kimi-k2.6",
@@ -233,7 +284,10 @@
       "arenaModel": "Kimi K2.6",
       "openWeights": true,
       "firstSeenDate": "2026-04-20",
-      "releaseDate": "2026-04-20"
+      "releaseDate": "2026-04-20",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 41.8,
+      "ttftSeconds": 2.98
     },
     {
       "id": "deepseek/deepseek-v4-pro",
@@ -246,7 +300,10 @@
       "arenaModel": "DeepSeek-V4-Pro",
       "openWeights": true,
       "firstSeenDate": "2026-04-24",
-      "releaseDate": "2026-04-24"
+      "releaseDate": "2026-04-24",
+      "aaIntelligenceIndex": 23.1,
+      "tokensPerSecond": 76.1,
+      "ttftSeconds": 1.76
     },
     {
       "id": "deepseek/deepseek-v4-pro-0813",
@@ -259,7 +316,10 @@
       "arenaModel": "DeepSeek-V4-Pro",
       "openWeights": true,
       "firstSeenDate": "2026-08-12",
-      "releaseDate": "2026-08-12"
+      "releaseDate": "2026-08-12",
+      "aaIntelligenceIndex": 23.1,
+      "tokensPerSecond": 76.1,
+      "ttftSeconds": 1.76
     },
     {
       "id": "z-ai/glm-5",
@@ -272,7 +332,10 @@
       "arenaModel": "GLM-5",
       "openWeights": true,
       "firstSeenDate": "2026-02-11",
-      "releaseDate": "2026-02-11"
+      "releaseDate": "2026-02-11",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 72.3,
+      "ttftSeconds": 1.98
     },
     {
       "id": "tencent/hy3",
@@ -285,7 +348,10 @@
       "arenaModel": "Hy3",
       "openWeights": true,
       "firstSeenDate": "2026-07-06",
-      "releaseDate": "2026-07-06"
+      "releaseDate": "2026-07-06",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 56.3,
+      "ttftSeconds": 2.99
     },
     {
       "id": "qwen/qwen3.7-plus",
@@ -298,7 +364,10 @@
       "arenaModel": "Qwen3.7-Plus",
       "openWeights": false,
       "firstSeenDate": "2026-06-03",
-      "releaseDate": "2026-06-03"
+      "releaseDate": "2026-06-03",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 58.2,
+      "ttftSeconds": 2.23
     },
     {
       "id": "google/gemini-3.5-flash-lite",
@@ -311,7 +380,10 @@
       "arenaModel": "Gemini 3.5 Flash-Lite",
       "openWeights": false,
       "firstSeenDate": "2026-07-21",
-      "releaseDate": "2026-07-21"
+      "releaseDate": "2026-07-21",
+      "aaIntelligenceIndex": 11.7,
+      "tokensPerSecond": 415.4,
+      "ttftSeconds": 6.76
     },
     {
       "id": "anthropic/claude-sonnet-4.5",
@@ -324,7 +396,10 @@
       "arenaModel": "Claude Sonnet 4.5 (20250929)",
       "openWeights": false,
       "firstSeenDate": "2025-09-29",
-      "releaseDate": "2025-09-29"
+      "releaseDate": "2025-09-29",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "google/gemma-4-31b-it",
@@ -337,7 +412,10 @@
       "arenaModel": "Gemma 4 31B",
       "openWeights": true,
       "firstSeenDate": "2026-04-02",
-      "releaseDate": "2026-04-02"
+      "releaseDate": "2026-04-02",
+      "aaIntelligenceIndex": 4.4,
+      "tokensPerSecond": 35.4,
+      "ttftSeconds": 1.11
     },
     {
       "id": "stepfun/step-5-preview",
@@ -350,7 +428,10 @@
       "arenaModel": "Step 5 Preview",
       "openWeights": false,
       "firstSeenDate": "2026-10-08",
-      "releaseDate": "2026-10-08"
+      "releaseDate": "2026-10-08",
+      "aaIntelligenceIndex": 28.5,
+      "tokensPerSecond": 108.6,
+      "ttftSeconds": 7.45
     },
     {
       "id": "xiaomi/mimo-v2.6-flash",
@@ -363,7 +444,10 @@
       "arenaModel": "MiMo-V2.6-Flash",
       "openWeights": true,
       "firstSeenDate": "2026-09-21",
-      "releaseDate": "2026-09-21"
+      "releaseDate": "2026-09-21",
+      "aaIntelligenceIndex": 26.8,
+      "tokensPerSecond": 37.7,
+      "ttftSeconds": 2.45
     },
     {
       "id": "anthropic/claude-opus-4.1",
@@ -376,7 +460,10 @@
       "arenaModel": "Claude Opus 4.1 (20250805)",
       "openWeights": false,
       "firstSeenDate": "2025-08-05",
-      "releaseDate": "2025-08-05"
+      "releaseDate": "2025-08-05",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "google/gemini-2.5-pro-preview",
@@ -389,7 +476,10 @@
       "arenaModel": "Gemini 2.5 Pro",
       "openWeights": false,
       "firstSeenDate": "2025-06-05",
-      "releaseDate": "2025-06-05"
+      "releaseDate": "2025-06-05",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 131.2,
+      "ttftSeconds": 20.7
     },
     {
       "id": "google/gemini-2.5-pro",
@@ -402,7 +492,10 @@
       "arenaModel": "Gemini 2.5 Pro",
       "openWeights": false,
       "firstSeenDate": "2025-06-17",
-      "releaseDate": "2025-06-17"
+      "releaseDate": "2025-06-17",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 131.2,
+      "ttftSeconds": 20.7
     },
     {
       "id": "thinkingmachines/inkling",
@@ -415,7 +508,10 @@
       "arenaModel": "Inkling",
       "openWeights": true,
       "firstSeenDate": "2026-07-17",
-      "releaseDate": "2026-07-17"
+      "releaseDate": "2026-07-17",
+      "aaIntelligenceIndex": 12.5,
+      "tokensPerSecond": 166.1,
+      "ttftSeconds": 2.26
     },
     {
       "id": "qwen/qwen3.6-plus",
@@ -428,7 +524,10 @@
       "arenaModel": "Qwen3.6-Plus",
       "openWeights": false,
       "firstSeenDate": "2026-04-02",
-      "releaseDate": "2026-04-02"
+      "releaseDate": "2026-04-02",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 55.1,
+      "ttftSeconds": 1.91
     },
     {
       "id": "x-ai/grok-4.3",
@@ -441,7 +540,10 @@
       "arenaModel": "Grok 4.3",
       "openWeights": false,
       "firstSeenDate": "2026-04-30",
-      "releaseDate": "2026-04-30"
+      "releaseDate": "2026-04-30",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 101.8,
+      "ttftSeconds": 26.17
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",
@@ -454,7 +556,10 @@
       "arenaModel": "Qwen3.5-397B-A17B",
       "openWeights": true,
       "firstSeenDate": "2026-02-16",
-      "releaseDate": "2026-02-16"
+      "releaseDate": "2026-02-16",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 57.8,
+      "ttftSeconds": 2.17
     },
     {
       "id": "z-ai/glm-4.7",
@@ -467,7 +572,10 @@
       "arenaModel": "GLM-4.7",
       "openWeights": true,
       "firstSeenDate": "2025-12-22",
-      "releaseDate": "2025-12-22"
+      "releaseDate": "2025-12-22",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 82.2,
+      "ttftSeconds": 1.57
     },
     {
       "id": "openai/gpt-5.1",
@@ -480,7 +588,10 @@
       "arenaModel": "GPT-5.1",
       "openWeights": false,
       "firstSeenDate": "2025-11-13",
-      "releaseDate": "2025-11-13"
+      "releaseDate": "2025-11-13",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 100.3,
+      "ttftSeconds": 35.65
     },
     {
       "id": "google/gemma-4-26b-a4b-it",
@@ -493,7 +604,10 @@
       "arenaModel": "Gemma 4 26B A4B",
       "openWeights": true,
       "firstSeenDate": "2026-04-03",
-      "releaseDate": "2026-04-03"
+      "releaseDate": "2026-04-03",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 91.2,
+      "ttftSeconds": 0.92
     },
     {
       "id": "deepseek/deepseek-v4-flash",
@@ -506,7 +620,10 @@
       "arenaModel": "DeepSeek-V4-Flash",
       "openWeights": true,
       "firstSeenDate": "2026-04-24",
-      "releaseDate": "2026-04-24"
+      "releaseDate": "2026-04-24",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 137,
+      "ttftSeconds": 1.07
     },
     {
       "id": "deepseek/deepseek-v4-flash-0731",
@@ -519,7 +636,10 @@
       "arenaModel": "DeepSeek-V4-Flash",
       "openWeights": true,
       "firstSeenDate": "2026-07-31",
-      "releaseDate": "2026-07-31"
+      "releaseDate": "2026-07-31",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 137,
+      "ttftSeconds": 1.07
     },
     {
       "id": "openai/gpt-5.2",
@@ -532,7 +652,10 @@
       "arenaModel": "GPT-5.2",
       "openWeights": false,
       "firstSeenDate": "2025-12-10",
-      "releaseDate": "2025-12-10"
+      "releaseDate": "2025-12-10",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 67.9,
+      "ttftSeconds": 112.33
     },
     {
       "id": "qwen/qwen3.8-27b",
@@ -545,7 +668,10 @@
       "arenaModel": "Qwen3.8-27B",
       "openWeights": true,
       "firstSeenDate": "2026-08-14",
-      "releaseDate": "2026-08-14"
+      "releaseDate": "2026-08-14",
+      "aaIntelligenceIndex": 20.1,
+      "tokensPerSecond": 55.7,
+      "ttftSeconds": 3.12
     },
     {
       "id": "minimax/minimax-m3",
@@ -558,7 +684,10 @@
       "arenaModel": "MiniMax-M3",
       "openWeights": true,
       "firstSeenDate": "2026-05-31",
-      "releaseDate": "2026-05-31"
+      "releaseDate": "2026-05-31",
+      "aaIntelligenceIndex": 19,
+      "tokensPerSecond": 97.6,
+      "ttftSeconds": 1.23
     },
     {
       "id": "reflection/beam-1.0-501b-a23b",
@@ -571,7 +700,10 @@
       "arenaModel": "Beam 1.0 501B A23B",
       "openWeights": true,
       "firstSeenDate": "2026-10-16",
-      "releaseDate": "2026-10-16"
+      "releaseDate": "2026-10-16",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "google/gemini-3.1-flash-lite-preview",
@@ -584,7 +716,10 @@
       "arenaModel": "Gemini 3.1 Flash-Lite Preview",
       "openWeights": false,
       "firstSeenDate": "2026-03-03",
-      "releaseDate": "2026-03-03"
+      "releaseDate": "2026-03-03",
+      "aaIntelligenceIndex": 6.2,
+      "tokensPerSecond": 311.6,
+      "ttftSeconds": 4.65
     },
     {
       "id": "google/gemini-3.1-flash-lite",
@@ -597,7 +732,10 @@
       "arenaModel": "Gemini 3.1 Flash-Lite Preview",
       "openWeights": false,
       "firstSeenDate": "2026-05-07",
-      "releaseDate": "2026-05-07"
+      "releaseDate": "2026-05-07",
+      "aaIntelligenceIndex": 6.2,
+      "tokensPerSecond": 311.6,
+      "ttftSeconds": 4.65
     },
     {
       "id": "openai/o3",
@@ -610,7 +748,10 @@
       "arenaModel": "o3 (2025-04-16)",
       "openWeights": false,
       "firstSeenDate": "2025-04-16",
-      "releaseDate": "2025-04-16"
+      "releaseDate": "2025-04-16",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 146.4,
+      "ttftSeconds": 5.55
     },
     {
       "id": "mistralai/mistral-medium-3-5",
@@ -623,7 +764,10 @@
       "arenaModel": "Mistral Medium 3.5",
       "openWeights": true,
       "firstSeenDate": "2026-04-30",
-      "releaseDate": "2026-04-30"
+      "releaseDate": "2026-04-30",
+      "aaIntelligenceIndex": 4.6,
+      "tokensPerSecond": 170.2,
+      "ttftSeconds": 2.27
     },
     {
       "id": "deepseek/deepseek-v3.2",
@@ -636,7 +780,10 @@
       "arenaModel": "DeepSeek-V3.2",
       "openWeights": true,
       "firstSeenDate": "2025-12-01",
-      "releaseDate": "2025-12-01"
+      "releaseDate": "2025-12-01",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "z-ai/glm-4.6",
@@ -649,7 +796,10 @@
       "arenaModel": "GLM-4.6",
       "openWeights": true,
       "firstSeenDate": "2025-09-30",
-      "releaseDate": "2025-09-30"
+      "releaseDate": "2025-09-30",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 64.3,
+      "ttftSeconds": 2.12
     },
     {
       "id": "mistralai/mistral-large-4-0",
@@ -662,7 +812,10 @@
       "arenaModel": "Mistral Large 4",
       "openWeights": true,
       "firstSeenDate": "2026-10-06",
-      "releaseDate": "2026-10-06"
+      "releaseDate": "2026-10-06",
+      "aaIntelligenceIndex": 26.1,
+      "tokensPerSecond": 96,
+      "ttftSeconds": 1.48
     },
     {
       "id": "qwen/qwen3-235b-a22b-2507",
@@ -675,7 +828,10 @@
       "arenaModel": "Qwen3-235B-A22B-Instruct (2507)",
       "openWeights": true,
       "firstSeenDate": "2025-07-21",
-      "releaseDate": "2025-07-21"
+      "releaseDate": "2025-07-21",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 70.2,
+      "ttftSeconds": 1.18
     },
     {
       "id": "deepseek/deepseek-v3.2-exp",
@@ -688,7 +844,10 @@
       "arenaModel": "DeepSeek-V3.2-Exp",
       "openWeights": true,
       "firstSeenDate": "2025-09-29",
-      "releaseDate": "2025-09-29"
+      "releaseDate": "2025-09-29",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "deepseek/deepseek-r1-0528",
@@ -701,7 +860,10 @@
       "arenaModel": "DeepSeek-R1 (0528)",
       "openWeights": true,
       "firstSeenDate": "2025-05-28",
-      "releaseDate": "2025-05-28"
+      "releaseDate": "2025-05-28",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 166.1,
+      "ttftSeconds": 1.05
     },
     {
       "id": "deepseek/deepseek-chat-v3.1",
@@ -714,7 +876,10 @@
       "arenaModel": "DeepSeek-V3.1",
       "openWeights": true,
       "firstSeenDate": "2025-08-21",
-      "releaseDate": "2025-08-21"
+      "releaseDate": "2025-08-21",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 95.9,
+      "ttftSeconds": 1.32
     },
     {
       "id": "qwen/qwen3.5-122b-a10b",
@@ -727,7 +892,10 @@
       "arenaModel": "Qwen3.5-122B-A10B",
       "openWeights": true,
       "firstSeenDate": "2026-02-25",
-      "releaseDate": "2026-02-25"
+      "releaseDate": "2026-02-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 130.5,
+      "ttftSeconds": 2.23
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
@@ -740,7 +908,10 @@
       "arenaModel": "DeepSeek-V3.1-Terminus",
       "openWeights": true,
       "firstSeenDate": "2025-09-22",
-      "releaseDate": "2025-09-22"
+      "releaseDate": "2025-09-22",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "minimax/minimax-m2.7",
@@ -753,7 +924,10 @@
       "arenaModel": "MiniMax-M2.7",
       "openWeights": true,
       "firstSeenDate": "2026-03-18",
-      "releaseDate": "2026-03-18"
+      "releaseDate": "2026-03-18",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 54.4,
+      "ttftSeconds": 2.34
     },
     {
       "id": "openai/gpt-4.1",
@@ -766,7 +940,10 @@
       "arenaModel": "GPT-4.1 (2025-04-14)",
       "openWeights": false,
       "firstSeenDate": "2025-04-14",
-      "releaseDate": "2025-04-14"
+      "releaseDate": "2025-04-14",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 168.4,
+      "ttftSeconds": 1.68
     },
     {
       "id": "anthropic/claude-haiku-4.5",
@@ -779,7 +956,10 @@
       "arenaModel": "Claude Haiku 4.5 (20251001)",
       "openWeights": false,
       "firstSeenDate": "2025-10-15",
-      "releaseDate": "2025-10-15"
+      "releaseDate": "2025-10-15",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -792,7 +972,10 @@
       "arenaModel": "Qwen3-VL-235B-A22B-Instruct",
       "openWeights": true,
       "firstSeenDate": "2025-09-23",
-      "releaseDate": "2025-09-23"
+      "releaseDate": "2025-09-23",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 23.8,
+      "ttftSeconds": 1.42
     },
     {
       "id": "thinkingmachines/inkling-2-small",
@@ -805,7 +988,10 @@
       "arenaModel": "Inkling 2 Small",
       "openWeights": true,
       "firstSeenDate": "2026-11-09",
-      "releaseDate": "2026-11-09"
+      "releaseDate": "2026-11-09",
+      "aaIntelligenceIndex": 30.7,
+      "tokensPerSecond": 91,
+      "ttftSeconds": 2.3
     },
     {
       "id": "z-ai/glm-4.5",
@@ -818,7 +1004,10 @@
       "arenaModel": "GLM-4.5",
       "openWeights": true,
       "firstSeenDate": "2025-07-25",
-      "releaseDate": "2025-07-25"
+      "releaseDate": "2025-07-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "google/gemini-2.5-flash",
@@ -831,7 +1020,10 @@
       "arenaModel": "Gemini 2.5 Flash",
       "openWeights": false,
       "firstSeenDate": "2025-06-17",
-      "releaseDate": "2025-06-17"
+      "releaseDate": "2025-06-17",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 207,
+      "ttftSeconds": 0.41
     },
     {
       "id": "qwen/qwen3.5-27b",
@@ -844,7 +1036,10 @@
       "arenaModel": "Qwen3.5-27B",
       "openWeights": true,
       "firstSeenDate": "2026-02-25",
-      "releaseDate": "2026-02-25"
+      "releaseDate": "2026-02-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 23.8,
+      "ttftSeconds": 5.62
     },
     {
       "id": "thinkingmachines/inkling-small",
@@ -857,7 +1052,10 @@
       "arenaModel": "Inkling-Small",
       "openWeights": true,
       "firstSeenDate": "2026-07-30",
-      "releaseDate": "2026-07-30"
+      "releaseDate": "2026-07-30",
+      "aaIntelligenceIndex": 12.9,
+      "tokensPerSecond": 138.9,
+      "ttftSeconds": 2.18
     },
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -870,7 +1068,10 @@
       "arenaModel": "Qwen3-235B-A22B-Thinking (2507)",
       "openWeights": true,
       "firstSeenDate": "2025-07-25",
-      "releaseDate": "2025-07-25"
+      "releaseDate": "2025-07-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -883,7 +1084,10 @@
       "arenaModel": "Qwen3-Next-80B-A3B-Instruct",
       "openWeights": true,
       "firstSeenDate": "2025-09-11",
-      "releaseDate": "2025-09-11"
+      "releaseDate": "2025-09-11",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 133.4,
+      "ttftSeconds": 0.78
     },
     {
       "id": "qwen/qwen3.5-flash-02-23",
@@ -896,7 +1100,10 @@
       "arenaModel": "Qwen3.5-Flash",
       "openWeights": false,
       "firstSeenDate": "2026-02-25",
-      "releaseDate": "2026-02-25"
+      "releaseDate": "2026-02-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "deepseek/deepseek-chat-v3-0324",
@@ -909,7 +1116,10 @@
       "arenaModel": "DeepSeek-V3 (0324)",
       "openWeights": true,
       "firstSeenDate": "2025-03-24",
-      "releaseDate": "2025-03-24"
+      "releaseDate": "2025-03-24",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "qwen/qwen3.5-35b-a3b",
@@ -922,7 +1132,10 @@
       "arenaModel": "Qwen3.5-35B-A3B",
       "openWeights": true,
       "firstSeenDate": "2026-02-25",
-      "releaseDate": "2026-02-25"
+      "releaseDate": "2026-02-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 152.6,
+      "ttftSeconds": 1.99
     },
     {
       "id": "minimax/minimax-m2.5",
@@ -935,7 +1148,10 @@
       "arenaModel": "MiniMax-M2.5",
       "openWeights": true,
       "firstSeenDate": "2026-02-12",
-      "releaseDate": "2026-02-12"
+      "releaseDate": "2026-02-12",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 62.4,
+      "ttftSeconds": 2.22
     },
     {
       "id": "upstage/solar-pro4",
@@ -948,7 +1164,10 @@
       "arenaModel": "Solar Pro 4",
       "openWeights": false,
       "firstSeenDate": "2026-08-10",
-      "releaseDate": "2026-08-10"
+      "releaseDate": "2026-08-10",
+      "aaIntelligenceIndex": 14.2,
+      "tokensPerSecond": 85.5,
+      "ttftSeconds": 1.97
     },
     {
       "id": "openai/gpt-4.1-mini",
@@ -961,7 +1180,10 @@
       "arenaModel": "GPT-4.1 mini (2025-04-14)",
       "openWeights": false,
       "firstSeenDate": "2025-04-14",
-      "releaseDate": "2025-04-14"
+      "releaseDate": "2025-04-14",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 105.8,
+      "ttftSeconds": 1.53
     },
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -974,7 +1196,10 @@
       "arenaModel": "Qwen3-30B-A3B-Instruct (2507)",
       "openWeights": true,
       "firstSeenDate": "2025-07-29",
-      "releaseDate": "2025-07-29"
+      "releaseDate": "2025-07-29",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "z-ai/glm-4.6v",
@@ -987,7 +1212,10 @@
       "arenaModel": "GLM-4.6V",
       "openWeights": true,
       "firstSeenDate": "2025-12-08",
-      "releaseDate": "2025-12-08"
+      "releaseDate": "2025-12-08",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 74.6,
+      "ttftSeconds": 3.91
     },
     {
       "id": "z-ai/glm-4.5-air",
@@ -1000,7 +1228,10 @@
       "arenaModel": "GLM-4.5-Air",
       "openWeights": true,
       "firstSeenDate": "2025-07-25",
-      "releaseDate": "2025-07-25"
+      "releaseDate": "2025-07-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 79.9,
+      "ttftSeconds": 1.89
     },
     {
       "id": "thinkingmachines/inkling-2-mini",
@@ -1013,7 +1244,10 @@
       "arenaModel": "Inkling 2 Mini",
       "openWeights": true,
       "firstSeenDate": "2026-11-21",
-      "releaseDate": "2026-11-21"
+      "releaseDate": "2026-11-21",
+      "aaIntelligenceIndex": 20.1,
+      "tokensPerSecond": 140.4,
+      "ttftSeconds": 2.23
     },
     {
       "id": "google/gemma-3-27b-it",
@@ -1026,7 +1260,10 @@
       "arenaModel": "Gemma 3 27B IT",
       "openWeights": true,
       "firstSeenDate": "2025-03-12",
-      "releaseDate": "2025-03-12"
+      "releaseDate": "2025-03-12",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "z-ai/glm-4.7-flash",
@@ -1039,7 +1276,10 @@
       "arenaModel": "GLM-4.7-Flash",
       "openWeights": true,
       "firstSeenDate": "2026-01-19",
-      "releaseDate": "2026-01-19"
+      "releaseDate": "2026-01-19",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 112.6,
+      "ttftSeconds": 1.77
     },
     {
       "id": "deepseek/deepseek-chat",
@@ -1052,7 +1292,10 @@
       "arenaModel": "DeepSeek-V3",
       "openWeights": true,
       "firstSeenDate": "2024-12-26",
-      "releaseDate": "2024-12-26"
+      "releaseDate": "2024-12-26",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 55.6,
+      "ttftSeconds": 0.95
     },
     {
       "id": "cohere/command-a",
@@ -1065,7 +1308,10 @@
       "arenaModel": "Command A (03-2025)",
       "openWeights": true,
       "firstSeenDate": "2025-03-13",
-      "releaseDate": "2025-03-13"
+      "releaseDate": "2025-03-13",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 60.8,
+      "ttftSeconds": 1.72
     },
     {
       "id": "z-ai/glm-4.5v",
@@ -1078,7 +1324,10 @@
       "arenaModel": "GLM-4.5V",
       "openWeights": true,
       "firstSeenDate": "2025-08-11",
-      "releaseDate": "2025-08-11"
+      "releaseDate": "2025-08-11",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 37.2,
+      "ttftSeconds": 2.62
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -1091,7 +1340,10 @@
       "arenaModel": "gpt-oss-120b",
       "openWeights": true,
       "firstSeenDate": "2025-08-05",
-      "releaseDate": "2025-08-05"
+      "releaseDate": "2025-08-05",
+      "aaIntelligenceIndex": 3.8,
+      "tokensPerSecond": 242.3,
+      "ttftSeconds": 0.82
     },
     {
       "id": "qwen/qwen3-32b",
@@ -1104,7 +1356,10 @@
       "arenaModel": "Qwen3-32B",
       "openWeights": true,
       "firstSeenDate": "2025-04-28",
-      "releaseDate": "2025-04-28"
+      "releaseDate": "2025-04-28",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 63.5,
+      "ttftSeconds": 1.37
     },
     {
       "id": "openai/gpt-4o-2024-05-13",
@@ -1117,7 +1372,10 @@
       "arenaModel": "GPT-4o (2024-05-13)",
       "openWeights": false,
       "firstSeenDate": "2024-05-13",
-      "releaseDate": "2024-05-13"
+      "releaseDate": "2024-05-13",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 129.3,
+      "ttftSeconds": 1.83
     },
     {
       "id": "qwen/qwen-plus",
@@ -1130,7 +1388,10 @@
       "arenaModel": "Qwen-Plus (0125)",
       "openWeights": false,
       "firstSeenDate": "2025-02-01",
-      "releaseDate": "2025-02-01"
+      "releaseDate": "2025-02-01",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "google/gemma-3-12b-it",
@@ -1143,7 +1404,10 @@
       "arenaModel": "Gemma 3 12B IT",
       "openWeights": true,
       "firstSeenDate": "2025-03-13",
-      "releaseDate": "2025-03-13"
+      "releaseDate": "2025-03-13",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "openai/gpt-4o-2024-08-06",
@@ -1156,7 +1420,10 @@
       "arenaModel": "GPT-4o (2024-08-06)",
       "openWeights": false,
       "firstSeenDate": "2024-08-06",
-      "releaseDate": "2024-08-06"
+      "releaseDate": "2024-08-06",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 126,
+      "ttftSeconds": 1.68
     },
     {
       "id": "meta-llama/llama-4-maverick",
@@ -1169,7 +1436,10 @@
       "arenaModel": "Llama 4 Maverick 17B 128E Instruct",
       "openWeights": true,
       "firstSeenDate": "2025-04-05",
-      "releaseDate": "2025-04-05"
+      "releaseDate": "2025-04-05",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 183.6,
+      "ttftSeconds": 0.99
     },
     {
       "id": "qwen/qwen3-30b-a3b",
@@ -1182,7 +1452,10 @@
       "arenaModel": "Qwen3-30B-A3B",
       "openWeights": true,
       "firstSeenDate": "2025-04-28",
-      "releaseDate": "2025-04-28"
+      "releaseDate": "2025-04-28",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 81,
+      "ttftSeconds": 0.62
     },
     {
       "id": "openai/gpt-4.1-nano",
@@ -1195,7 +1468,10 @@
       "arenaModel": "GPT-4.1 nano (2025-04-14)",
       "openWeights": false,
       "firstSeenDate": "2025-04-14",
-      "releaseDate": "2025-04-14"
+      "releaseDate": "2025-04-14",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 329.3,
+      "ttftSeconds": 1.16
     },
     {
       "id": "meta-llama/llama-4-scout",
@@ -1208,7 +1484,10 @@
       "arenaModel": "Llama 4 Scout 17B 16E Instruct",
       "openWeights": true,
       "firstSeenDate": "2025-04-05",
-      "releaseDate": "2025-04-05"
+      "releaseDate": "2025-04-05",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 126.9,
+      "ttftSeconds": 0.75
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
@@ -1221,7 +1500,10 @@
       "arenaModel": "Llama 3.3 70B Instruct",
       "openWeights": true,
       "firstSeenDate": "2024-12-06",
-      "releaseDate": "2024-12-06"
+      "releaseDate": "2024-12-06",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "openai/gpt-4o-mini-2024-07-18",
@@ -1234,7 +1516,10 @@
       "arenaModel": "GPT-4o mini (2024-07-18)",
       "openWeights": false,
       "firstSeenDate": "2024-07-18",
-      "releaseDate": "2024-07-18"
+      "releaseDate": "2024-07-18",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 69.6,
+      "ttftSeconds": 1.89
     },
     {
       "id": "openai/gpt-4o-mini",
@@ -1247,7 +1532,10 @@
       "arenaModel": "GPT-4o mini (2024-07-18)",
       "openWeights": false,
       "firstSeenDate": "2024-07-18",
-      "releaseDate": "2024-07-18"
+      "releaseDate": "2024-07-18",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 69.6,
+      "ttftSeconds": 1.89
     },
     {
       "id": "openai/gpt-oss-20b",
@@ -1260,7 +1548,10 @@
       "arenaModel": "gpt-oss-20b",
       "openWeights": true,
       "firstSeenDate": "2025-08-05",
-      "releaseDate": "2025-08-05"
+      "releaseDate": "2025-08-05",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 124.5,
+      "ttftSeconds": 0.72
     },
     {
       "id": "google/gemma-3-4b-it",
@@ -1273,7 +1564,10 @@
       "arenaModel": "Gemma 3 4B IT",
       "openWeights": true,
       "firstSeenDate": "2025-03-13",
-      "releaseDate": "2025-03-13"
+      "releaseDate": "2025-03-13",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -1286,7 +1580,10 @@
       "arenaModel": "Qwen2.5-72B-Instruct",
       "openWeights": true,
       "firstSeenDate": "2024-09-19",
-      "releaseDate": "2024-09-19"
+      "releaseDate": "2024-09-19",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 32.2,
+      "ttftSeconds": 3.33
     },
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
@@ -1299,7 +1596,10 @@
       "arenaModel": "Mistral Small 3.1 24B Instruct (2503)",
       "openWeights": true,
       "firstSeenDate": "2025-03-17",
-      "releaseDate": "2025-03-17"
+      "releaseDate": "2025-03-17",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
@@ -1312,7 +1612,10 @@
       "arenaModel": "Llama 3.1 70B Instruct",
       "openWeights": true,
       "firstSeenDate": "2024-07-23",
-      "releaseDate": "2024-07-23"
+      "releaseDate": "2024-07-23",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -1325,7 +1628,10 @@
       "arenaModel": "Gemma 2 27B IT",
       "openWeights": true,
       "firstSeenDate": "2024-07-13",
-      "releaseDate": "2024-07-13"
+      "releaseDate": "2024-07-13",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "ibm-granite/granite-4.2-8b",
@@ -1338,7 +1644,10 @@
       "arenaModel": "Granite 4.2 8B",
       "openWeights": true,
       "firstSeenDate": "2026-08-31",
-      "releaseDate": "2026-08-31"
+      "releaseDate": "2026-08-31",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 88,
+      "ttftSeconds": 0.7
     },
     {
       "id": "cohere/command-r-plus-08-2024",
@@ -1351,7 +1660,10 @@
       "arenaModel": "Command R+ (08-2024)",
       "openWeights": true,
       "firstSeenDate": "2024-08-30",
-      "releaseDate": "2024-08-30"
+      "releaseDate": "2024-08-30",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "mistralai/mistral-small-24b-instruct-2501",
@@ -1364,7 +1676,10 @@
       "arenaModel": "Mistral Small 24B Instruct (2501)",
       "openWeights": true,
       "firstSeenDate": "2025-01-30",
-      "releaseDate": "2025-01-30"
+      "releaseDate": "2025-01-30",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 72.9,
+      "ttftSeconds": 0.87
     },
     {
       "id": "qwen/qwen-2.5-coder-32b-instruct",
@@ -1377,7 +1692,10 @@
       "arenaModel": "Qwen2.5-Coder-32B-Instruct",
       "openWeights": true,
       "firstSeenDate": "2024-11-11",
-      "releaseDate": "2024-11-11"
+      "releaseDate": "2024-11-11",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "microsoft/phi-4",
@@ -1390,7 +1708,10 @@
       "arenaModel": "Phi-4",
       "openWeights": true,
       "firstSeenDate": "2025-01-10",
-      "releaseDate": "2025-01-10"
+      "releaseDate": "2025-01-10",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": 41.9,
+      "ttftSeconds": 2.42
     },
     {
       "id": "cohere/command-r-08-2024",
@@ -1403,7 +1724,10 @@
       "arenaModel": "Command R (08-2024)",
       "openWeights": true,
       "firstSeenDate": "2024-08-30",
-      "releaseDate": "2024-08-30"
+      "releaseDate": "2024-08-30",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "meta-llama/llama-3.1-8b-instruct",
@@ -1416,7 +1740,10 @@
       "arenaModel": "Llama 3.1 8B Instruct",
       "openWeights": true,
       "firstSeenDate": "2024-07-23",
-      "releaseDate": "2024-07-23"
+      "releaseDate": "2024-07-23",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     },
     {
       "id": "meta-llama/llama-3.2-3b-instruct",
@@ -1429,7 +1756,10 @@
       "arenaModel": "Llama 3.2 3B Instruct",
       "openWeights": true,
       "firstSeenDate": "2024-09-25",
-      "releaseDate": "2024-09-25"
+      "releaseDate": "2024-09-25",
+      "aaIntelligenceIndex": null,
+      "tokensPerSecond": null,
+      "ttftSeconds": null
     }
   ]
 }

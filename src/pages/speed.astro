@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SpeedIntelligenceChart from "../components/SpeedIntelligenceChart";
+import { loadMeta, loadSpeedIntelligence } from "../lib/data";
+
+const meta = loadMeta();
+const data = loadSpeedIntelligence();
+---
+
+<BaseLayout
+  title="Speed & Intelligence"
+  description="Output tokens/sec, time to first token, and Artificial Analysis Intelligence Index v5."
+  lastUpdated={meta.lastUpdated}
+>
+  <div class="grid gap-8">
+    <header class="space-y-2">
+      <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+        Artificial Analysis API v2 · Speed, Latency &amp; Intelligence Index v5
+      </p>
+      <h1 class="m-0 text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-[-0.025em]">
+        Speed &amp; Intelligence
+      </h1>
+    </header>
+
+    <SpeedIntelligenceChart client:load data={data} />
+  </div>
+</BaseLayout>

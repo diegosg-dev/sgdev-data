@@ -4,11 +4,13 @@ export interface SiteMeta {
   arenaPublishDate: string | null;
   snapshotCount: number;
   matchedCount: number;
+  aaCount?: number;
   arenaHistoryDates: number;
   providerSpreadModels: number;
   sources: {
     prices: { name: string; url: string };
     quality: { name: string; url: string; license: string };
+    speedAndIntelligence?: { name: string; url: string };
   };
 }
 
@@ -24,6 +26,31 @@ export interface FrontierModel {
   openWeights: boolean;
   firstSeenDate: string;
   releaseDate: string;
+  aaIntelligenceIndex?: number | null;
+  tokensPerSecond?: number | null;
+  ttftSeconds?: number | null;
+}
+
+export interface SpeedIntelligenceModel {
+  id: string;
+  slug: string;
+  name: string;
+  creator: string;
+  releaseDate: string | null;
+  intelligenceIndex: number | null;
+  codingIndex: number | null;
+  agenticIndex: number | null;
+  inputPrice: number | null;
+  outputPrice: number | null;
+  blended: number | null;
+  tokensPerSecond: number | null;
+  ttftSeconds: number | null;
+  e2eSeconds: number | null;
+}
+
+export interface SpeedIntelligenceData {
+  snapshotDate: string;
+  models: SpeedIntelligenceModel[];
 }
 
 export interface FrontierData {

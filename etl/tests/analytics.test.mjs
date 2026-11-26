@@ -36,4 +36,13 @@ test("exported static JSON files satisfy schema invariants", () => {
     assert.ok(pm.quotes.length >= 2);
     assert.ok(pm.maxBlended >= pm.minBlended);
   }
+
+  const speedIntel = JSON.parse(
+    fs.readFileSync(path.join(DATA_DIR, "speed-intelligence.json"), "utf8"),
+  );
+  assert.ok(speedIntel.models.length > 0, "expected Artificial Analysis speed/intelligence models");
+  for (const sm of speedIntel.models) {
+    assert.ok(typeof sm.slug === "string" && sm.slug.length > 0);
+    assert.ok(sm.intelligenceIndex != null || sm.tokensPerSecond != null);
+  }
 });

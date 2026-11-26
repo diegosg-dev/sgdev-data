@@ -67,6 +67,28 @@ CREATE TABLE IF NOT EXISTS provider_quotes (
 
 CREATE INDEX IF NOT EXISTS idx_provider_quotes_date_model
   ON provider_quotes (snapshot_date, model_id);
+
+CREATE TABLE IF NOT EXISTS aa_snapshots (
+  snapshot_date TEXT NOT NULL,
+  aa_id TEXT NOT NULL,
+  slug TEXT NOT NULL,
+  name TEXT NOT NULL,
+  creator TEXT NOT NULL,
+  release_date TEXT,
+  intelligence_index REAL,
+  coding_index REAL,
+  agentic_index REAL,
+  input_price REAL,
+  output_price REAL,
+  cache_hit_price REAL,
+  tokens_per_second REAL,
+  ttft_seconds REAL,
+  e2e_seconds REAL,
+  PRIMARY KEY (snapshot_date, aa_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_aa_snapshots_date_slug
+  ON aa_snapshots (snapshot_date, slug);
 `;
 
 export function openDb(dbPath) {

@@ -7,11 +7,13 @@ services:
       - "8080:8080"
     restart: unless-stopped
 
-  # Weekly ETL: fetch OpenRouter + LMArena, write SQLite + JSON.
+  # Weekly ETL: fetch OpenRouter + LMArena + Artificial Analysis, write SQLite + JSON.
   etl:
     build:
       context: .
       target: etl
+    environment:
+      - AA_API_KEY=${AA_API_KEY:-}
     volumes:
       - ./data:/app/data
       - ./public/data:/app/public/data
@@ -28,6 +30,7 @@ services:
       - ./public/data:/app/public/data
     environment:
       - ETL_INTERVAL_SECONDS=604800
+      - AA_API_KEY=${AA_API_KEY:-}
     entrypoint: ["/bin/sh", "-c"]
     command:
       - |

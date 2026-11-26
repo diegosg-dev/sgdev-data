@@ -1,9 +1,10 @@
 {
-  "lastUpdated": "2026-11-26T11:13:41.404Z",
+  "lastUpdated": "2026-11-26T11:44:40.294Z",
   "snapshotDate": "2026-11-26",
   "arenaPublishDate": "2026-11-22",
   "snapshotCount": 1,
   "matchedCount": 110,
+  "aaCount": 410,
   "arenaHistoryDates": 200,
   "providerSpreadModels": 21,
   "sources": {
@@ -15,6 +16,10 @@
       "name": "LMArena leaderboard dataset",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "license": "CC BY 4.0"
+    },
+    "speedAndIntelligence": {
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai"
     }
   }
 }

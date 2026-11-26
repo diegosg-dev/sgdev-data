@@ -9,8 +9,7 @@ Static Astro site + weekly ETL. Runs in Docker behind Caddy (e.g. `llm.sgdev.es`
 - **Astro** (static-first) + TypeScript + Tailwind + React islands
 - **Charts:** Observable Plot (M4+)
 - **Data:** SQLite via ETL → static JSON at build time (no DB server)
-- **Sources:** [OpenRouter](https://openrouter.ai) models API · [LMArena leaderboard dataset](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset) (CC BY 4.0)
-- **Not used:** Artificial Analysis (licence forbids public dashboards)
+- **Sources:** [OpenRouter](https://openrouter.ai) models API · [LMArena leaderboard dataset](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset) (CC BY 4.0) · [Artificial Analysis](https://artificialanalysis.ai) API v2 (`AA_API_KEY`)
 
 ## One-command deploy
 

@@ -12,6 +12,7 @@ import {
 import { matchModels } from "./matcher.mjs";
 import { fetchOpenRouterModels, fetchProviderEndpoints } from "./fetch-openrouter.mjs";
 import { fetchLmArenaHistory, fetchLmArenaLatest } from "./fetch-lmarena.mjs";
+import { fetchArtificialAnalysisModels } from "./fetch-aa.mjs";
 import { exportStaticJson } from "./export-json.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -75,6 +76,7 @@ export async function runEtl(options = {}) {
     let openRouterModels;
     let arenaLatest;
     let arenaHistory = [];
+    let aaModels = [];
     let endpointsByModel = new Map();
 
     if (opts.fixture) {
@@ -96,12 +98,25 @@ export async function runEtl(options = {}) {
           endpointsByModel.set(k, v);
         }
       }
+      const aaPath = path.join(fixtureDir, "aa-models.json");
+      if (fs.existsSync(aaPath)) {
+        aaModels = JSON.parse(fs.readFileSync(aaPath, "utf8"));
+      }
     } else {
-      console.log("Fetching OpenRouter models and LMArena text_style_control latest...");
-      [openRouterModels, arenaLatest] = await Promise.all([
+      console.log("Fetching OpenRouter models, LMArena latest, and Artificial Analysis API v2...");
+      const [orRes, arenaRes, aaRes] = await Promise.all([
         fetchOpenRouterModels(),
         fetchLmArenaLatest(),
+        fetchArtificialAnalysisModels({ apiKey: opts.aaApiKey }),
       ]);
+      openRouterModels = orRes;
+      arenaLatest = arenaRes;
+      aaModels = aaRes.models;
+      if (aaRes.skipped) {
+        console.log("Artificial Analysis skipped (AA_API_KEY not set).");
+      } else {
+        console.log(`Fetched ${aaModels.length} Artificial Analysis models (v${aaRes.intelligenceIndexVersion}).`);
+      }
       if (!opts.skipHistory) {
         console.log("Fetching LMArena text_style_control full history...");
         arenaHistory = await fetchLmArenaHistory();
@@ -194,6 +209,29 @@ export async function runEtl(options = {}) {
         context_length = excluded.context_length
     `);
 
+    const insertAa = db.prepare(`
+      INSERT INTO aa_snapshots (
+        snapshot_date, aa_id, slug, name, creator, release_date,
+        intelligence_index, coding_index, agentic_index,
+        input_price, output_price, cache_hit_price,
+        tokens_per_second, ttft_seconds, e2e_seconds
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(snapshot_date, aa_id) DO UPDATE SET
+        slug = excluded.slug,
+        name = excluded.name,
+        creator = excluded.creator,
+        release_date = excluded.release_date,
+        intelligence_index = excluded.intelligence_index,
+        coding_index = excluded.coding_index,
+        agentic_index = excluded.agentic_index,
+        input_price = excluded.input_price,
+        output_price = excluded.output_price,
+        cache_hit_price = excluded.cache_hit_price,
+        tokens_per_second = excluded.tokens_per_second,
+        ttft_seconds = excluded.ttft_seconds,
+        e2e_seconds = excluded.e2e_seconds
+    `);
+
     const tx = db.transaction(() => {
       let validMatched = 0;
       for (const { openRouter, arena, matchMethod } of matched) {
@@ -283,6 +321,42 @@ export async function runEtl(options = {}) {
             ep.context_length ?? null,
           );
         }
+      }
+
+      for (const m of aaModels) {
+        if (!m?.id || !m?.slug || !m?.name) continue;
+        const evals = m.evaluations || {};
+        const pricing = m.pricing || {};
+        const perf = m.performance || {};
+        insertAa.run(
+          opts.snapshotDate,
+          String(m.id),
+          String(m.slug),
+          String(m.name),
+          String(m.model_creator?.name || "Unknown"),
+          m.release_date ? String(m.release_date).slice(0, 10) : null,
+          evals.artificial_analysis_intelligence_index != null
+            ? Number(evals.artificial_analysis_intelligence_index)
+            : null,
+          evals.artificial_analysis_coding_index != null
+            ? Number(evals.artificial_analysis_coding_index)
+            : null,
+          evals.artificial_analysis_agentic_index != null
+            ? Number(evals.artificial_analysis_agentic_index)
+            : null,
+          pricing.price_1m_input_tokens != null ? Number(pricing.price_1m_input_tokens) : null,
+          pricing.price_1m_output_tokens != null ? Number(pricing.price_1m_output_tokens) : null,
+          pricing.price_1m_cache_hit_tokens != null ? Number(pricing.price_1m_cache_hit_tokens) : null,
+          perf.median_output_tokens_per_second != null
+            ? Number(perf.median_output_tokens_per_second)
+            : null,
+          perf.median_time_to_first_token_seconds != null
+            ? Number(perf.median_time_to_first_token_seconds)
+            : null,
+          perf.median_end_to_end_response_time_seconds != null
+            ? Number(perf.median_end_to_end_response_time_seconds)
+            : null,
+        );
       }
     });
 

@@ -409,7 +409,15 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
                       `Blended (${ratio}:1): ${formatPricePerM(d.blended)} / 1M`,
                       `In / Out: ${formatPricePerM(d.inputPrice)} / ${formatPricePerM(d.outputPrice)}`,
                       `Context: ${formatContext(d.contextLength)}`,
-                    ].join("\n"),
+                      d.aaIntelligenceIndex != null
+                        ? `AA Index v5: ${d.aaIntelligenceIndex.toFixed(1)}`
+                        : null,
+                      d.tokensPerSecond != null
+                        ? `Speed: ${d.tokensPerSecond.toFixed(1)} tok/s${d.ttftSeconds != null ? ` · TTFT ${d.ttftSeconds.toFixed(2)}s` : ""}`
+                        : null,
+                    ]
+                      .filter(Boolean)
+                      .join("\n"),
                 }),
               ),
             ],

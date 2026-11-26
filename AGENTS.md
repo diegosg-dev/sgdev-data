@@ -13,10 +13,10 @@ Background server helpers from Astro: `astro dev --background`, `astro dev stop`
 
 ### Rules
 
-- Never hand-type numeric data — every value from OpenRouter or LMArena.
-- Never use Artificial Analysis data.
+- Never hand-type numeric data — every value from OpenRouter, LMArena, or Artificial Analysis.
 - Credit sources on every page (footer + chart source lines).
-- Do not expose the raw OpenRouter catalog as a public API.
+- Do not expose the raw OpenRouter or Artificial Analysis catalog as a public API.
+- Never commit API keys (`AA_API_KEY` / `ARTIFICIAL_ANALYSIS_API_KEY`).
 - Prefer Observable Plot for charts; keep Terminal Editorial tokens.
 - Build milestone-by-milestone with commits; wait for OK between milestones unless told otherwise.
 

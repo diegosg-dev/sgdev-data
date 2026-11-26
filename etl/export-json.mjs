@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { canonicalizeModelKey, stripDateSuffix } from "./normalize.mjs";
 
 function round(n, digits = 4) {
   const f = 10 ** digits;
@@ -38,6 +39,69 @@ export function exportStaticJson(db, outDir) {
   const latestDate = latestSnap.snapshot_date;
   const prevDate = allSnaps.length >= 2 ? allSnaps[allSnaps.length - 2] : null;
 
+  // 0. Artificial Analysis latest snapshot (for speed/intelligence page + optional frontier enrichment)
+  const aaRows = db
+    .prepare(
+      `SELECT aa_id, slug, name, creator, release_date,
+              intelligence_index, coding_index, agentic_index,
+              input_price, output_price, cache_hit_price,
+              tokens_per_second, ttft_seconds, e2e_seconds
+       FROM aa_snapshots
+       WHERE snapshot_date = ?
+       ORDER BY intelligence_index DESC NULLS LAST, tokens_per_second DESC NULLS LAST`,
+    )
+    .all(latestDate);
+
+  const aaByCanonical = new Map();
+  for (const r of aaRows) {
+    const keys = [
+      canonicalizeModelKey(r.slug),
+      canonicalizeModelKey(r.name),
+      stripDateSuffix(canonicalizeModelKey(r.slug)),
+    ].filter(Boolean);
+    for (const k of keys) {
+      if (!aaByCanonical.has(k)) aaByCanonical.set(k, r);
+    }
+  }
+
+  function findAaMatch(modelId, modelName) {
+    const keys = [
+      canonicalizeModelKey(modelId),
+      stripDateSuffix(canonicalizeModelKey(modelId)),
+      canonicalizeModelKey(String(modelName || "").replace(/^[^:]+:\s*/, "")),
+    ].filter(Boolean);
+    for (const k of keys) {
+      if (aaByCanonical.has(k)) return aaByCanonical.get(k);
+    }
+    return null;
+  }
+
+  const speedIntelligenceModels = aaRows
+    .filter(
+      (r) =>
+        (r.intelligence_index != null && r.intelligence_index > 0) ||
+        (r.tokens_per_second != null && r.tokens_per_second > 0),
+    )
+    .map((r) => ({
+      id: r.aa_id,
+      slug: r.slug,
+      name: r.name,
+      creator: r.creator,
+      releaseDate: r.release_date,
+      intelligenceIndex: r.intelligence_index != null ? round(r.intelligence_index, 1) : null,
+      codingIndex: r.coding_index != null ? round(r.coding_index, 1) : null,
+      agenticIndex: r.agentic_index != null ? round(r.agentic_index, 1) : null,
+      inputPrice: r.input_price != null ? round(r.input_price, 6) : null,
+      outputPrice: r.output_price != null ? round(r.output_price, 6) : null,
+      blended:
+        r.input_price != null && r.output_price != null
+          ? round(blendedPrice(r.input_price, r.output_price, 3), 6)
+          : null,
+      tokensPerSecond: r.tokens_per_second != null ? round(r.tokens_per_second, 1) : null,
+      ttftSeconds: r.ttft_seconds != null ? round(r.ttft_seconds, 2) : null,
+      e2eSeconds: r.e2e_seconds != null ? round(r.e2e_seconds, 2) : null,
+    }));
+
   // 1. Frontier: matched models with positive/valid pricing and Arena score on latest snapshot
   const latestMatched = db
     .prepare(
@@ -51,21 +115,29 @@ export function exportStaticJson(db, outDir) {
        ORDER BY arena_score DESC`,
     )
     .all(latestDate)
-    .map((r) => ({
-      id: r.model_id,
-      name: r.model_name,
-      provider: r.provider,
-      inputPrice: round(r.input_price, 6),
-      outputPrice: round(r.output_price, 6),
-      contextLength: r.context_length ?? 0,
-      arenaScore: round(r.arena_score, 1),
-      arenaModel: r.arena_model,
-      openWeights: Boolean(r.open_weights),
-      firstSeenDate: r.first_seen_date,
-      releaseDate: r.source_created_at
-        ? new Date(r.source_created_at * 1000).toISOString().slice(0, 10)
-        : r.first_seen_date,
-    }));
+    .map((r) => {
+      const aa = findAaMatch(r.model_id, r.model_name);
+      return {
+        id: r.model_id,
+        name: r.model_name,
+        provider: r.provider,
+        inputPrice: round(r.input_price, 6),
+        outputPrice: round(r.output_price, 6),
+        contextLength: r.context_length ?? 0,
+        arenaScore: round(r.arena_score, 1),
+        arenaModel: r.arena_model,
+        openWeights: Boolean(r.open_weights),
+        firstSeenDate: r.first_seen_date,
+        releaseDate: r.source_created_at
+          ? new Date(r.source_created_at * 1000).toISOString().slice(0, 10)
+          : r.first_seen_date,
+        aaIntelligenceIndex:
+          aa?.intelligence_index != null ? round(aa.intelligence_index, 1) : null,
+        tokensPerSecond:
+          aa?.tokens_per_second != null ? round(aa.tokens_per_second, 1) : null,
+        ttftSeconds: aa?.ttft_seconds != null ? round(aa.ttft_seconds, 2) : null,
+      };
+    });
 
   // 2. Prices history: per-model dated snapshots + cheapest price for score >= threshold
   const thresholds = [1250, 1300, 1350, 1400, 1450];
@@ -323,6 +395,7 @@ export function exportStaticJson(db, outDir) {
     arenaPublishDate: latestSnap.arena_publish_date,
     snapshotCount: allSnaps.length,
     matchedCount: latestMatched.length,
+    aaCount: speedIntelligenceModels.length,
     arenaHistoryDates: openVsClosedSeries.length,
     providerSpreadModels: providerSpreads.length,
     sources: {
@@ -332,6 +405,10 @@ export function exportStaticJson(db, outDir) {
         url: "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
         license: "CC BY 4.0",
       },
+      speedAndIntelligence: {
+        name: "Artificial Analysis",
+        url: "https://artificialanalysis.ai",
+      },
     },
   };
 
@@ -340,6 +417,10 @@ export function exportStaticJson(db, outDir) {
     "frontier.json": {
       snapshotDate: latestDate,
       models: latestMatched,
+    },
+    "speed-intelligence.json": {
+      snapshotDate: latestDate,
+      models: speedIntelligenceModels,
     },
     "prices-history.json": {
       snapshotDates: allSnaps,

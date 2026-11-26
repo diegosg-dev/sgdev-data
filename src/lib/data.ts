@@ -7,6 +7,7 @@ import type {
   PricesHistoryData,
   ProvidersData,
   SiteMeta,
+  SpeedIntelligenceData,
   TimelineData,
 } from "./schema";
 
@@ -43,4 +44,8 @@ export function loadTimeline(): TimelineData {
 
 export function loadMovers(): MoversData {
   return readJson<MoversData>("movers.json");
+}
+
+export function loadSpeedIntelligence(): SpeedIntelligenceData {
+  return readJson<SpeedIntelligenceData>("speed-intelligence.json");
 }
