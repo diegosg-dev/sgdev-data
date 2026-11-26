@@ -1,27 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ChartShell from "../components/ChartShell.astro";
+import ProvidersChart from "../components/ProvidersChart";
+import { loadMeta, loadProviders } from "../lib/data";
+
+const meta = loadMeta();
+const data = loadProviders();
 ---
 
 <BaseLayout
   title="Provider spread"
-  description="Same open model, different providers — price ranges across OpenRouter."
+  description="Same open-weights LLM priced across inference providers on OpenRouter."
+  lastUpdated={meta.lastUpdated}
 >
-  <div class="grid gap-10">
+  <div class="grid gap-8">
     <header class="space-y-2">
-      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+      <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+        Inference market · Open-weights pricing
+      </p>
+      <h1 class="m-0 text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-[-0.025em]">
         Provider spread
       </h1>
-      <p class="m-0 text-[var(--muted)] max-w-2xl">
-        Range/dot plot of the same open model priced across providers.
-      </p>
     </header>
 
-    <ChartShell
-      takeaway="Identical weights, different invoices — shop the range before you lock in."
-      keyNumber="—"
-      keyNumberLabel="Widest spread"
-      source="Source: OpenRouter (openrouter.ai)"
-    />
+    <ProvidersChart client:load data={data} />
   </div>
 </BaseLayout>

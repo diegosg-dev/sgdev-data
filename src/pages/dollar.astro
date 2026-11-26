@@ -1,28 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ChartShell from "../components/ChartShell.astro";
+import DollarBuysChart from "../components/DollarBuysChart";
+import { loadFrontier, loadMeta } from "../lib/data";
+
+const meta = loadMeta();
+const frontierData = loadFrontier();
 ---
 
 <BaseLayout
-  title="What $1 buys"
-  description="Tokens and task counts per model for preset workloads."
+  title="What $1 buys you"
+  description="Tokens and task counts per $1 USD across LLM models for preset workloads."
+  lastUpdated={meta.lastUpdated}
 >
-  <div class="grid gap-10">
+  <div class="grid gap-8">
     <header class="space-y-2">
-      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+      <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+        Unit economics · Preset workloads
+      </p>
+      <h1 class="m-0 text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-[-0.025em]">
         What $1 buys you
       </h1>
-      <p class="m-0 text-[var(--muted)] max-w-2xl">
-        Convert list prices into tokens and estimated task runs for chat, coding,
-        summarise-PDF, and agent-loop presets.
-      </p>
     </header>
 
-    <ChartShell
-      takeaway="One dollar stretches further on models that sit below the frontier tax."
-      keyNumber="—"
-      keyNumberLabel="Best tokens / $"
-      source="Source: OpenRouter prices · task presets (SGDev)"
-    />
+    <DollarBuysChart client:load frontierData={frontierData} />
   </div>
 </BaseLayout>

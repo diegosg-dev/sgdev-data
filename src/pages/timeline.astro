@@ -1,28 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ChartShell from "../components/ChartShell.astro";
+import TimelineChart from "../components/TimelineChart";
+import { loadMeta, loadTimeline } from "../lib/data";
+
+const meta = loadMeta();
+const data = loadTimeline();
 ---
 
 <BaseLayout
   title="Release & context timeline"
-  description="Models by first-seen date and context window growth."
+  description="Models by release date and context window growth over time."
+  lastUpdated={meta.lastUpdated}
 >
-  <div class="grid gap-10">
+  <div class="grid gap-8">
     <header class="space-y-2">
-      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+      <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+        Release cadence · Context growth
+      </p>
+      <h1 class="m-0 text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-[-0.025em]">
         Release &amp; context timeline
       </h1>
-      <p class="m-0 text-[var(--muted)] max-w-2xl">
-        First-seen dates from our snapshots, plotted against reported context
-        window size.
-      </p>
     </header>
 
-    <ChartShell
-      takeaway="Context windows keep climbing; watch when new models first enter our feed."
-      keyNumber="—"
-      keyNumberLabel="Largest context"
-      source="Source: OpenRouter context fields · SGDev first-seen"
-    />
+    <TimelineChart client:load data={data} />
   </div>
 </BaseLayout>

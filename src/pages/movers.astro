@@ -1,28 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ChartShell from "../components/ChartShell.astro";
+import MoversView from "../components/MoversView";
+import { loadMeta, loadMovers } from "../lib/data";
+
+const meta = loadMeta();
+const data = loadMovers();
 ---
 
 <BaseLayout
   title="Movers"
-  description="Biggest price drops and new entrants since the last snapshot."
+  description="Biggest LLM price drops, increases, and new entrants since the previous snapshot."
+  lastUpdated={meta.lastUpdated}
 >
-  <div class="grid gap-10">
+  <div class="grid gap-8">
     <header class="space-y-2">
-      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+      <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+        Weekly delta · Price drops &amp; new entrants
+      </p>
+      <h1 class="m-0 text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-[-0.025em]">
         Movers
       </h1>
-      <p class="m-0 text-[var(--muted)] max-w-2xl">
-        Week-over-week price drops (signal green) and increases (danger red),
-        plus models that appeared for the first time.
-      </p>
     </header>
 
-    <ChartShell
-      takeaway="The loudest cuts and the newest names since the previous snapshot."
-      keyNumber="—"
-      keyNumberLabel="Biggest drop"
-      source="Source: OpenRouter weekly snapshots (SGDev)"
-    />
+    <MoversView client:load data={data} />
   </div>
 </BaseLayout>

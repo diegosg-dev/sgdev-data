@@ -1,28 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ChartShell from "../components/ChartShell.astro";
+import OpenVsClosedChart from "../components/OpenVsClosedChart";
+import { loadMeta, loadOpenVsClosed } from "../lib/data";
+
+const meta = loadMeta();
+const data = loadOpenVsClosed();
 ---
 
 <BaseLayout
   title="Open vs closed"
-  description="Best open-weights vs best closed Arena scores over time."
+  description="Best open-weights vs best closed LMArena score over time."
+  lastUpdated={meta.lastUpdated}
 >
-  <div class="grid gap-10">
+  <div class="grid gap-8">
     <header class="space-y-2">
-      <h1 class="m-0 text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.02em]">
+      <p class="font-mono m-0 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+        Quality gap · Backfilled from LMArena history
+      </p>
+      <h1 class="m-0 text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-[-0.025em]">
         Open vs closed gap
       </h1>
-      <p class="m-0 text-[var(--muted)] max-w-2xl">
-        Best open-weights Arena score versus best closed model — how fast the
-        gap is closing.
-      </p>
     </header>
 
-    <ChartShell
-      takeaway="Amber leads when open weights catch up; electric blue when closed still dominate."
-      keyNumber="—"
-      keyNumberLabel="Current gap (Arena)"
-      source="Source: LMArena style-control overall (CC BY 4.0)"
-    />
+    <OpenVsClosedChart client:load data={data} />
   </div>
 </BaseLayout>
