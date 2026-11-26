@@ -1,4 +1,9 @@
-:80 {
+{
+	admin off
+	auto_https off
+}
+
+:8080 {
 	root * /srv
 	encode gzip zstd
 	file_server
