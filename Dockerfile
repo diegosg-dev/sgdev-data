@@ -3,6 +3,9 @@
 # --- deps ---
 FROM node:22-bookworm-slim AS deps
 WORKDIR /app
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends python3 make g++ \
+  && rm -rf /var/lib/apt/lists/*
 COPY package.json package-lock.json ./
 RUN npm ci
 
@@ -12,14 +15,11 @@ WORKDIR /app
 COPY . .
 RUN npm run build
 
-# --- ETL runner (weekly cron via compose; implemented in M2) ---
+# --- ETL runner (weekly cron via compose) ---
 FROM deps AS etl
 WORKDIR /app
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends python3 \
-  && rm -rf /var/lib/apt/lists/*
 COPY . .
-CMD ["npm", "run", "etl:help"]
+CMD ["npm", "run", "etl"]
 
 # --- production static site (default target for plain `docker build`) ---
 FROM caddy:2.10-alpine AS web
