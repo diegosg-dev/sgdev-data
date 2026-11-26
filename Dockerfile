@@ -23,6 +23,8 @@ CMD ["npm", "run", "etl:help"]
 
 # --- production static site (default target for plain `docker build`) ---
 FROM caddy:2.10-alpine AS web
+# Clear file capabilities so Caddy executes cleanly under cap_drop: ALL (binds unprivileged :8080)
+RUN setcap -r /usr/bin/caddy
 COPY Caddyfile /etc/caddy/Caddyfile
 COPY --from=build /app/dist /srv
 EXPOSE 8080
