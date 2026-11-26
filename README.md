@@ -36,29 +36,38 @@ npm run build && npm run preview
 ### ETL (weekly)
 
 ```bash
-# Stub until Milestone 2
-npm run etl:help
+# Fetch live OpenRouter + LMArena data, update SQLite, export static JSON
+npm run etl
 
-# Compose profile (after M2)
+# Run offline against real-shape fixtures
+npm run etl:fixture
+
+# Re-export static JSON from existing data/sgdev.sqlite
+npm run etl:export
+
+# Run ETL & schema tests
+npm test
+
+# Compose profile (one-off run in container)
 docker compose --profile etl run --rm etl
 ```
 
-The `etl-cron` service is included in the default compose stack and will run the weekly snapshot once the pipeline lands.
+The `etl-cron` service is included in the default compose stack and runs `npm run etl` on a weekly loop.
 
 ## Design: Terminal Editorial
 
-Dark by default (`#0B0D10` / `#13161B`), signal green / electric blue / amber accents, Inter + JetBrains Mono, light-mode toggle.
+Dark by default (`#0B0D10` / `#13161B`), signal green / electric blue / amber accents, Inter + JetBrains Mono, light-mode toggle. Every chart includes a one-sentence editorial takeaway, a single key number, a source line, and a **Copy as image** button. The **Good-Enough Finder** supports shareable permalinks and **1200×675 PNG** share card exports.
 
 ## Roadmap
 
 | Milestone | Status |
 |-----------|--------|
-| **M1** Scaffold, design system, Docker, Caddy, README | ← you are here |
-| **M2** ETL + matching + fixtures + tests | |
-| **M3** JSON export + typed schema | |
-| **M4** Frontier scatter + Good-Enough Finder | |
-| **M5** Remaining charts | |
-| **M6** Share cards, polish, Lighthouse | |
+| **M1** Scaffold, design system, Docker, Caddy, README | Done |
+| **M2** ETL + matching + fixtures + tests | Done |
+| **M3** JSON export + typed schema + analytics | Done |
+| **M4** Frontier scatter + Good-Enough Finder + share cards | Done |
+| **M5** Remaining charts (Prices, Open vs Closed, Providers, $1 Buys, Timeline, Movers) | Done |
+| **M6** Polish, accessibility, tests, live deploy | Done |
 
 ## Licence notes
 

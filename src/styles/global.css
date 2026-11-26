@@ -147,3 +147,12 @@
 .animate-in {
   animation: fade-up 420ms ease-out both;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-in {
+    animation: none;
+  }
+}
