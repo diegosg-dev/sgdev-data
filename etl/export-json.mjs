@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { canonicalizeModelKey, stripDateSuffix } from "./normalize.mjs";
+import { stripEffortSuffix } from "./matcher.mjs";
 
 function round(n, digits = 4) {
   const f = 10 ** digits;
@@ -44,8 +45,10 @@ export function exportStaticJson(db, outDir) {
     .prepare(
       `SELECT aa_id, slug, name, creator, release_date,
               intelligence_index, coding_index, agentic_index,
-              input_price, output_price, cache_hit_price,
-              tokens_per_second, ttft_seconds, e2e_seconds
+              engineering_index, economics_index, finance_index,
+              strategy_index, legal_index, healthcare_index,
+              cost_per_task_usd, input_price, output_price, cache_hit_price,
+              tokens_per_second, ttft_seconds, ttfa_seconds, e2e_seconds
        FROM aa_snapshots
        WHERE snapshot_date = ?
        ORDER BY intelligence_index DESC NULLS LAST, tokens_per_second DESC NULLS LAST`,
@@ -58,6 +61,8 @@ export function exportStaticJson(db, outDir) {
       canonicalizeModelKey(r.slug),
       canonicalizeModelKey(r.name),
       stripDateSuffix(canonicalizeModelKey(r.slug)),
+      stripDateSuffix(stripEffortSuffix(canonicalizeModelKey(r.slug))),
+      stripDateSuffix(stripEffortSuffix(canonicalizeModelKey(r.name))),
     ].filter(Boolean);
     for (const k of keys) {
       if (!aaByCanonical.has(k)) aaByCanonical.set(k, r);
@@ -68,7 +73,11 @@ export function exportStaticJson(db, outDir) {
     const keys = [
       canonicalizeModelKey(modelId),
       stripDateSuffix(canonicalizeModelKey(modelId)),
+      stripDateSuffix(stripEffortSuffix(canonicalizeModelKey(modelId))),
       canonicalizeModelKey(String(modelName || "").replace(/^[^:]+:\s*/, "")),
+      stripDateSuffix(
+        stripEffortSuffix(canonicalizeModelKey(String(modelName || "").replace(/^[^:]+:\s*/, ""))),
+      ),
     ].filter(Boolean);
     for (const k of keys) {
       if (aaByCanonical.has(k)) return aaByCanonical.get(k);
@@ -80,7 +89,8 @@ export function exportStaticJson(db, outDir) {
     .filter(
       (r) =>
         (r.intelligence_index != null && r.intelligence_index > 0) ||
-        (r.tokens_per_second != null && r.tokens_per_second > 0),
+        (r.tokens_per_second != null && r.tokens_per_second > 0) ||
+        (r.e2e_seconds != null && r.e2e_seconds > 0),
     )
     .map((r) => ({
       id: r.aa_id,
@@ -91,6 +101,13 @@ export function exportStaticJson(db, outDir) {
       intelligenceIndex: r.intelligence_index != null ? round(r.intelligence_index, 1) : null,
       codingIndex: r.coding_index != null ? round(r.coding_index, 1) : null,
       agenticIndex: r.agentic_index != null ? round(r.agentic_index, 1) : null,
+      engineeringIndex: r.engineering_index != null ? round(r.engineering_index, 1) : null,
+      economicsIndex: r.economics_index != null ? round(r.economics_index, 1) : null,
+      financeIndex: r.finance_index != null ? round(r.finance_index, 1) : null,
+      strategyIndex: r.strategy_index != null ? round(r.strategy_index, 1) : null,
+      legalIndex: r.legal_index != null ? round(r.legal_index, 1) : null,
+      healthcareIndex: r.healthcare_index != null ? round(r.healthcare_index, 1) : null,
+      costPerTaskUsd: r.cost_per_task_usd != null ? round(r.cost_per_task_usd, 4) : null,
       inputPrice: r.input_price != null ? round(r.input_price, 6) : null,
       outputPrice: r.output_price != null ? round(r.output_price, 6) : null,
       blended:
@@ -99,6 +116,7 @@ export function exportStaticJson(db, outDir) {
           : null,
       tokensPerSecond: r.tokens_per_second != null ? round(r.tokens_per_second, 1) : null,
       ttftSeconds: r.ttft_seconds != null ? round(r.ttft_seconds, 2) : null,
+      ttfaSeconds: r.ttfa_seconds != null ? round(r.ttfa_seconds, 2) : null,
       e2eSeconds: r.e2e_seconds != null ? round(r.e2e_seconds, 2) : null,
     }));
 
@@ -106,7 +124,8 @@ export function exportStaticJson(db, outDir) {
   const latestMatched = db
     .prepare(
       `SELECT model_id, model_name, provider, input_price, output_price, context_length,
-              arena_score, arena_model, arena_license, open_weights, first_seen_date, source_created_at
+              arena_score, arena_model, arena_license, open_weights, first_seen_date,
+              source_created_at, arena_categories_json
        FROM model_snapshots
        WHERE snapshot_date = ?
          AND arena_score IS NOT NULL
@@ -117,6 +136,14 @@ export function exportStaticJson(db, outDir) {
     .all(latestDate)
     .map((r) => {
       const aa = findAaMatch(r.model_id, r.model_name);
+      let arenaCategories = {};
+      if (r.arena_categories_json) {
+        try {
+          arenaCategories = JSON.parse(r.arena_categories_json);
+        } catch {
+          arenaCategories = {};
+        }
+      }
       return {
         id: r.model_id,
         name: r.model_name,
@@ -126,6 +153,7 @@ export function exportStaticJson(db, outDir) {
         contextLength: r.context_length ?? 0,
         arenaScore: round(r.arena_score, 1),
         arenaModel: r.arena_model,
+        arenaCategories,
         openWeights: Boolean(r.open_weights),
         firstSeenDate: r.first_seen_date,
         releaseDate: r.source_created_at
@@ -133,9 +161,22 @@ export function exportStaticJson(db, outDir) {
           : r.first_seen_date,
         aaIntelligenceIndex:
           aa?.intelligence_index != null ? round(aa.intelligence_index, 1) : null,
+        aaEngineeringIndex:
+          aa?.engineering_index != null ? round(aa.engineering_index, 1) : null,
+        aaEconomicsIndex:
+          aa?.economics_index != null ? round(aa.economics_index, 1) : null,
+        aaFinanceIndex: aa?.finance_index != null ? round(aa.finance_index, 1) : null,
+        aaStrategyIndex: aa?.strategy_index != null ? round(aa.strategy_index, 1) : null,
+        aaLegalIndex: aa?.legal_index != null ? round(aa.legal_index, 1) : null,
+        aaHealthcareIndex:
+          aa?.healthcare_index != null ? round(aa.healthcare_index, 1) : null,
         tokensPerSecond:
           aa?.tokens_per_second != null ? round(aa.tokens_per_second, 1) : null,
         ttftSeconds: aa?.ttft_seconds != null ? round(aa.ttft_seconds, 2) : null,
+        ttfaSeconds: aa?.ttfa_seconds != null ? round(aa.ttfa_seconds, 2) : null,
+        e2eSeconds: aa?.e2e_seconds != null ? round(aa.e2e_seconds, 2) : null,
+        costPerTaskUsd:
+          aa?.cost_per_task_usd != null ? round(aa.cost_per_task_usd, 4) : null,
       };
     });
 

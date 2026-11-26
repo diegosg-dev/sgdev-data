@@ -2,6 +2,39 @@
   "snapshotDate": "2026-11-26",
   "models": [
     {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "provider": "OpenAI",
+      "releaseDate": "2023-05-28",
+      "firstSeenDate": "2023-05-28",
+      "contextLength": 8191,
+      "arenaScore": 1288,
+      "openWeights": false,
+      "blended": 37.5
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "provider": "OpenAI",
+      "releaseDate": "2024-01-25",
+      "firstSeenDate": "2024-01-25",
+      "contextLength": 4095,
+      "arenaScore": 1225.7,
+      "openWeights": false,
+      "blended": 1.25
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "provider": "OpenAI",
+      "releaseDate": "2024-05-13",
+      "firstSeenDate": "2024-05-13",
+      "contextLength": 128000,
+      "arenaScore": 1346.1,
+      "openWeights": false,
+      "blended": 4.375
+    },
+    {
       "id": "openai/gpt-4o-2024-05-13",
       "name": "OpenAI: GPT-4o (2024-05-13)",
       "provider": "OpenAI",
@@ -132,6 +165,17 @@
       "arenaScore": 1270.6,
       "openWeights": true,
       "blended": 0.745
+    },
+    {
+      "id": "openai/gpt-4o-2024-11-20",
+      "name": "OpenAI: GPT-4o (2024-11-20)",
+      "provider": "OpenAI",
+      "releaseDate": "2024-11-20",
+      "firstSeenDate": "2024-11-20",
+      "contextLength": 128000,
+      "arenaScore": 1346.1,
+      "openWeights": false,
+      "blended": 4.375
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
@@ -475,6 +519,39 @@
       "blended": 0.055
     },
     {
+      "id": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "provider": "OpenAI",
+      "releaseDate": "2025-08-07",
+      "firstSeenDate": "2025-08-07",
+      "contextLength": 400000,
+      "arenaScore": 1435,
+      "openWeights": false,
+      "blended": 3.4375
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "provider": "OpenAI",
+      "releaseDate": "2025-08-07",
+      "firstSeenDate": "2025-08-07",
+      "contextLength": 400000,
+      "arenaScore": 1390.3,
+      "openWeights": false,
+      "blended": 0.6875
+    },
+    {
+      "id": "openai/gpt-5-nano",
+      "name": "OpenAI: GPT-5 Nano",
+      "provider": "OpenAI",
+      "releaseDate": "2025-08-07",
+      "firstSeenDate": "2025-08-07",
+      "contextLength": 400000,
+      "arenaScore": 1337.9,
+      "openWeights": false,
+      "blended": 0.1375
+    },
+    {
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "provider": "Z.ai",
@@ -673,6 +750,17 @@
       "blended": 0.145375
     },
     {
+      "id": "moonshotai/kimi-k2.5",
+      "name": "MoonshotAI: Kimi K2.5",
+      "provider": "Moonshot",
+      "releaseDate": "2026-01-27",
+      "firstSeenDate": "2026-01-27",
+      "contextLength": 262144,
+      "arenaScore": 1449.6,
+      "openWeights": true,
+      "blended": 1
+    },
+    {
       "id": "anthropic/claude-opus-4.6",
       "name": "Anthropic: Claude Opus 4.6",
       "provider": "Anthropic",
@@ -803,6 +891,28 @@
       "arenaScore": 1464.9,
       "openWeights": false,
       "blended": 5.625
+    },
+    {
+      "id": "openai/gpt-5.4-mini",
+      "name": "OpenAI: GPT-5.4 Mini",
+      "provider": "OpenAI",
+      "releaseDate": "2026-03-17",
+      "firstSeenDate": "2026-03-17",
+      "contextLength": 400000,
+      "arenaScore": 1447.1,
+      "openWeights": false,
+      "blended": 1.6875
+    },
+    {
+      "id": "openai/gpt-5.4-nano",
+      "name": "OpenAI: GPT-5.4 Nano",
+      "provider": "OpenAI",
+      "releaseDate": "2026-03-17",
+      "firstSeenDate": "2026-03-17",
+      "contextLength": 400000,
+      "arenaScore": 1401.1,
+      "openWeights": false,
+      "blended": 0.4625
     },
     {
       "id": "minimax/minimax-m2.7",
@@ -948,6 +1058,17 @@
       "blended": 0.5625
     },
     {
+      "id": "google/gemini-3.5-flash",
+      "name": "Google: Gemini 3.5 Flash",
+      "provider": "Google",
+      "releaseDate": "2026-05-19",
+      "firstSeenDate": "2026-05-19",
+      "contextLength": 1048576,
+      "arenaScore": 1478.2,
+      "openWeights": false,
+      "blended": 3.375
+    },
+    {
       "id": "qwen/qwen3.7-max",
       "name": "Qwen: Qwen3.7 Max",
       "provider": "Qwen",
@@ -992,6 +1113,39 @@
       "blended": 0.56
     },
     {
+      "id": "anthropic/claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
+      "provider": "Anthropic",
+      "releaseDate": "2026-06-09",
+      "firstSeenDate": "2026-06-09",
+      "contextLength": 1000000,
+      "arenaScore": 1504.1,
+      "openWeights": false,
+      "blended": 20
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "provider": "Z.ai",
+      "releaseDate": "2026-06-16",
+      "firstSeenDate": "2026-06-16",
+      "contextLength": 1048576,
+      "arenaScore": 1475.2,
+      "openWeights": true,
+      "blended": 1.07
+    },
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
+      "provider": "Anthropic",
+      "releaseDate": "2026-06-30",
+      "firstSeenDate": "2026-06-30",
+      "contextLength": 1000000,
+      "arenaScore": 1460.7,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "provider": "Tencent",
@@ -1014,6 +1168,39 @@
       "blended": 3
     },
     {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "provider": "OpenAI",
+      "releaseDate": "2026-07-09",
+      "firstSeenDate": "2026-07-09",
+      "contextLength": 1050000,
+      "arenaScore": 1485.2,
+      "openWeights": false,
+      "blended": 8
+    },
+    {
+      "id": "openai/gpt-5.6-terra",
+      "name": "OpenAI: GPT-5.6 Terra",
+      "provider": "OpenAI",
+      "releaseDate": "2026-07-09",
+      "firstSeenDate": "2026-07-09",
+      "contextLength": 1050000,
+      "arenaScore": 1468.1,
+      "openWeights": false,
+      "blended": 4.5
+    },
+    {
+      "id": "openai/gpt-5.6-luna",
+      "name": "OpenAI: GPT-5.6 Luna",
+      "provider": "OpenAI",
+      "releaseDate": "2026-07-09",
+      "firstSeenDate": "2026-07-09",
+      "contextLength": 1050000,
+      "arenaScore": 1453,
+      "openWeights": false,
+      "blended": 0.45
+    },
+    {
       "id": "meta/muse-spark-1.1",
       "name": "Meta: Muse Spark 1.1",
       "provider": "Meta",
@@ -1023,6 +1210,17 @@
       "arenaScore": 1491.2,
       "openWeights": false,
       "blended": 2
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "provider": "Moonshot",
+      "releaseDate": "2026-07-16",
+      "firstSeenDate": "2026-07-16",
+      "contextLength": 1048576,
+      "arenaScore": 1487.9,
+      "openWeights": true,
+      "blended": 4.144
     },
     {
       "id": "thinkingmachines/inkling",
@@ -1036,6 +1234,17 @@
       "blended": 1.7625
     },
     {
+      "id": "google/gemini-3.6-flash",
+      "name": "Google: Gemini 3.6 Flash",
+      "provider": "Google",
+      "releaseDate": "2026-07-21",
+      "firstSeenDate": "2026-07-21",
+      "contextLength": 1048576,
+      "arenaScore": 1482.5,
+      "openWeights": false,
+      "blended": 1.5
+    },
+    {
       "id": "google/gemini-3.5-flash-lite",
       "name": "Google: Gemini 3.5 Flash Lite",
       "provider": "Google",
@@ -1045,6 +1254,17 @@
       "arenaScore": 1455.2,
       "openWeights": false,
       "blended": 0.85
+    },
+    {
+      "id": "anthropic/claude-opus-5",
+      "name": "Anthropic: Claude Opus 5",
+      "provider": "Anthropic",
+      "releaseDate": "2026-07-24",
+      "firstSeenDate": "2026-07-24",
+      "contextLength": 1000000,
+      "arenaScore": 1489.7,
+      "openWeights": false,
+      "blended": 10
     },
     {
       "id": "thinkingmachines/inkling-small",
@@ -1066,7 +1286,18 @@
       "contextLength": 1048576,
       "arenaScore": 1435.6,
       "openWeights": true,
-      "blended": 0.09
+      "blended": 0.11025
+    },
+    {
+      "id": "meta/muse-spark-1.2",
+      "name": "Meta: Muse Spark 1.2",
+      "provider": "Meta",
+      "releaseDate": "2026-08-05",
+      "firstSeenDate": "2026-08-05",
+      "contextLength": 1048576,
+      "arenaScore": 1492.8,
+      "openWeights": false,
+      "blended": 2
     },
     {
       "id": "upstage/solar-pro4",
@@ -1091,6 +1322,28 @@
       "blended": 1.19325
     },
     {
+      "id": "x-ai/grok-4.6",
+      "name": "SpaceXSI: Grok 4.6",
+      "provider": "xAI",
+      "releaseDate": "2026-08-12",
+      "firstSeenDate": "2026-08-12",
+      "contextLength": 500000,
+      "arenaScore": 1456.9,
+      "openWeights": false,
+      "blended": 3
+    },
+    {
+      "id": "google/gemini-3.7-flash",
+      "name": "Google: Gemini 3.7 Flash",
+      "provider": "Google",
+      "releaseDate": "2026-08-13",
+      "firstSeenDate": "2026-08-13",
+      "contextLength": 1048576,
+      "arenaScore": 1489.7,
+      "openWeights": false,
+      "blended": 1.5
+    },
+    {
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "provider": "Qwen",
@@ -1100,6 +1353,17 @@
       "arenaScore": 1435,
       "openWeights": true,
       "blended": 0.535
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "name": "Z.ai: GLM 5.3",
+      "provider": "Z.ai",
+      "releaseDate": "2026-08-18",
+      "firstSeenDate": "2026-08-18",
+      "contextLength": 1048576,
+      "arenaScore": 1481.1,
+      "openWeights": true,
+      "blended": 0.402425
     },
     {
       "id": "z-ai/glm-5.3-flash",
@@ -1124,6 +1388,39 @@
       "blended": 0.0825
     },
     {
+      "id": "anthropic/claude-fable-5.1",
+      "name": "Anthropic: Claude Fable 5.1",
+      "provider": "Anthropic",
+      "releaseDate": "2026-09-01",
+      "firstSeenDate": "2026-09-01",
+      "contextLength": 1000000,
+      "arenaScore": 1502.1,
+      "openWeights": false,
+      "blended": 20
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "provider": "Google",
+      "releaseDate": "2026-09-02",
+      "firstSeenDate": "2026-09-02",
+      "contextLength": 1048576,
+      "arenaScore": 1498,
+      "openWeights": false,
+      "blended": 1.65
+    },
+    {
+      "id": "meta/muse-spark-1.3",
+      "name": "Meta: Muse Spark 1.3",
+      "provider": "Meta",
+      "releaseDate": "2026-09-02",
+      "firstSeenDate": "2026-09-02",
+      "contextLength": 1048576,
+      "arenaScore": 1497.8,
+      "openWeights": false,
+      "blended": 2
+    },
+    {
       "id": "qwen/qwen3.8-max-0902",
       "name": "Qwen: Qwen3.8 Max (0902)",
       "provider": "Qwen",
@@ -1133,6 +1430,28 @@
       "arenaScore": 1483.5,
       "openWeights": false,
       "blended": 3
+    },
+    {
+      "id": "openai/gpt-6-astra",
+      "name": "OpenAI: GPT-6 Astra",
+      "provider": "OpenAI",
+      "releaseDate": "2026-09-04",
+      "firstSeenDate": "2026-09-04",
+      "contextLength": 1050000,
+      "arenaScore": 1475.4,
+      "openWeights": false,
+      "blended": 20
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "provider": "DeepSeek",
+      "releaseDate": "2026-09-10",
+      "firstSeenDate": "2026-09-10",
+      "contextLength": 1048576,
+      "arenaScore": 1474.4,
+      "openWeights": true,
+      "blended": 0.21
     },
     {
       "id": "xiaomi/mimo-v2.6-pro",
@@ -1157,6 +1476,72 @@
       "blended": 0.175
     },
     {
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXSI: Grok 4.7",
+      "provider": "xAI",
+      "releaseDate": "2026-09-21",
+      "firstSeenDate": "2026-09-21",
+      "contextLength": 500000,
+      "arenaScore": 1443.8,
+      "openWeights": false,
+      "blended": 3
+    },
+    {
+      "id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "provider": "Anthropic",
+      "releaseDate": "2026-09-22",
+      "firstSeenDate": "2026-09-22",
+      "contextLength": 1000000,
+      "arenaScore": 1507,
+      "openWeights": false,
+      "blended": 8
+    },
+    {
+      "id": "openai/gpt-6-sol",
+      "name": "OpenAI: GPT-6 Sol",
+      "provider": "OpenAI",
+      "releaseDate": "2026-09-22",
+      "firstSeenDate": "2026-09-22",
+      "contextLength": 1050000,
+      "arenaScore": 1457.9,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
+      "id": "openai/gpt-6-luna",
+      "name": "OpenAI: GPT-6 Luna",
+      "provider": "OpenAI",
+      "releaseDate": "2026-09-22",
+      "firstSeenDate": "2026-09-22",
+      "contextLength": 1050000,
+      "arenaScore": 1443,
+      "openWeights": false,
+      "blended": 0.2
+    },
+    {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "provider": "Anthropic",
+      "releaseDate": "2026-09-28",
+      "firstSeenDate": "2026-09-28",
+      "contextLength": 1000000,
+      "arenaScore": 1473,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "provider": "OpenAI",
+      "releaseDate": "2026-09-29",
+      "firstSeenDate": "2026-09-29",
+      "contextLength": 1050000,
+      "arenaScore": 1481.9,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
       "id": "mistralai/mistral-large-4-0",
       "name": "Mistral: Mistral Large 4",
       "provider": "Mistral",
@@ -1166,6 +1551,17 @@
       "arenaScore": 1423.5,
       "openWeights": true,
       "blended": 1.05
+    },
+    {
+      "id": "anthropic/claude-haiku-5.5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "provider": "Anthropic",
+      "releaseDate": "2026-10-07",
+      "firstSeenDate": "2026-10-07",
+      "contextLength": 1000000,
+      "arenaScore": 1421.1,
+      "openWeights": false,
+      "blended": 0.2
     },
     {
       "id": "stepfun/step-5-preview",
@@ -1179,6 +1575,28 @@
       "blended": 1.425
     },
     {
+      "id": "meta/muse-wonder",
+      "name": "Meta: Muse Wonder",
+      "provider": "Meta",
+      "releaseDate": "2026-10-12",
+      "firstSeenDate": "2026-10-12",
+      "contextLength": 1048576,
+      "arenaScore": 1511.9,
+      "openWeights": false,
+      "blended": 8
+    },
+    {
+      "id": "google/gemini-4-argon",
+      "name": "Google: Gemini 4 Argon",
+      "provider": "Google",
+      "releaseDate": "2026-10-13",
+      "firstSeenDate": "2026-10-13",
+      "contextLength": 1048576,
+      "arenaScore": 1519.8,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
       "id": "reflection/beam-1.0-501b-a23b",
       "name": "Reflection: Beam 1.0 501B A23B",
       "provider": "Reflection",
@@ -1190,6 +1608,50 @@
       "blended": 0.475
     },
     {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "provider": "DeepSeek",
+      "releaseDate": "2026-10-17",
+      "firstSeenDate": "2026-10-17",
+      "contextLength": 1048576,
+      "arenaScore": 1474.4,
+      "openWeights": true,
+      "blended": 0.2625
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "provider": "Moonshot",
+      "releaseDate": "2026-10-23",
+      "firstSeenDate": "2026-10-23",
+      "contextLength": 1048576,
+      "arenaScore": 1483.1,
+      "openWeights": true,
+      "blended": 2.2808
+    },
+    {
+      "id": "openai/gpt-6.1-terra",
+      "name": "OpenAI: GPT-6.1 Terra",
+      "provider": "OpenAI",
+      "releaseDate": "2026-10-26",
+      "firstSeenDate": "2026-10-26",
+      "contextLength": 1050000,
+      "arenaScore": 1473.9,
+      "openWeights": false,
+      "blended": 2
+    },
+    {
+      "id": "anthropic/claude-fable-5.2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "provider": "Anthropic",
+      "releaseDate": "2026-11-09",
+      "firstSeenDate": "2026-11-09",
+      "contextLength": 1000000,
+      "arenaScore": 1502.2,
+      "openWeights": false,
+      "blended": 16
+    },
+    {
       "id": "thinkingmachines/inkling-2-small",
       "name": "Thinking Machines: Inkling 2 Small",
       "provider": "Thinkingmachines",
@@ -1199,6 +1661,61 @@
       "arenaScore": 1412.2,
       "openWeights": true,
       "blended": 0.475
+    },
+    {
+      "id": "google/gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "provider": "Google",
+      "releaseDate": "2026-11-10",
+      "firstSeenDate": "2026-11-10",
+      "contextLength": 1048576,
+      "arenaScore": 1526.5,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
+      "id": "google/gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen",
+      "provider": "Google",
+      "releaseDate": "2026-11-12",
+      "firstSeenDate": "2026-11-12",
+      "contextLength": 1048576,
+      "arenaScore": 1490.1,
+      "openWeights": false,
+      "blended": 3
+    },
+    {
+      "id": "openai/gpt-6.2-astra",
+      "name": "OpenAI: GPT-6.2 Astra",
+      "provider": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "firstSeenDate": "2026-11-17",
+      "contextLength": 1050000,
+      "arenaScore": 1466.7,
+      "openWeights": false,
+      "blended": 16
+    },
+    {
+      "id": "openai/gpt-6.2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "provider": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "firstSeenDate": "2026-11-17",
+      "contextLength": 1050000,
+      "arenaScore": 1463.7,
+      "openWeights": false,
+      "blended": 4
+    },
+    {
+      "id": "google/gemini-4-neon",
+      "name": "Google: Gemini 4 Neon",
+      "provider": "Google",
+      "releaseDate": "2026-11-18",
+      "firstSeenDate": "2026-11-18",
+      "contextLength": 1048576,
+      "arenaScore": 1512.2,
+      "openWeights": false,
+      "blended": 6
     },
     {
       "id": "thinkingmachines/inkling-2-mini",

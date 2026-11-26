@@ -31,16 +31,16 @@
     {
       "date": "2026-11-26",
       "threshold": 1350,
-      "blended": 0.09,
-      "modelId": "deepseek/deepseek-v4-flash-0731",
-      "modelName": "DeepSeek: DeepSeek V4 Flash 0731",
-      "arenaScore": 1435.6,
+      "blended": 0.1,
+      "modelId": "openai/gpt-oss-120b",
+      "modelName": "OpenAI: gpt-oss-120b",
+      "arenaScore": 1351.7,
       "openWeights": true
     },
     {
       "date": "2026-11-26",
       "threshold": 1400,
-      "blended": 0.09,
+      "blended": 0.11025,
       "modelId": "deepseek/deepseek-v4-flash-0731",
       "modelName": "DeepSeek: DeepSeek V4 Flash 0731",
       "arenaScore": 1435.6,
@@ -49,14 +49,174 @@
     {
       "date": "2026-11-26",
       "threshold": 1450,
-      "blended": 0.231,
-      "modelId": "tencent/hy3",
-      "modelName": "Tencent: Hy3",
-      "arenaScore": 1455.5,
+      "blended": 0.21,
+      "modelId": "deepseek/deepseek-v4.1-flash",
+      "modelName": "DeepSeek: DeepSeek V4.1 Flash",
+      "arenaScore": 1474.4,
       "openWeights": true
     }
   ],
   "models": [
+    {
+      "id": "google/gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1526.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1526.5
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-4-argon",
+      "name": "Google: Gemini 4 Argon",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1519.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1519.8
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-4-neon",
+      "name": "Google: Gemini 4 Neon",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1512.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 3,
+          "outputPrice": 15,
+          "blended": 6,
+          "arenaScore": 1512.2
+        }
+      ]
+    },
+    {
+      "id": "meta/muse-wonder",
+      "name": "Meta: Muse Wonder",
+      "provider": "Meta",
+      "openWeights": false,
+      "latestScore": 1511.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 4,
+          "outputPrice": 20,
+          "blended": 8,
+          "arenaScore": 1511.9
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1507,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 4,
+          "outputPrice": 20,
+          "blended": 8,
+          "arenaScore": 1507
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1504.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 10,
+          "outputPrice": 50,
+          "blended": 20,
+          "arenaScore": 1504.1
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-fable-5.2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1502.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 8,
+          "outputPrice": 40,
+          "blended": 16,
+          "arenaScore": 1502.2
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-fable-5.1",
+      "name": "Anthropic: Claude Fable 5.1",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1502.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 10,
+          "outputPrice": 50,
+          "blended": 20,
+          "arenaScore": 1502.1
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1498,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.825,
+          "outputPrice": 4.125,
+          "blended": 1.65,
+          "arenaScore": 1498
+        }
+      ]
+    },
+    {
+      "id": "meta/muse-spark-1.3",
+      "name": "Meta: Muse Spark 1.3",
+      "provider": "Meta",
+      "openWeights": false,
+      "latestScore": 1497.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 4.25,
+          "blended": 2,
+          "arenaScore": 1497.8
+        }
+      ]
+    },
     {
       "id": "anthropic/claude-opus-4.6",
       "name": "Anthropic: Claude Opus 4.6",
@@ -90,6 +250,22 @@
       ]
     },
     {
+      "id": "meta/muse-spark-1.2",
+      "name": "Meta: Muse Spark 1.2",
+      "provider": "Meta",
+      "openWeights": false,
+      "latestScore": 1492.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 4.25,
+          "blended": 2,
+          "arenaScore": 1492.8
+        }
+      ]
+    },
+    {
       "id": "meta/muse-spark-1.1",
       "name": "Meta: Muse Spark 1.1",
       "provider": "Meta",
@@ -102,6 +278,70 @@
           "outputPrice": 4.25,
           "blended": 2,
           "arenaScore": 1491.2
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1490.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.5,
+          "outputPrice": 7.5,
+          "blended": 3,
+          "arenaScore": 1490.1
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.7-flash",
+      "name": "Google: Gemini 3.7 Flash",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1489.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.75,
+          "outputPrice": 3.75,
+          "blended": 1.5,
+          "arenaScore": 1489.7
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5",
+      "name": "Anthropic: Claude Opus 5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1489.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "blended": 10,
+          "arenaScore": 1489.7
+        }
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "latestScore": 1487.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.192,
+          "outputPrice": 16,
+          "blended": 4.144,
+          "arenaScore": 1487.9
         }
       ]
     },
@@ -122,6 +362,22 @@
       ]
     },
     {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1485.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 4,
+          "outputPrice": 20,
+          "blended": 8,
+          "arenaScore": 1485.2
+        }
+      ]
+    },
+    {
       "id": "qwen/qwen3.8-max-0902",
       "name": "Qwen: Qwen3.8 Max (0902)",
       "provider": "Qwen",
@@ -138,6 +394,54 @@
       ]
     },
     {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "latestScore": 1483.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.2403,
+          "outputPrice": 8.4023,
+          "blended": 2.2808,
+          "arenaScore": 1483.1
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.6-flash",
+      "name": "Google: Gemini 3.6 Flash",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1482.5,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.75,
+          "outputPrice": 3.75,
+          "blended": 1.5,
+          "arenaScore": 1482.5
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1481.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1481.9
+        }
+      ]
+    },
+    {
       "id": "xiaomi/mimo-v2.6-pro",
       "name": "Xiaomi: MiMo-V2.6-Pro",
       "provider": "Xiaomi",
@@ -150,6 +454,38 @@
           "outputPrice": 0.87,
           "blended": 0.54375,
           "arenaScore": 1481.3
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "name": "Z.ai: GLM 5.3",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1481.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.0699,
+          "outputPrice": 1.4,
+          "blended": 0.402425,
+          "arenaScore": 1481.1
+        }
+      ]
+    },
+    {
+      "id": "google/gemini-3.5-flash",
+      "name": "Google: Gemini 3.5 Flash",
+      "provider": "Google",
+      "openWeights": false,
+      "latestScore": 1478.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.5,
+          "outputPrice": 9,
+          "blended": 3.375,
+          "arenaScore": 1478.2
         }
       ]
     },
@@ -186,6 +522,22 @@
       ]
     },
     {
+      "id": "openai/gpt-6-astra",
+      "name": "OpenAI: GPT-6 Astra",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1475.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 10,
+          "outputPrice": 50,
+          "blended": 20,
+          "arenaScore": 1475.4
+        }
+      ]
+    },
+    {
       "id": "openai/gpt-5.2-chat",
       "name": "OpenAI: GPT-5.2 Chat",
       "provider": "OpenAI",
@@ -198,6 +550,54 @@
           "outputPrice": 14,
           "blended": 4.8125,
           "arenaScore": 1475.3
+        }
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "provider": "Z.ai",
+      "openWeights": true,
+      "latestScore": 1475.2,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.62,
+          "outputPrice": 2.42,
+          "blended": 1.07,
+          "arenaScore": 1475.2
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1474.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "blended": 0.2625,
+          "arenaScore": 1474.4
+        }
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "provider": "DeepSeek",
+      "openWeights": true,
+      "latestScore": 1474.4,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.14,
+          "outputPrice": 0.42,
+          "blended": 0.21,
+          "arenaScore": 1474.4
         }
       ]
     },
@@ -218,6 +618,22 @@
       ]
     },
     {
+      "id": "openai/gpt-6.1-terra",
+      "name": "OpenAI: GPT-6.1 Terra",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1473.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1,
+          "outputPrice": 5,
+          "blended": 2,
+          "arenaScore": 1473.9
+        }
+      ]
+    },
+    {
       "id": "qwen/qwen3.7-max",
       "name": "Qwen: Qwen3.7 Max",
       "provider": "Qwen",
@@ -230,6 +646,22 @@
           "outputPrice": 4.425,
           "blended": 2.2125,
           "arenaScore": 1473.7
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1473,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1473
         }
       ]
     },
@@ -282,6 +714,38 @@
       ]
     },
     {
+      "id": "openai/gpt-5.6-terra",
+      "name": "OpenAI: GPT-5.6 Terra",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1468.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 12,
+          "blended": 4.5,
+          "arenaScore": 1468.1
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-6.2-astra",
+      "name": "OpenAI: GPT-6.2 Astra",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1466.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 8,
+          "outputPrice": 40,
+          "blended": 16,
+          "arenaScore": 1466.7
+        }
+      ]
+    },
+    {
       "id": "x-ai/grok-4.5",
       "name": "SpaceXSI: Grok 4.5",
       "provider": "xAI",
@@ -330,6 +794,22 @@
       ]
     },
     {
+      "id": "openai/gpt-6.2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1463.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1463.7
+        }
+      ]
+    },
+    {
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshot",
@@ -342,6 +822,22 @@
           "outputPrice": 3.41,
           "blended": 1.34,
           "arenaScore": 1461
+        }
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1460.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1460.7
         }
       ]
     },
@@ -378,6 +874,22 @@
       ]
     },
     {
+      "id": "openai/gpt-6-sol",
+      "name": "OpenAI: GPT-6 Sol",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1457.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "blended": 4,
+          "arenaScore": 1457.9
+        }
+      ]
+    },
+    {
       "id": "z-ai/glm-5",
       "name": "Z.ai: GLM 5",
       "provider": "Z.ai",
@@ -390,6 +902,22 @@
           "outputPrice": 3.2,
           "blended": 1.55,
           "arenaScore": 1457.2
+        }
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.6",
+      "name": "SpaceXSI: Grok 4.6",
+      "provider": "xAI",
+      "openWeights": false,
+      "latestScore": 1456.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "blended": 3,
+          "arenaScore": 1456.9
         }
       ]
     },
@@ -458,6 +986,22 @@
       ]
     },
     {
+      "id": "openai/gpt-5.6-luna",
+      "name": "OpenAI: GPT-5.6 Luna",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1453,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.2,
+          "outputPrice": 1.2,
+          "blended": 0.45,
+          "arenaScore": 1453
+        }
+      ]
+    },
+    {
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "provider": "Google",
@@ -470,6 +1014,22 @@
           "outputPrice": 0.4,
           "blended": 0.25,
           "arenaScore": 1452.2
+        }
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2.5",
+      "name": "MoonshotAI: Kimi K2.5",
+      "provider": "Moonshot",
+      "openWeights": true,
+      "latestScore": 1449.6,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.5,
+          "outputPrice": 2.5,
+          "blended": 1,
+          "arenaScore": 1449.6
         }
       ]
     },
@@ -522,6 +1082,22 @@
       ]
     },
     {
+      "id": "openai/gpt-5.4-mini",
+      "name": "OpenAI: GPT-5.4 Mini",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1447.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.75,
+          "outputPrice": 4.5,
+          "blended": 1.6875,
+          "arenaScore": 1447.1
+        }
+      ]
+    },
+    {
       "id": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
       "provider": "Google",
@@ -554,6 +1130,22 @@
       ]
     },
     {
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXSI: Grok 4.7",
+      "provider": "xAI",
+      "openWeights": false,
+      "latestScore": 1443.8,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "blended": 3,
+          "arenaScore": 1443.8
+        }
+      ]
+    },
+    {
       "id": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
       "provider": "Thinkingmachines",
@@ -566,6 +1158,22 @@
           "outputPrice": 4.05,
           "blended": 1.7625,
           "arenaScore": 1443.4
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-6-luna",
+      "name": "OpenAI: GPT-6 Luna",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1443,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.1,
+          "outputPrice": 0.5,
+          "blended": 0.2,
+          "arenaScore": 1443
         }
       ]
     },
@@ -674,9 +1282,9 @@
       "points": [
         {
           "date": "2026-11-26",
-          "inputPrice": 0.06,
-          "outputPrice": 0.18,
-          "blended": 0.09,
+          "inputPrice": 0.047,
+          "outputPrice": 0.3,
+          "blended": 0.11025,
           "arenaScore": 1435.6
         }
       ]
@@ -725,6 +1333,22 @@
           "inputPrice": 0.06,
           "outputPrice": 1.96,
           "blended": 0.535,
+          "arenaScore": 1435
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1435,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "blended": 3.4375,
           "arenaScore": 1435
         }
       ]
@@ -922,6 +1546,22 @@
       ]
     },
     {
+      "id": "anthropic/claude-haiku-5.5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "provider": "Anthropic",
+      "openWeights": false,
+      "latestScore": 1421.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.1,
+          "outputPrice": 0.5,
+          "blended": 0.2,
+          "arenaScore": 1421.1
+        }
+      ]
+    },
+    {
       "id": "deepseek/deepseek-chat-v3.1",
       "name": "DeepSeek: DeepSeek V3.1",
       "provider": "DeepSeek",
@@ -1114,6 +1754,22 @@
       ]
     },
     {
+      "id": "openai/gpt-5.4-nano",
+      "name": "OpenAI: GPT-5.4 Nano",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1401.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.2,
+          "outputPrice": 1.25,
+          "blended": 0.4625,
+          "arenaScore": 1401.1
+        }
+      ]
+    },
+    {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "provider": "Qwen",
@@ -1206,6 +1862,22 @@
           "outputPrice": 1.2,
           "blended": 0.525,
           "arenaScore": 1390.9
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1390.3,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.25,
+          "outputPrice": 2,
+          "blended": 0.6875,
+          "arenaScore": 1390.3
         }
       ]
     },
@@ -1434,6 +2106,38 @@
       ]
     },
     {
+      "id": "openai/gpt-4o-2024-11-20",
+      "name": "OpenAI: GPT-4o (2024-11-20)",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1346.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "blended": 4.375,
+          "arenaScore": 1346.1
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1346.1,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "blended": 4.375,
+          "arenaScore": 1346.1
+        }
+      ]
+    },
+    {
       "id": "qwen/qwen-plus",
       "name": "Qwen: Qwen-Plus",
       "provider": "Qwen",
@@ -1462,6 +2166,22 @@
           "outputPrice": 0.15,
           "blended": 0.075,
           "arenaScore": 1341.8
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5-nano",
+      "name": "OpenAI: GPT-5 Nano",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1337.9,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 0.05,
+          "outputPrice": 0.4,
+          "blended": 0.1375,
+          "arenaScore": 1337.9
         }
       ]
     },
@@ -1706,6 +2426,22 @@
       ]
     },
     {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1288,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 30,
+          "outputPrice": 60,
+          "blended": 37.5,
+          "arenaScore": 1288
+        }
+      ]
+    },
+    {
       "id": "cohere/command-r-plus-08-2024",
       "name": "Cohere: Command R+ (08-2024)",
       "provider": "Cohere",
@@ -1786,6 +2522,22 @@
       ]
     },
     {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "provider": "OpenAI",
+      "openWeights": false,
+      "latestScore": 1225.7,
+      "points": [
+        {
+          "date": "2026-11-26",
+          "inputPrice": 1,
+          "outputPrice": 2,
+          "blended": 1.25,
+          "arenaScore": 1225.7
+        }
+      ]
+    },
+    {
       "id": "meta-llama/llama-3.1-8b-instruct",
       "name": "Meta: Llama 3.1 8B Instruct",
       "provider": "Meta",
@@ -1823,6 +2575,86 @@
       "date": "2026-11-26",
       "models": [
         {
+          "id": "google/gemini-4-carbon",
+          "name": "Google: Gemini 4 Carbon",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1526.5,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-4-argon",
+          "name": "Google: Gemini 4 Argon",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1519.8,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-4-neon",
+          "name": "Google: Gemini 4 Neon",
+          "inputPrice": 3,
+          "outputPrice": 15,
+          "arenaScore": 1512.2,
+          "openWeights": false
+        },
+        {
+          "id": "meta/muse-wonder",
+          "name": "Meta: Muse Wonder",
+          "inputPrice": 4,
+          "outputPrice": 20,
+          "arenaScore": 1511.9,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-opus-5.5",
+          "name": "Anthropic: Claude Opus 5.5",
+          "inputPrice": 4,
+          "outputPrice": 20,
+          "arenaScore": 1507,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-fable-5",
+          "name": "Anthropic: Claude Fable 5",
+          "inputPrice": 10,
+          "outputPrice": 50,
+          "arenaScore": 1504.1,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-fable-5.2",
+          "name": "Anthropic: Claude Fable 5.2",
+          "inputPrice": 8,
+          "outputPrice": 40,
+          "arenaScore": 1502.2,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-fable-5.1",
+          "name": "Anthropic: Claude Fable 5.1",
+          "inputPrice": 10,
+          "outputPrice": 50,
+          "arenaScore": 1502.1,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-3.8-flash",
+          "name": "Google: Gemini 3.8 Flash",
+          "inputPrice": 0.825,
+          "outputPrice": 4.125,
+          "arenaScore": 1498,
+          "openWeights": false
+        },
+        {
+          "id": "meta/muse-spark-1.3",
+          "name": "Meta: Muse Spark 1.3",
+          "inputPrice": 1.25,
+          "outputPrice": 4.25,
+          "arenaScore": 1497.8,
+          "openWeights": false
+        },
+        {
           "id": "anthropic/claude-opus-4.6",
           "name": "Anthropic: Claude Opus 4.6",
           "inputPrice": 5,
@@ -1839,6 +2671,14 @@
           "openWeights": false
         },
         {
+          "id": "meta/muse-spark-1.2",
+          "name": "Meta: Muse Spark 1.2",
+          "inputPrice": 1.25,
+          "outputPrice": 4.25,
+          "arenaScore": 1492.8,
+          "openWeights": false
+        },
+        {
           "id": "meta/muse-spark-1.1",
           "name": "Meta: Muse Spark 1.1",
           "inputPrice": 1.25,
@@ -1847,11 +2687,51 @@
           "openWeights": false
         },
         {
+          "id": "google/gemini-4-hydrogen",
+          "name": "Google: Gemini 4 Hydrogen",
+          "inputPrice": 1.5,
+          "outputPrice": 7.5,
+          "arenaScore": 1490.1,
+          "openWeights": false
+        },
+        {
+          "id": "google/gemini-3.7-flash",
+          "name": "Google: Gemini 3.7 Flash",
+          "inputPrice": 0.75,
+          "outputPrice": 3.75,
+          "arenaScore": 1489.7,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-opus-5",
+          "name": "Anthropic: Claude Opus 5",
+          "inputPrice": 5,
+          "outputPrice": 25,
+          "arenaScore": 1489.7,
+          "openWeights": false
+        },
+        {
+          "id": "moonshotai/kimi-k3",
+          "name": "MoonshotAI: Kimi K3",
+          "inputPrice": 0.192,
+          "outputPrice": 16,
+          "arenaScore": 1487.9,
+          "openWeights": true
+        },
+        {
           "id": "google/gemini-3.1-pro-preview",
           "name": "Google: Gemini 3.1 Pro Preview",
           "inputPrice": 2,
           "outputPrice": 12,
           "arenaScore": 1486.7,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-5.6-sol",
+          "name": "OpenAI: GPT-5.6 Sol",
+          "inputPrice": 4,
+          "outputPrice": 20,
+          "arenaScore": 1485.2,
           "openWeights": false
         },
         {
@@ -1863,12 +2743,52 @@
           "openWeights": false
         },
         {
+          "id": "moonshotai/kimi-k3.1-pro",
+          "name": "MoonshotAI: Kimi K3.1 Pro",
+          "inputPrice": 0.2403,
+          "outputPrice": 8.4023,
+          "arenaScore": 1483.1,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemini-3.6-flash",
+          "name": "Google: Gemini 3.6 Flash",
+          "inputPrice": 0.75,
+          "outputPrice": 3.75,
+          "arenaScore": 1482.5,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-6.1-sol",
+          "name": "OpenAI: GPT-6.1 Sol",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1481.9,
+          "openWeights": false
+        },
+        {
           "id": "xiaomi/mimo-v2.6-pro",
           "name": "Xiaomi: MiMo-V2.6-Pro",
           "inputPrice": 0.435,
           "outputPrice": 0.87,
           "arenaScore": 1481.3,
           "openWeights": true
+        },
+        {
+          "id": "z-ai/glm-5.3",
+          "name": "Z.ai: GLM 5.3",
+          "inputPrice": 0.0699,
+          "outputPrice": 1.4,
+          "arenaScore": 1481.1,
+          "openWeights": true
+        },
+        {
+          "id": "google/gemini-3.5-flash",
+          "name": "Google: Gemini 3.5 Flash",
+          "inputPrice": 1.5,
+          "outputPrice": 9,
+          "arenaScore": 1478.2,
+          "openWeights": false
         },
         {
           "id": "openai/gpt-5.5",
@@ -1887,12 +2807,44 @@
           "openWeights": true
         },
         {
+          "id": "openai/gpt-6-astra",
+          "name": "OpenAI: GPT-6 Astra",
+          "inputPrice": 10,
+          "outputPrice": 50,
+          "arenaScore": 1475.4,
+          "openWeights": false
+        },
+        {
           "id": "openai/gpt-5.2-chat",
           "name": "OpenAI: GPT-5.2 Chat",
           "inputPrice": 1.75,
           "outputPrice": 14,
           "arenaScore": 1475.3,
           "openWeights": false
+        },
+        {
+          "id": "z-ai/glm-5.2",
+          "name": "Z.ai: GLM 5.2",
+          "inputPrice": 0.62,
+          "outputPrice": 2.42,
+          "arenaScore": 1475.2,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v4.1-flash-1017",
+          "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+          "inputPrice": 0.15,
+          "outputPrice": 0.6,
+          "arenaScore": 1474.4,
+          "openWeights": true
+        },
+        {
+          "id": "deepseek/deepseek-v4.1-flash",
+          "name": "DeepSeek: DeepSeek V4.1 Flash",
+          "inputPrice": 0.14,
+          "outputPrice": 0.42,
+          "arenaScore": 1474.4,
+          "openWeights": true
         },
         {
           "id": "anthropic/claude-opus-4.8",
@@ -1903,11 +2855,27 @@
           "openWeights": false
         },
         {
+          "id": "openai/gpt-6.1-terra",
+          "name": "OpenAI: GPT-6.1 Terra",
+          "inputPrice": 1,
+          "outputPrice": 5,
+          "arenaScore": 1473.9,
+          "openWeights": false
+        },
+        {
           "id": "qwen/qwen3.7-max",
           "name": "Qwen: Qwen3.7 Max",
           "inputPrice": 1.475,
           "outputPrice": 4.425,
           "arenaScore": 1473.7,
+          "openWeights": false
+        },
+        {
+          "id": "anthropic/claude-sonnet-5.5",
+          "name": "Anthropic: Claude Sonnet 5.5",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1473,
           "openWeights": false
         },
         {
@@ -1935,6 +2903,22 @@
           "openWeights": false
         },
         {
+          "id": "openai/gpt-5.6-terra",
+          "name": "OpenAI: GPT-5.6 Terra",
+          "inputPrice": 2,
+          "outputPrice": 12,
+          "arenaScore": 1468.1,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-6.2-astra",
+          "name": "OpenAI: GPT-6.2 Astra",
+          "inputPrice": 8,
+          "outputPrice": 40,
+          "arenaScore": 1466.7,
+          "openWeights": false
+        },
+        {
           "id": "x-ai/grok-4.5",
           "name": "SpaceXSI: Grok 4.5",
           "inputPrice": 2,
@@ -1959,12 +2943,28 @@
           "openWeights": true
         },
         {
+          "id": "openai/gpt-6.2-sol",
+          "name": "OpenAI: GPT-6.2 Sol",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1463.7,
+          "openWeights": false
+        },
+        {
           "id": "moonshotai/kimi-k2.6",
           "name": "MoonshotAI: Kimi K2.6",
           "inputPrice": 0.65,
           "outputPrice": 3.41,
           "arenaScore": 1461,
           "openWeights": true
+        },
+        {
+          "id": "anthropic/claude-sonnet-5",
+          "name": "Anthropic: Claude Sonnet 5",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1460.7,
+          "openWeights": false
         },
         {
           "id": "deepseek/deepseek-v4-pro-0813",
@@ -1983,12 +2983,28 @@
           "openWeights": true
         },
         {
+          "id": "openai/gpt-6-sol",
+          "name": "OpenAI: GPT-6 Sol",
+          "inputPrice": 2,
+          "outputPrice": 10,
+          "arenaScore": 1457.9,
+          "openWeights": false
+        },
+        {
           "id": "z-ai/glm-5",
           "name": "Z.ai: GLM 5",
           "inputPrice": 1,
           "outputPrice": 3.2,
           "arenaScore": 1457.2,
           "openWeights": true
+        },
+        {
+          "id": "x-ai/grok-4.6",
+          "name": "SpaceXSI: Grok 4.6",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "arenaScore": 1456.9,
+          "openWeights": false
         },
         {
           "id": "tencent/hy3",
@@ -2023,11 +3039,27 @@
           "openWeights": false
         },
         {
+          "id": "openai/gpt-5.6-luna",
+          "name": "OpenAI: GPT-5.6 Luna",
+          "inputPrice": 0.2,
+          "outputPrice": 1.2,
+          "arenaScore": 1453,
+          "openWeights": false
+        },
+        {
           "id": "google/gemma-4-31b-it",
           "name": "Google: Gemma 4 31B",
           "inputPrice": 0.2,
           "outputPrice": 0.4,
           "arenaScore": 1452.2,
+          "openWeights": true
+        },
+        {
+          "id": "moonshotai/kimi-k2.5",
+          "name": "MoonshotAI: Kimi K2.5",
+          "inputPrice": 0.5,
+          "outputPrice": 2.5,
+          "arenaScore": 1449.6,
           "openWeights": true
         },
         {
@@ -2055,6 +3087,14 @@
           "openWeights": false
         },
         {
+          "id": "openai/gpt-5.4-mini",
+          "name": "OpenAI: GPT-5.4 Mini",
+          "inputPrice": 0.75,
+          "outputPrice": 4.5,
+          "arenaScore": 1447.1,
+          "openWeights": false
+        },
+        {
           "id": "google/gemini-2.5-pro",
           "name": "Google: Gemini 2.5 Pro",
           "inputPrice": 1.25,
@@ -2071,12 +3111,28 @@
           "openWeights": false
         },
         {
+          "id": "x-ai/grok-4.7",
+          "name": "SpaceXSI: Grok 4.7",
+          "inputPrice": 2,
+          "outputPrice": 6,
+          "arenaScore": 1443.8,
+          "openWeights": false
+        },
+        {
           "id": "thinkingmachines/inkling",
           "name": "Thinking Machines: Inkling",
           "inputPrice": 1,
           "outputPrice": 4.05,
           "arenaScore": 1443.4,
           "openWeights": true
+        },
+        {
+          "id": "openai/gpt-6-luna",
+          "name": "OpenAI: GPT-6 Luna",
+          "inputPrice": 0.1,
+          "outputPrice": 0.5,
+          "arenaScore": 1443,
+          "openWeights": false
         },
         {
           "id": "qwen/qwen3.6-plus",
@@ -2129,8 +3185,8 @@
         {
           "id": "deepseek/deepseek-v4-flash-0731",
           "name": "DeepSeek: DeepSeek V4 Flash 0731",
-          "inputPrice": 0.06,
-          "outputPrice": 0.18,
+          "inputPrice": 0.047,
+          "outputPrice": 0.3,
           "arenaScore": 1435.6,
           "openWeights": true
         },
@@ -2157,6 +3213,14 @@
           "outputPrice": 1.96,
           "arenaScore": 1435,
           "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5",
+          "name": "OpenAI: GPT-5",
+          "inputPrice": 1.25,
+          "outputPrice": 10,
+          "arenaScore": 1435,
+          "openWeights": false
         },
         {
           "id": "minimax/minimax-m3",
@@ -2255,6 +3319,14 @@
           "openWeights": true
         },
         {
+          "id": "anthropic/claude-haiku-5.5",
+          "name": "Anthropic: Claude Haiku 5.5",
+          "inputPrice": 0.1,
+          "outputPrice": 0.5,
+          "arenaScore": 1421.1,
+          "openWeights": false
+        },
+        {
           "id": "deepseek/deepseek-chat-v3.1",
           "name": "DeepSeek: DeepSeek V3.1",
           "inputPrice": 0.25,
@@ -2351,6 +3423,14 @@
           "openWeights": true
         },
         {
+          "id": "openai/gpt-5.4-nano",
+          "name": "OpenAI: GPT-5.4 Nano",
+          "inputPrice": 0.2,
+          "outputPrice": 1.25,
+          "arenaScore": 1401.1,
+          "openWeights": false
+        },
+        {
           "id": "qwen/qwen3-235b-a22b-thinking-2507",
           "name": "Qwen: Qwen3 235B A22B Thinking 2507",
           "inputPrice": 0.45,
@@ -2397,6 +3477,14 @@
           "outputPrice": 1.2,
           "arenaScore": 1390.9,
           "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5-mini",
+          "name": "OpenAI: GPT-5 Mini",
+          "inputPrice": 0.25,
+          "outputPrice": 2,
+          "arenaScore": 1390.3,
+          "openWeights": false
         },
         {
           "id": "upstage/solar-pro4",
@@ -2511,6 +3599,22 @@
           "openWeights": false
         },
         {
+          "id": "openai/gpt-4o-2024-11-20",
+          "name": "OpenAI: GPT-4o (2024-11-20)",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "arenaScore": 1346.1,
+          "openWeights": false
+        },
+        {
+          "id": "openai/gpt-4o",
+          "name": "OpenAI: GPT-4o",
+          "inputPrice": 2.5,
+          "outputPrice": 10,
+          "arenaScore": 1346.1,
+          "openWeights": false
+        },
+        {
           "id": "qwen/qwen-plus",
           "name": "Qwen: Qwen-Plus",
           "inputPrice": 0.26,
@@ -2525,6 +3629,14 @@
           "outputPrice": 0.15,
           "arenaScore": 1341.8,
           "openWeights": true
+        },
+        {
+          "id": "openai/gpt-5-nano",
+          "name": "OpenAI: GPT-5 Nano",
+          "inputPrice": 0.05,
+          "outputPrice": 0.4,
+          "arenaScore": 1337.9,
+          "openWeights": false
         },
         {
           "id": "openai/gpt-4o-2024-08-06",
@@ -2647,6 +3759,14 @@
           "openWeights": true
         },
         {
+          "id": "openai/gpt-4",
+          "name": "OpenAI: GPT-4",
+          "inputPrice": 30,
+          "outputPrice": 60,
+          "arenaScore": 1288,
+          "openWeights": false
+        },
+        {
           "id": "cohere/command-r-plus-08-2024",
           "name": "Cohere: Command R+ (08-2024)",
           "inputPrice": 2.5,
@@ -2685,6 +3805,14 @@
           "outputPrice": 0.6,
           "arenaScore": 1250.5,
           "openWeights": true
+        },
+        {
+          "id": "openai/gpt-3.5-turbo-0613",
+          "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+          "inputPrice": 1,
+          "outputPrice": 2,
+          "arenaScore": 1225.7,
+          "openWeights": false
         },
         {
           "id": "meta-llama/llama-3.1-8b-instruct",

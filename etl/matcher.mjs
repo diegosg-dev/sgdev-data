@@ -1,7 +1,24 @@
 import { canonicalizeModelKey, stripDateSuffix } from "./normalize.mjs";
 
 const SKIP_SUFFIXES = [":free", ":extended", ":nitro", ":floor", ":online", ":exacto", ":batch"];
-const SKIP_PREFIXES = ["openrouter/"];
+const SKIP_PREFIXES = ["openrouter/", "~"];
+
+const EFFORT_SUFFIX_RE =
+  /-(?:high|max|xhigh|medium|low|minimal|none|thinking|reasoning|non-reasoning|adaptive|default-fallback|effort)$/g;
+
+/**
+ * Strip trailing reasoning-effort tags (e.g. "-high", "-max", "-xhigh", "-thinking")
+ * without touching model version numbers or size/tier tags (like "mini", "flash", "pro").
+ */
+export function stripEffortSuffix(key) {
+  let prev = key;
+  for (let i = 0; i < 3; i++) {
+    const next = prev.replace(EFFORT_SUFFIX_RE, "");
+    if (next === prev) break;
+    prev = next;
+  }
+  return prev;
+}
 
 /**
  * Return true if an OpenRouter model entry is a routing alias or non-priced variant
@@ -20,13 +37,16 @@ export function isRoutingAlias(modelId) {
  * Strategy (in strict precedence):
  *  1. Explicit manual override in data/match-overrides.json (`overrides[openRouterId] = arenaModelName`).
  *  2. Exact canonical key match (e.g. `openai/gpt-4o-mini` -> `gpt-4o-mini` === `gpt-4o-mini`).
- *  3. Exact stripped-date/instruct key match ONLY when it resolves uniquely to one Arena model
- *     (never merges distinct sizes or variants like `mini` vs base or `thinking` vs non-thinking).
+ *  3. Exact stripped-date/instruct key match when it resolves uniquely to one Arena model.
+ *  4. Conservative reasoning-effort suffix match: if OpenRouter has `google/gemini-4-carbon`
+ *     and LMArena has `Gemini 4 Carbon (High)`, match to the highest-rated effort variant
+ *     with the exact same base canonical key (never merges distinct sizes/tiers like `mini` vs base).
  */
 export function matchModels(openRouterModels, arenaRows, overrides = {}) {
   const arenaByExactName = new Map();
   const arenaByCanonical = new Map();
   const arenaByStripped = new Map();
+  const arenaByEffortBase = new Map();
 
   for (const row of arenaRows) {
     const name = String(row.model_name || "").trim();
@@ -44,6 +64,14 @@ export function matchModels(openRouterModels, arenaRows, overrides = {}) {
       const list = arenaByStripped.get(stripped) || [];
       list.push(row);
       arenaByStripped.set(stripped, list);
+    }
+
+    const effortBase = stripDateSuffix(stripEffortSuffix(key));
+    if (effortBase && effortBase !== key) {
+      const existing = arenaByEffortBase.get(effortBase);
+      if (!existing || row.rating > existing.rating) {
+        arenaByEffortBase.set(effortBase, row);
+      }
     }
   }
 
@@ -87,7 +115,7 @@ export function matchModels(openRouterModels, arenaRows, overrides = {}) {
       }
     }
 
-    // 3. Unique stripped-date/instruct match (only if unambiguous: exactly 1 Arena candidate)
+    // 3. Unique stripped-date/instruct match
     if (!arena) {
       const candidates = [
         stripDateSuffix(canonicalizeModelKey(id)),
@@ -99,6 +127,24 @@ export function matchModels(openRouterModels, arenaRows, overrides = {}) {
         if (hits && hits.length === 1) {
           arena = hits[0];
           matchMethod = "normalized";
+          break;
+        }
+      }
+    }
+
+    // 4. Conservative effort-variant match (e.g. `google/gemini-4-carbon` -> `Gemini 4 Carbon (High)`)
+    if (!arena) {
+      const candidates = [
+        stripDateSuffix(stripEffortSuffix(canonicalizeModelKey(id))),
+        model.canonical_slug
+          ? stripDateSuffix(stripEffortSuffix(canonicalizeModelKey(model.canonical_slug)))
+          : "",
+      ].filter(Boolean);
+
+      for (const c of candidates) {
+        if (arenaByEffortBase.has(c)) {
+          arena = arenaByEffortBase.get(c);
+          matchMethod = "effort-variant";
           break;
         }
       }

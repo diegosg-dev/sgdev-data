@@ -7,6 +7,18 @@ export const LMARENA_LATEST_URL =
 export const LMARENA_FULL_URL =
   "https://huggingface.co/api/datasets/lmarena-ai/leaderboard-dataset/parquet/text_style_control/full/0.parquet";
 
+export const ARENA_EXTRA_CATEGORIES = [
+  "coding",
+  "math",
+  "hard_prompts",
+  "creative_writing",
+  "instruction_following",
+  "multi_turn",
+  "expert",
+];
+
+const WANTED_CATEGORIES = new Set(["overall", ...ARENA_EXTRA_CATEGORIES]);
+
 async function fetchParquetRows(url, columns) {
   const res = await fetch(url);
   if (!res.ok) {
@@ -37,6 +49,10 @@ function normalizeArenaRow(row) {
   };
 }
 
+/**
+ * Fetch latest LMArena text_style_control overall rows, with per-category ratings attached
+ * on each model (`categories: { coding, math, hard_prompts, ... }`).
+ */
 export async function fetchLmArenaLatest() {
   const rows = await fetchParquetRows(LMARENA_LATEST_URL, [
     "model_name",
@@ -50,10 +66,31 @@ export async function fetchLmArenaLatest() {
     "category",
     "leaderboard_publish_date",
   ]);
-  return rows
-    .filter((r) => r.category === "overall" && Number.isFinite(Number(r.rating)))
-    .map(normalizeArenaRow)
-    .sort((a, b) => b.rating - a.rating);
+
+  const categoriesByModel = new Map();
+  const overall = [];
+
+  for (const raw of rows) {
+    const cat = String(raw.category || "").trim();
+    if (!WANTED_CATEGORIES.has(cat)) continue;
+    if (!Number.isFinite(Number(raw.rating))) continue;
+
+    const norm = normalizeArenaRow(raw);
+    if (cat === "overall") {
+      overall.push(norm);
+    } else {
+      if (!categoriesByModel.has(norm.model_name)) {
+        categoriesByModel.set(norm.model_name, {});
+      }
+      categoriesByModel.get(norm.model_name)[cat] = Math.round(norm.rating * 10) / 10;
+    }
+  }
+
+  for (const row of overall) {
+    row.categories = categoriesByModel.get(row.model_name) || {};
+  }
+
+  return overall.sort((a, b) => b.rating - a.rating);
 }
 
 export async function fetchLmArenaHistory() {

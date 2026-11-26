@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS model_snapshots (
   first_seen_date TEXT NOT NULL,
   source_created_at INTEGER,
   match_method TEXT,
+  arena_categories_json TEXT,
   PRIMARY KEY (snapshot_date, model_id)
 );
 
@@ -78,11 +79,19 @@ CREATE TABLE IF NOT EXISTS aa_snapshots (
   intelligence_index REAL,
   coding_index REAL,
   agentic_index REAL,
+  engineering_index REAL,
+  economics_index REAL,
+  finance_index REAL,
+  strategy_index REAL,
+  legal_index REAL,
+  healthcare_index REAL,
+  cost_per_task_usd REAL,
   input_price REAL,
   output_price REAL,
   cache_hit_price REAL,
   tokens_per_second REAL,
   ttft_seconds REAL,
+  ttfa_seconds REAL,
   e2e_seconds REAL,
   PRIMARY KEY (snapshot_date, aa_id)
 );
@@ -95,5 +104,33 @@ export function openDb(dbPath) {
   fs.mkdirSync(path.dirname(dbPath), { recursive: true });
   const db = new Database(dbPath);
   db.exec(SCHEMA_SQL);
+
+  // Additive migrations for existing local SQLite databases
+  const ensureColumns = (table, cols) => {
+    const existing = new Set(
+      db
+        .prepare(`PRAGMA table_info(${table})`)
+        .all()
+        .map((c) => c.name),
+    );
+    for (const [name, def] of cols) {
+      if (!existing.has(name)) {
+        db.exec(`ALTER TABLE ${table} ADD COLUMN ${name} ${def}`);
+      }
+    }
+  };
+
+  ensureColumns("model_snapshots", [["arena_categories_json", "TEXT"]]);
+  ensureColumns("aa_snapshots", [
+    ["engineering_index", "REAL"],
+    ["economics_index", "REAL"],
+    ["finance_index", "REAL"],
+    ["strategy_index", "REAL"],
+    ["legal_index", "REAL"],
+    ["healthcare_index", "REAL"],
+    ["cost_per_task_usd", "REAL"],
+    ["ttfa_seconds", "REAL"],
+  ]);
+
   return db;
 }

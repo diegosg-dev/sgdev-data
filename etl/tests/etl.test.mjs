@@ -9,7 +9,7 @@ import {
   isOpenWeights,
   pricePerTokenToPerMillion,
 } from "../normalize.mjs";
-import { isRoutingAlias, matchModels } from "../matcher.mjs";
+import { isRoutingAlias, matchModels, stripEffortSuffix } from "../matcher.mjs";
 import { runEtl } from "../run.mjs";
 
 test("pricePerTokenToPerMillion converts USD/token to USD/1M accurately", () => {
@@ -75,6 +75,27 @@ test("canonicalizeModelKey normalizes decimal versions without collapsing distin
   assert.equal(canonicalizeModelKey("anthropic/claude-3.5-sonnet"), "claude-3-5-sonnet");
   assert.equal(canonicalizeModelKey("Claude 3.5 Sonnet"), "claude-3-5-sonnet");
   assert.notEqual(canonicalizeModelKey("gpt-4o"), canonicalizeModelKey("gpt-4o-mini"));
+});
+
+test("matchModels matches Arena reasoning-effort variants to base OpenRouter IDs", () => {
+  assert.equal(stripEffortSuffix("gemini-4-carbon-high"), "gemini-4-carbon");
+  assert.equal(stripEffortSuffix("claude-fable-5-2-max"), "claude-fable-5-2");
+
+  const orModels = [
+    { id: "google/gemini-4-carbon", name: "Google: Gemini 4 Carbon" },
+    { id: "anthropic/claude-opus-5.5", name: "Anthropic: Claude Opus 5.5" },
+  ];
+  const arenaRows = [
+    { model_name: "Gemini 4 Carbon (High)", organization: "google", license: "Proprietary", rating: 1526.5 },
+    { model_name: "Claude Opus 5.5 (High)", organization: "anthropic", license: "Proprietary", rating: 1507.0 },
+    { model_name: "Claude Opus 5.5 (Medium)", organization: "anthropic", license: "Proprietary", rating: 1495.0 },
+  ];
+
+  const { matched } = matchModels(orModels, arenaRows, {});
+  assert.equal(matched.length, 2);
+  assert.equal(matched[0].arena.model_name, "Gemini 4 Carbon (High)");
+  assert.equal(matched[0].matchMethod, "effort-variant");
+  assert.equal(matched[1].arena.model_name, "Claude Opus 5.5 (High)");
 });
 
 test("fixture ETL runs end-to-end, is idempotent, and never leaks raw OpenRouter catalog", async () => {

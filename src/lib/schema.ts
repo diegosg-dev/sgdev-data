@@ -23,12 +23,22 @@ export interface FrontierModel {
   contextLength: number;
   arenaScore: number;
   arenaModel: string;
+  arenaCategories?: Record<string, number>;
   openWeights: boolean;
   firstSeenDate: string;
   releaseDate: string;
   aaIntelligenceIndex?: number | null;
+  aaEngineeringIndex?: number | null;
+  aaEconomicsIndex?: number | null;
+  aaFinanceIndex?: number | null;
+  aaStrategyIndex?: number | null;
+  aaLegalIndex?: number | null;
+  aaHealthcareIndex?: number | null;
   tokensPerSecond?: number | null;
   ttftSeconds?: number | null;
+  ttfaSeconds?: number | null;
+  e2eSeconds?: number | null;
+  costPerTaskUsd?: number | null;
 }
 
 export interface SpeedIntelligenceModel {
@@ -40,11 +50,19 @@ export interface SpeedIntelligenceModel {
   intelligenceIndex: number | null;
   codingIndex: number | null;
   agenticIndex: number | null;
+  engineeringIndex: number | null;
+  economicsIndex: number | null;
+  financeIndex: number | null;
+  strategyIndex: number | null;
+  legalIndex: number | null;
+  healthcareIndex: number | null;
+  costPerTaskUsd: number | null;
   inputPrice: number | null;
   outputPrice: number | null;
   blended: number | null;
   tokensPerSecond: number | null;
   ttftSeconds: number | null;
+  ttfaSeconds: number | null;
   e2eSeconds: number | null;
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import * as Plot from "@observablehq/plot";
-import type { FrontierData, PricesHistoryData, TaskPresetId } from "../lib/schema";
+import type { FrontierData, FrontierModel, PricesHistoryData, TaskPresetId } from "../lib/schema";
 import {
   TASK_PRESETS,
   computeDeflationSeries,
@@ -28,6 +28,108 @@ const RATIO_OPTIONS = [
   { label: "10:1", value: 10 },
 ];
 
+type FrontierBenchId =
+  | "arena_overall"
+  | "arena_coding"
+  | "arena_math"
+  | "arena_hard_prompts"
+  | "arena_expert"
+  | "aa_intelligence"
+  | "aa_engineering"
+  | "aa_economics"
+  | "aa_finance"
+  | "aa_legal";
+
+const FRONTIER_BENCHES: {
+  id: FrontierBenchId;
+  label: string;
+  axisLabel: string;
+  sourceLabel: string;
+  isArena: boolean;
+  getScore: (m: FrontierModel) => number | null;
+}[] = [
+  {
+    id: "arena_overall",
+    label: "Arena Overall",
+    axisLabel: "↑ LMArena Overall (style-control)",
+    sourceLabel: "LMArena style-control overall (CC BY 4.0)",
+    isArena: true,
+    getScore: (m) => m.arenaScore,
+  },
+  {
+    id: "arena_coding",
+    label: "Arena Coding",
+    axisLabel: "↑ LMArena Coding (style-control)",
+    sourceLabel: "LMArena style-control coding (CC BY 4.0)",
+    isArena: true,
+    getScore: (m) => m.arenaCategories?.coding ?? null,
+  },
+  {
+    id: "arena_math",
+    label: "Arena Math",
+    axisLabel: "↑ LMArena Math (style-control)",
+    sourceLabel: "LMArena style-control math (CC BY 4.0)",
+    isArena: true,
+    getScore: (m) => m.arenaCategories?.math ?? null,
+  },
+  {
+    id: "arena_hard_prompts",
+    label: "Hard Prompts",
+    axisLabel: "↑ LMArena Hard Prompts",
+    sourceLabel: "LMArena style-control hard_prompts (CC BY 4.0)",
+    isArena: true,
+    getScore: (m) => m.arenaCategories?.hard_prompts ?? null,
+  },
+  {
+    id: "arena_expert",
+    label: "Arena Expert",
+    axisLabel: "↑ LMArena Expert",
+    sourceLabel: "LMArena style-control expert (CC BY 4.0)",
+    isArena: true,
+    getScore: (m) => m.arenaCategories?.expert ?? null,
+  },
+  {
+    id: "aa_intelligence",
+    label: "AA Intel v5",
+    axisLabel: "↑ AA Intelligence Index v5",
+    sourceLabel: "Artificial Analysis Intelligence Index v5",
+    isArena: false,
+    getScore: (m) => m.aaIntelligenceIndex ?? null,
+  },
+  {
+    id: "aa_engineering",
+    label: "AA Eng",
+    axisLabel: "↑ AA Engineering Index",
+    sourceLabel: "Artificial Analysis Engineering Index",
+    isArena: false,
+    getScore: (m) => m.aaEngineeringIndex ?? null,
+  },
+  {
+    id: "aa_economics",
+    label: "AA Econ",
+    axisLabel: "↑ AA Economics Index",
+    sourceLabel: "Artificial Analysis Economics Index",
+    isArena: false,
+    getScore: (m) => m.aaEconomicsIndex ?? null,
+  },
+  {
+    id: "aa_finance",
+    label: "AA Finance",
+    axisLabel: "↑ AA Finance & Accounting",
+    sourceLabel: "Artificial Analysis Finance Index",
+    isArena: false,
+    getScore: (m) => m.aaFinanceIndex ?? null,
+  },
+  {
+    id: "aa_legal",
+    label: "AA Legal",
+    axisLabel: "↑ AA Legal Index",
+    sourceLabel: "Artificial Analysis Legal Index",
+    isArena: false,
+    getScore: (m) => m.aaLegalIndex ?? null,
+  },
+];
+
 export default function FrontierDashboard({ frontierData, pricesHistory }: Props) {
   const models = frontierData.models;
 
@@ -40,10 +142,13 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
   }, [models]);
 
   // Frontier controls
+  const [benchId, setBenchId] = useState<FrontierBenchId>("arena_overall");
   const [ratio, setRatio] = useState<number>(3);
   const [selectedProvider, setSelectedProvider] = useState<string>("All");
   const [weightFilter, setWeightFilter] = useState<"all" | "closed" | "open">("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const activeBench = FRONTIER_BENCHES.find((b) => b.id === benchId) ?? FRONTIER_BENCHES[0];
 
   // Good-Enough Finder controls
   const [presetId, setPresetId] = useState<TaskPresetId>("coding");
@@ -103,15 +208,20 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
     ];
   }, [models]);
 
-  // Filtered frontier points
+  // Filtered frontier points projected onto the active benchmark score
   const filteredModels = useMemo(() => {
-    return models.filter((m) => {
-      if (selectedProvider !== "All" && m.provider !== selectedProvider) return false;
-      if (weightFilter === "closed" && m.openWeights) return false;
-      if (weightFilter === "open" && !m.openWeights) return false;
-      return true;
-    });
-  }, [models, selectedProvider, weightFilter]);
+    return models
+      .filter((m) => {
+        if (selectedProvider !== "All" && m.provider !== selectedProvider) return false;
+        if (weightFilter === "closed" && m.openWeights) return false;
+        if (weightFilter === "open" && !m.openWeights) return false;
+        return activeBench.getScore(m) != null;
+      })
+      .map((m) => ({
+        ...m,
+        arenaScore: activeBench.getScore(m) as number,
+      }));
+  }, [models, selectedProvider, weightFilter, activeBench]);
 
   const { points, frontier } = useMemo(
     () => computeParetoFrontier(filteredModels, ratio),
@@ -159,14 +269,14 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
     [pricesHistory.deflationSnapshots, preset, monthlyRuns, minScore, openOnly],
   );
 
-  // Key headline number: cheapest model >= 1450 (top-tier frontier bar) or >= minScore
-  const headlineBar = 1450;
+  // Key headline number: cheapest top-tier model for the selected benchmark
+  const headlineBar = activeBench.isArena ? 1450 : 50;
   const cheapestTopClass = useMemo(() => {
     const eligible = points
       .filter((p) => p.arenaScore >= headlineBar)
       .sort((a, b) => a.blended - b.blended);
     return eligible[0] ?? frontier[frontier.length - 1] ?? null;
-  }, [points, frontier]);
+  }, [points, frontier, headlineBar]);
 
   const winnerPoint = useMemo(() => {
     if (!finderResult.winner) return null;
@@ -207,17 +317,36 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
       {/* HERO SCATTER: PRICE VS QUALITY FRONTIER */}
       <ChartCard
         id="frontier"
-        takeaway="Models on the green frontier buy the highest Arena score per blended dollar."
+        takeaway={`Models on the green frontier buy the highest ${activeBench.label} score per blended dollar.`}
         keyNumber={cheapestTopClass ? `${formatPricePerM(cheapestTopClass.blended)} / 1M` : "—"}
         keyNumberLabel={
           cheapestTopClass
-            ? `Cheapest >= ${headlineBar} Arena (${shortModelName(cheapestTopClass.name)})`
+            ? `Cheapest >= ${headlineBar} ${activeBench.label} (${shortModelName(cheapestTopClass.name)})`
             : "Cheapest frontier / 1M"
         }
-        source={`Source: OpenRouter prices (${ratio}:1 in:out) · LMArena style-control overall (CC BY 4.0) · Snapshot ${frontierData.snapshotDate}`}
-        filename={`sgdev-frontier-${frontierData.snapshotDate}.png`}
+        source={`Source: OpenRouter prices (${ratio}:1 in:out) · ${activeBench.sourceLabel} · Snapshot ${frontierData.snapshotDate}`}
+        filename={`sgdev-frontier-${benchId}-${frontierData.snapshotDate}.png`}
         controls={
           <>
+            <div className="w-full flex flex-wrap items-center gap-1.5 pb-1">
+              <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--muted)] mr-1">
+                Bench:
+              </span>
+              {FRONTIER_BENCHES.map((b) => (
+                <button
+                  key={b.id}
+                  type="button"
+                  onClick={() => setBenchId(b.id)}
+                  className={`font-mono cursor-pointer px-2 py-1 text-[10px] border transition-colors ${
+                    benchId === b.id
+                      ? "border-[var(--signal)] text-[var(--text)] bg-[color-mix(in_srgb,var(--signal)_12%,transparent)]"
+                      : "border-[var(--grid)] text-[var(--muted)] hover:text-[var(--text)]"
+                  }`}
+                >
+                  {b.label}
+                </button>
+              ))}
+            </div>
             <div className="flex items-center gap-1.5">
               <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--muted)]">
                 Mix:
@@ -324,16 +453,20 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
               tickFormat: (d: number) => formatPricePerM(d),
             },
             y: {
-              label: "↑ LMArena score (style-control)",
+              label: activeBench.axisLabel,
               grid: true,
             },
             marks: [
-              // Quality bar from Good-Enough Finder
-              Plot.ruleY([minScore], {
-                stroke: palette.signal,
-                strokeDasharray: "4,4",
-                strokeOpacity: 0.45,
-              }),
+              // Quality bar from Good-Enough Finder (shown on Arena Overall)
+              ...(benchId === "arena_overall"
+                ? [
+                    Plot.ruleY([minScore], {
+                      stroke: palette.signal,
+                      strokeDasharray: "4,4",
+                      strokeOpacity: 0.45,
+                    }),
+                  ]
+                : []),
               // Best-value frontier step/line
               Plot.line(frontier, {
                 x: "blended",
@@ -405,15 +538,18 @@ export default function FrontierDashboard({ frontierData, pricesHistory }: Props
                     [
                       shortModelName(d.name),
                       `${d.provider} · ${d.openWeights ? "Open weights" : "Closed"}`,
-                      `Arena: ${d.arenaScore.toFixed(1)}`,
+                      `${activeBench.label}: ${d.arenaScore.toFixed(1)}`,
                       `Blended (${ratio}:1): ${formatPricePerM(d.blended)} / 1M`,
                       `In / Out: ${formatPricePerM(d.inputPrice)} / ${formatPricePerM(d.outputPrice)}`,
                       `Context: ${formatContext(d.contextLength)}`,
-                      d.aaIntelligenceIndex != null
-                        ? `AA Index v5: ${d.aaIntelligenceIndex.toFixed(1)}`
+                      d.e2eSeconds != null
+                        ? `AA Time/task (E2E): ${d.e2eSeconds.toFixed(1)}s`
+                        : null,
+                      d.costPerTaskUsd != null
+                        ? `AA Cost/task: ${formatUsd(d.costPerTaskUsd)}`
                         : null,
                       d.tokensPerSecond != null
-                        ? `Speed: ${d.tokensPerSecond.toFixed(1)} tok/s${d.ttftSeconds != null ? ` · TTFT ${d.ttftSeconds.toFixed(2)}s` : ""}`
+                        ? `Speed: ${d.tokensPerSecond.toFixed(1)} tok/s`
                         : null,
                     ]
                       .filter(Boolean)
