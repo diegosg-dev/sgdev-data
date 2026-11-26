@@ -1,11 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ChartShell from "../components/ChartShell.astro";
+import FrontierDashboard from "../components/FrontierDashboard";
+import { loadFrontier, loadMeta, loadPricesHistory } from "../lib/data";
+
+const meta = loadMeta();
+const frontierData = loadFrontier();
+const pricesHistory = loadPricesHistory();
 ---
 
 <BaseLayout
   title="SGDev LLM Data"
   description="Price vs quality frontier for LLMs — find the good-enough model for your budget."
+  lastUpdated={meta.lastUpdated}
 >
   <div class="grid gap-10">
     <header class="grid gap-4 md:grid-cols-12 md:items-end">
@@ -24,36 +30,18 @@ import ChartShell from "../components/ChartShell.astro";
       </div>
       <div class="md:col-span-4 md:text-right space-y-1">
         <p class="font-mono m-0 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
-          Status
+          Latest snapshot
         </p>
-        <p class="font-mono m-0 text-sm text-[var(--amber)]">M1 scaffold · data incoming</p>
+        <p class="font-mono m-0 text-sm text-[var(--signal)]">
+          {meta.snapshotDate} · {meta.matchedCount} matched models
+        </p>
       </div>
     </header>
 
-    <ChartShell
-      id="frontier"
-      takeaway="Models that buy the most Arena score per dollar sit on the green frontier."
-      keyNumber="—"
-      keyNumberLabel="Cheapest GPT-4-class / 1M"
-      source="Source: OpenRouter prices · LMArena style-control (CC BY 4.0)"
+    <FrontierDashboard
+      client:load
+      frontierData={frontierData}
+      pricesHistory={pricesHistory}
     />
-
-    <section class="chart-panel grid gap-4 p-5 md:p-6 md:grid-cols-12" id="good-enough">
-      <header class="md:col-span-12 space-y-2">
-        <h2 class="chart-takeaway m-0">Good-Enough Finder</h2>
-        <p class="m-0 text-sm text-[var(--muted)] max-w-2xl">
-          Pick a task, a quality bar, and a monthly volume. We return the cheapest
-          model that clears it — plus savings vs a premium default.
-        </p>
-        <p class="source-line m-0">Interactive controls ship in M4.</p>
-      </header>
-      <div
-        class="md:col-span-12 min-h-[160px] border border-dashed border-[var(--grid)] flex items-center justify-center"
-      >
-        <p class="font-mono m-0 text-xs uppercase tracking-[0.12em] text-[var(--muted)]">
-          Finder landing in M4
-        </p>
-      </div>
-    </section>
   </div>
 </BaseLayout>
